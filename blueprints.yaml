@@ -1,0 +1,35 @@
+name: Oxygen
+version: 1.0.0
+description: Crazy fast, accessible and GDRP-compliant out of the box.
+icon: sun-o
+author:
+  name: Kittyfish from Mars
+  email: kittfishfrommars@gmail.com
+  url: https://github.com/kittyfishfrommars
+keywords: grav, theme, accessiblity, performance, maintenance, legal
+homepage: https://github.com/kittyfishfrommars/grav-theme-oxygen
+demo: https://kittyfishfrommars.github.io/grav/grav-theme-oxygen
+readme: https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/README.md
+bugs: https://github.com/kittyfishfrommars/grav-theme-oxygen/issues
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.7.0' }
+  - { name: grav-plugin-error, version: '>=1.8.0' }
+  - { name: grav-plugin-markdown-notices, version: '>=1.1.0' }
+  - { name: grav-plugin-problems, version: '>=2.1.1' }
+  - { name: grav-plugin-sitemap, version: '>=5.0.0' }
+
+form:
+  validation: strict
+  fields:
+    dropdown:
+        type: toggle
+        label: Dropdown in Navigation
+        highlight: 1
+        default: 1
+        options:
+            1: PLUGIN_ADMIN.ENABLED
+            0: PLUGIN_ADMIN.DISABLED
+        validate:
+            type: bool
