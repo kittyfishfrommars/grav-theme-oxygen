@@ -1,0 +1,77 @@
+# THEME .gitignore
+
+
+# ignore built files
+dist/
+assets/
+cache/
+
+# specifically allow folders
+!images/
+
+# track this folder (i.e. do NOT ignore it)
+!user/data/*.*/
+!dist
+!vendor
+
+# track this file .gitignore (i.e. do NOT ignore it)
+!.gitignore
+!.htaccess
+!readme.md
+
+# track .editorconfig file (i.e. do NOT ignore it)
+!.editorconfig
+
+# ignore visual studio workspace
+*.code-workspace
+
+# ignore all files that start with ~
+~*
+
+# ignore OS generated files
+ehthumbs.db
+Thumbs.db
+
+# ignore Editor files
+*.sublime-project
+*.sublime-workspace
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+
+# osx specific files
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+._*
+*.swp
+*.swo
+*.swn
+
+# ignore log files
+*.log
+
+# ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Node
+npm-debug.log
+node_modules
