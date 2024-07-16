@@ -5,6 +5,7 @@
 dist/
 assets/
 cache/
+.wget/
 
 # specifically allow folders
 !images/
