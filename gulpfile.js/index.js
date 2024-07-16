@@ -19,7 +19,7 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 // fix code style where possible
 exports.fix = series(
 	parallel(
-		fixCSS,
+		fixCSS
 	),
 );
 
@@ -29,7 +29,7 @@ exports.build = series(
 	cleanDist,
 	parallel(
 		compileCSS,
-		compileJS,
+		compileJS
 	)
 );
 

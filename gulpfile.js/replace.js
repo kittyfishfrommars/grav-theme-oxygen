@@ -13,6 +13,5 @@ function fingerprint() {
 			}
 		));
 }
-// .pipe(dest('./'));
-// .pipe(replace(/fp=[0-9]+/g, 'fp=' + fpString))
+
 exports.fingerprint = fingerprint;
