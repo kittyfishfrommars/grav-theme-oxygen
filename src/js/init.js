@@ -4,9 +4,7 @@
 
 (function($) {
 
-	// MOBILE MENU
-	var themeCSSPath = $('script').last().data('theme-root') + '/css/';
-
+	// skel.js options
 	skel.init({
 		reset: 'full',
 		breakpoints: {
@@ -44,7 +42,7 @@
 		}
 	});
 
-	// DROPDOWN
+	// Dropdown
 	var	$window = $(window),
 		$body = $('body');
 
