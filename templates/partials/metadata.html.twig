@@ -1,4 +1,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{% if not config.theme.index == 1 %}
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+{% endif %}
 {% for meta in page.metadata %}
     {% if meta.name == "generator" or meta.name == "author" %}
         {# skip #}

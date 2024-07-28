@@ -1,5 +1,5 @@
 name: Oxygen
-version: 1.0.1
+version: 1.0.2
 description: 'A crazy fast, accessible and GDPR-compliant theme out of the box + build tools.'
 icon: sun-o
 author:
@@ -24,13 +24,33 @@ dependencies:
 form:
   validation: strict
   fields:
+    spacer:
+        type: spacer
+        title: Theme Options
+        text: >
+            Please refer to <a target="_blank" href="https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/README.md#theme-options">README - Theme Options</a> for a more detailed explanation of each setting.
+        underline: true
+    index:
+        type: toggle
+        label: Search Engine Index
+        help: '(Default: disabled) Whether to allow search engines to index this website.'        
+        default: 0
+        highlight: 1
+        options:
+            0: PLUGIN_ADMIN.DISABLED
+            1: PLUGIN_ADMIN.ENABLED
+        validate:
+            type: bool
     dropdown:
         type: toggle
         label: Dropdown in Navigation
-        highlight: 1
+        info: foo
+        text: bar
+        help: '(Default: enabled) Whether to display submenus in a dropdown navigation on desktop.'
         default: 1
+        highlight: 1
         options:
-            1: PLUGIN_ADMIN.ENABLED
             0: PLUGIN_ADMIN.DISABLED
+            1: PLUGIN_ADMIN.ENABLED
         validate:
             type: bool
