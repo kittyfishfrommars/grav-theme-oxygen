@@ -56,7 +56,6 @@ Thumbs.db
 *.log
 
 # ignore compiled files
-*.com
 *.class
 *.dll
 *.exe
