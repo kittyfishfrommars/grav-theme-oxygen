@@ -21,6 +21,8 @@ All-in-one package: [grav-skeleton-oxygen](https://github.com/kittyfishfrommars/
   - [Manual Update](#manual-update)
 - [Supported Templates](#supported-templates)
 - [Configuration](#configuration)
+  - [Theme Options](#theme-options)
+    - [Search Engine Index](#search-engine-index)
   - [Environments](#environments)
 - [Build Tools](#build-tools)
   - [Gulp](#gulp)
@@ -123,9 +125,41 @@ Manually updating this theme is pretty simple. Here is what you will need to do 
 
 ## Configuration
 
+### Theme Options
+
+#### Search Engine Index
+
+For a granular approach to indexing, please refer to Grav's [sitemap plugin](https://github.com/getgrav/grav-plugin-sitemap), which comes bundled with this theme.
+
+By default Oxygen _additionally_ instructs [search engines](https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag) not to index any content, so you can setup your new site in your own time. Once you are ready to go live you have two ways to allow access to your site:
+
+**Admin Panel**
+
+Enable indexing through the [Grav Admin Panel](https://github.com/getgrav/grav-plugin-admin), which comes pre-installed with [Oxygen's Skeleton](https://github.com/kittyfishfrommars/grav-skeleton-oxygen) package.
+
+1. Login by pointing your browser to `http://mysite.com/admin`
+2. Navigate to `Themes` and select the Oxygen Theme
+3. Scroll down to `Theme Options` and enable the `Search Engine Index` toggle
+
+Done.
+
+**Manual Edit**
+
+Enable indexing by editing or creating [user/env/mysite.com/config/themes/oxygen.yaml](https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/_demo/config/themes/oxygen.yaml) and rename the folder `mysite.com` to your production url without `www`.
+
+Set the following value:
+`
+index: true
+`
+
+This will remove the `noindex` meta tag from each site's head.
+
+Done.
+
+
 ### Environments
 
-For optimal perfomance in your production environment, copy [env/mysite.com/system.yaml](https://github.com/kittyfishfrommars/grav-skeleton-oxygen/blob/main/env/mysite.com/config/system.yaml) and rename the folder `mysite.com` to your production domain (without www).
+For optimal perfomance in your production environment, copy [user/env/mysite.com/config/system.yaml](https://github.com/kittyfishfrommars/grav-skeleton-oxygen/blob/main/env/mysite.com/config/system.yaml) and rename the folder `mysite.com` to your production url without `www`.
 
 
 ## Build Tools
