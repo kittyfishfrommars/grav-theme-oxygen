@@ -1,10 +1,10 @@
 # v1.0.2
-##  29-07-2024
+##  08-08-2024
 
 1. [](#new)
 * Add [Theme Option](https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/README.md#theme-options) to enable search engine indexing (default: disabled)
 1. [](#improved)
-* Include sample `user/env/mysite.com/system.yaml` file, see [README](https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/README.md#environments)
+* Include sample `user/env/mysite.com` folder for production settings, see [README](https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/README.md#environments)
 
 # v1.0.1
 ##  17-07-2024
