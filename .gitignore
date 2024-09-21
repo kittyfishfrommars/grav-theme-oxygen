@@ -1,11 +1,13 @@
 # THEME .gitignore
 
-
 # ignore built files
 dist/
 assets/
 cache/
 .wget/
+
+# ignore specifix files
+wget.sh
 
 # specifically allow folders
 !images/
