@@ -1,7 +1,7 @@
 ---
 title: Sitemap
-metadata:
-  robots: noindex,nofollow
+# metadata:
+  # robots: noindex
 template: error
 visible: false
 slug: sitemap
