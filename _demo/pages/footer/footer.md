@@ -1,10 +1,10 @@
 ---
 title: Footer
-metadata:
-  robots: noindex
 routable: false
 visible: false
 expires: 0
+pageOptions:
+    noIndex: true
 sitemap:
    ignore: true
 # do not change taxonomy definition

@@ -1,7 +1,5 @@
 ---
 title: Elements
-# metadata:
-#  robots: noindex
 sitemap:
   ignore: true
 ---

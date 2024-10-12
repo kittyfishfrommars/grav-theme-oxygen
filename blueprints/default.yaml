@@ -17,8 +17,10 @@ form:
                 # title: A title
                 # text: Some text
                 underline: true
-                ordering@: content
+                # ordering@: content
+                ordering@: PageMedia
               header.banner:
+                ordering@: spacer
                 type: fieldset
                 title: Banner
                 # help: 'optional'
@@ -27,7 +29,6 @@ form:
                 icon: camera
                 collapsed: true
                 collapsible: true
-                ordering@: spacer
                 fields:
                   .url:
                     type: mediapicker
@@ -53,3 +54,25 @@ form:
                     label: (Optional) Blurb class
                     help: 'Custom pre-defined CSS classes.'
                     class: 'uppercase'
+              header.pageOptions:
+                ordering@: banner
+                # type: section
+                type: fieldset
+                title: Page Options
+                info: ' click to expand'
+                # underline: true
+                icon: cog
+                collapsed: true
+                collapsible: true
+                fields:
+                  .noIndex:
+                    type: toggle
+                    label: Allow this specific page to be indexed by search engines
+                    help: '(Default: enabled) This page may be indexed by search engines. Please make sure that the the entire site can be indexed via THEME OPTIONS.'
+                    default: 0
+                    highlight: 0
+                    options:
+                      1: PLUGIN_ADMIN.DISABLED
+                      0: PLUGIN_ADMIN.ENABLED
+                    validate:
+                      type: bool

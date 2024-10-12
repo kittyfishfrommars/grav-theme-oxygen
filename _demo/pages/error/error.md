@@ -1,7 +1,5 @@
 ---
 title: Page not found
-metadata:
-  robots: noindex
 template: error
 routable: false
 visible: false
@@ -10,6 +8,8 @@ twig_first: true
 process:
   twig: true
 expires: 0
+pageOptions:
+    noIndex: true
 sitemap:
    ignore: true
 ---
