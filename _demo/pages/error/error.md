@@ -1,6 +1,7 @@
 ---
 title: Page not found
-robots: noindex,nofollow
+metadata:
+  robots: noindex,nofollow
 template: error
 routable: false
 visible: false

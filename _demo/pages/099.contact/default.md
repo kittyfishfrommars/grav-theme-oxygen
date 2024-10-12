@@ -6,7 +6,9 @@ menu: 'Contact'
 # slug: 'Impressum'
 slug: 'contact'
 visible: true
-robots: noindex,nofollow
+# uncomment to disable indexing of this page
+# metadata:
+   # robots: noindex,nofollow
 # grav-plugin-sitemap overrides
 sitemap:
    changefreq: monthly

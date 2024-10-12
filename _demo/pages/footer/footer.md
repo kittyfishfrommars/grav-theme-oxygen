@@ -1,6 +1,7 @@
 ---
 title: Footer
-robots: noindex,nofollow
+metadata:
+  robots: noindex,nofollow
 routable: false
 visible: false
 expires: 0
