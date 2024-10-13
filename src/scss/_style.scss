@@ -627,10 +627,10 @@ input[type = "button"].fit,
 
 #logo {
     color: config.$color-nav-text;
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 400;
     letter-spacing: 2px;
-    line-height: 2em;
+    line-height: 2.2em;
     text-transform: uppercase;
 }
 
@@ -653,7 +653,7 @@ input[type = "button"].fit,
 #nav > ul > li {
     border-radius: 4px;
     display: inline-block;
-    margin-left: 0.5em;
+    margin-left: 0.25em;
     padding: 0 0.5em;
 }
 

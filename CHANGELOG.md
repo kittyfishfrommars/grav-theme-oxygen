@@ -1,3 +1,9 @@
+# v1.0.4
+##  14-10-2024
+
+1. [](#fix)
+* Decrease logo font-size for tablet (<1280), slightly decrease navigation item margins
+
 # v1.0.3
 ##  13-10-2024
 
