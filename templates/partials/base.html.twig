@@ -20,9 +20,9 @@
 		{# head: with loading parameter #}
 		{{ assets.css('delay')|raw }}
 		{# head: deferred css #}
-		<link rel="stylesheet" href="{{ theme_url }}/fonts/fontawesome/font-awesome.min.css?fp=4701" media="print" onload="this.onload=null;this.media='all'">
+		<link rel="stylesheet" href="{{ url('theme://fonts/fontawesome/font-awesome.min.css?fp=4701') }}" media="print" onload="this.onload=null;this.media='all'">
 		<noscript>
-			<link rel="stylesheet" href="{{ theme_url }}/fonts/fontawesome/font-awesome.min.css?fp=4701">
+			<link rel="stylesheet" href="{{ url('theme://fonts/fontawesome/font-awesome.min.css?fp=4701') }}">
 		</noscript>
 	{% endblock %}
 
