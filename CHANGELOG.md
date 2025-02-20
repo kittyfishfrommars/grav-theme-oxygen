@@ -2,6 +2,7 @@
 ##  20-02-2025
 
 1. [](#fix)
+* [#5](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/2) Updated README with more detailed [Setup Instructions](https://github.com/kittyfishfrommars/grav-theme-oxygen/tree/main?tab=readme-ov-file#setup).
 * [#2](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/2) fix fontawesome reference for inherited themes
 
 # v1.0.4

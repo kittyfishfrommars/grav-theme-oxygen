@@ -28,6 +28,7 @@ All-in-one package: [grav-skeleton-oxygen](https://github.com/kittyfishfrommars/
   - [Gulp](#gulp)
 - [Troubleshooting](#troubleshooting)
   - [500 Internal Server Error](#500-internal-server-error)
+  - [Incorrect content rendering](#incorrect-content-rendering)
 - [Examples in the wild](#examples-in-the-wild)
 - [Credits](#credits)
 
@@ -77,10 +78,14 @@ You should now have all the theme files under
 If you want to set Oxygen as the default theme, you can do so by following these steps:
 
 * Navigate to `grav/user/config`.
-* Open the **system.yaml** file.
-* Change the `theme:` setting to `theme: oxygen` and save your changes.
-* Open the **site.yaml** file.
-* Add this line at the bottom: `taxonomies: [tag]` and save your changes.
+* Open **[system.yaml](https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/_demo/config/system.yaml)**.
+* Change the `theme:` setting to `theme: oxygen` to enable this theme.
+* Under `markdown:` set `extra: true` to enable Markdown Extra.
+* Under `markdown:` set `auto_line_breaks: true` to enable automatic line breaks.
+* Save your changes.
+* Open **[site.yaml](https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/_demo/config/system.yaml)**.
+* Add this line at the bottom: `taxonomies: [tag]` to enable Taxonomies.
+* Save your changes.
 * Clear the Grav cache. The simplest way to do this is by going to the root Grav directory in Terminal and typing `bin/grav clear-cache`.
 
 Once this is done, you should be able to see the new theme on the frontend. Keep in mind any customizations made to the previous theme will not be reflected as all of the theme and templating information is now being pulled from the `oxygen` folder.
@@ -231,6 +236,10 @@ The nuclear option is, of course, **not recommended for production**:
     chmod 777 grav-skeleton-oxygen -R
 
 Where `grav-skeleton-oxygen` is your installation folder.
+
+### Incorrect content rendering
+
+If your content renders as markdown instead of nicely formatted html, this is most solved by editing the settings in `/user/config/system.yaml`. Please see [Setup](#setup) for detailed instructions.
 
 
 ## Examples in the wild
