@@ -13,7 +13,7 @@ en:
 de:
   PLUGIN_ERROR:
     ERROR: Fehler
-    ERROR_MESSAGE: 
+    ERROR_MESSAGE: >
       Diese Seite gibt es leider nicht.
 
 
@@ -22,3 +22,15 @@ de:
     TITLE_TITLE: Titel
     TITLE_LOCATION: URL
     TITLE_LASTMOD: Letzte Aktualisierung
+cs:
+  PLUGIN_ERROR:
+    ERROR: Chyba
+    ERROR_MESSAGE: >
+      Vypadá to, že hledaná stránka tu není.
+
+
+      %SITEMAP% poskytuje přehled všech dostupných stránek.
+  PLUGIN_SITEMAP:
+    TITLE_TITLE: Název
+    TITLE_LOCATION: URL
+    TITLE_LASTMOD: Naposledy změněno
