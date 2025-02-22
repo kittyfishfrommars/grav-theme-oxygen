@@ -31,7 +31,7 @@ hook:
     headline: Getting Started
     # comment-out line below to right section, display hook full width
     text:
-        Once you're happy with your site's content, head on over to your <a href="https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/README.md#theme-options">Theme Options</a> and enable indexing for your favorite search engine.
+        Once you're happy with your site's content, head on over to <a href="https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/README.md#theme-options">Theme Options</a> and enable indexing for your favorite search engine.
   button:
     # comment-out line below to disable button
     text: 'Read More'
