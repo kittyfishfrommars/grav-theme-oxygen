@@ -675,6 +675,10 @@ input[type = "button"].fit,
     color: config.$color-secondary;
 }
 
+#nav > ul > li a.nav-active, #nav > ul > li a:hover  {
+    color: config.$color-nav-active;
+}
+
 #nav > ul > li > ul {
     display: none;
 }
@@ -704,14 +708,14 @@ input[type = "button"].fit,
 }
 
 .dropotron > li > a {
-    color: inherit;
+    color: config.$color-nav-text;
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: none;
 }
 
 .dropotron > li.active > a, .dropotron > li:hover > a {
-    color: inherit;
+    color: config.$color-nav-active;
 }
 
 .dropotron.level-0,

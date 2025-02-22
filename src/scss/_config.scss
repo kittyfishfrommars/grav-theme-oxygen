@@ -11,8 +11,10 @@ $color-bg-secondary: #222222;
    536b33 dark olive green
    0d3d50 midnight blue
    26626c metallic blue
+   6fcedf bright blue
    623523 irish coffee brown
    894b2b chestnut brown
+   ffa501 orange
 */
 
 $color-primary: #26626c;
@@ -20,8 +22,9 @@ $color-secondary: #eeeeee;
 $color-text: #1f1f1f;
 $color-nav-bg: #000000;
 $color-nav-text: #f2f2f2;
-$color-nav-link: color.adjust($color-nav-text, $lightness: - 27%);
-$color-nav-border: color.adjust($color-nav-bg, $lightness: + 15%);
+$color-nav-active: #ffa501;
+$color-nav-link: color.adjust($color-nav-text, $lightness: - 20%); /* mobile menu deep link */
+$color-nav-border: color.adjust($color-nav-bg, $lightness: + 15%); /* mobile separator */
 $color-disabled: #9e9d9d;
 
 /* ICONS */
