@@ -9,6 +9,7 @@
 * [#5](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/2) Update README with more detailed [Setup Instructions](https://github.com/kittyfishfrommars/grav-theme-oxygen/tree/main?tab=readme-ov-file#setup).
 3. [](#fix)
 * [#2](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/2) Fix fontawesome reference for inherited themes
+* [#8](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/2) Fix allow relative URLs in admin panel link lists
 
 # v1.0.4
 ##  14-10-2024
