@@ -1,9 +1,12 @@
-# v1.0.5
-##  20-02-2025
+# v2.0.0
+##  24-02-2025
 
-1. [](#fix)
-* [#5](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/2) Updated README with more detailed [Setup Instructions](https://github.com/kittyfishfrommars/grav-theme-oxygen/tree/main?tab=readme-ov-file#setup).
-* [#2](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/2) fix fontawesome reference for inherited themes
+1. [](#new)
+* [#6](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/6) Add full-width hook section, requires manual update of [home.md](https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/15fc35e817270063fda3bbf94f86ebf5bbe11a97/_demo/pages/01.home/home.md?plain=1#L25)
+* [PR #9](https://github.com/kittyfishfrommars/grav-theme-oxygen/pull/9) Add cs language support to sitemap, thanks [@petira](https://github.com/petira)
+* [#5](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/2) Update README with more detailed [Setup Instructions](https://github.com/kittyfishfrommars/grav-theme-oxygen/tree/main?tab=readme-ov-file#setup).
+2. [](#fix)
+* [#2](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/2) Fix fontawesome reference for inherited themes
 
 # v1.0.4
 ##  14-10-2024
@@ -22,7 +25,7 @@
 
 1. [](#new)
 * Add site-wide [Theme Option](https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/README.md#theme-options) to enable search engine indexing (default: disabled - indexing is not allowed)
-1. [](#improved)
+2. [](#improved)
 * Include sample `user/env/mysite.com` folder for production settings, see [README](https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/README.md#environments)
 
 # v1.0.1

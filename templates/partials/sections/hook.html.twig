@@ -2,19 +2,24 @@
 	<div class="wrapper style2 evenpart">
 		<section class="container">
 			<div class="row double">
-				<div class="6u">
+				<div class="{{ (page.header.hook.right.text) ? '6u' : '12u' }}">
 					<header class="major">
-						<h2>{{ header.hook.teaser|raw }}</h2>
-						<span class="byline">{{ header.hook.byline|raw }}</span>
+						<h2>{{ header.hook.left.headline|raw }}</h2>
+						<span class="byline">{{ header.hook.left.text|raw }}</span>
 					</header>
+			{% if (page.header.hook.right.text) %}
 				</div>
 				<div class="6u">
 					<div class="{{ (page.header.hook.button.text) ? 'mb-2' }}">
-						{{ (text_copy|default(page.content))|raw }}
+						<h3>{{ header.hook.right.headline|raw }}</h3>
+						{{ header.hook.right.text|raw }}
 					</div>
-					{% if page.header.hook.button.text %}
-						<a href="{{ header.hook.button.url }}" class="button mb-1">{{ header.hook.button.text|raw }}</a>
-					{% endif %}
+			{% endif %}
+			{% if page.header.hook.button.text %}
+				<div class="{{ header.hook.button.class }}">
+					<a href="{{ header.hook.button.url }}" class="button mb-1">{{ header.hook.button.text|raw }}</a>
+				</div>
+			{% endif %}
 				</div>
 			</div>
 		</section>

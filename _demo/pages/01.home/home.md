@@ -23,13 +23,21 @@ banner:
       # text: 'a performant theme for Grav CMS'
 
 hook:
-    teaser: "Look, It's Kittyfish from Mars."
-    byline:
+  left:
+    headline: "Look, It's Kittyfish from Mars."
+    text:
         This theme is crazy fast, accessible and GDPR-compliant out of the box. Source code and build tools are available at <a href="https://github.com/kittyfishfrommars" target="_blank">github.com/kittyfishfrommars</a>. Provided as-is and free for personal and commercial use. No strings attached. Have fun!
-    button:
-      # comment-out line below to disable button
-      text: 'Button'
-      url: '#'
+  right:
+    headline: Getting Started
+    # comment-out line below to right section, display hook full width
+    text:
+        Once you're happy with your site's content, head on over to your <a href="https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/README.md#theme-options">Theme Options</a> and enable indexing for your favorite search engine.
+  button:
+    # comment-out line below to disable button
+    text: 'Read More'
+    url: '#'
+    # comment-in line below to center button, may be useful on hook full width
+    # class: 'text-center'
 
 cta:
     headline: Curio vitae metus semper
@@ -120,6 +128,4 @@ portals:
 
 ---
 
-### Curio vitae metus semper
-
-Donec leo. Vivamus fermentum nibh in augue. <a href="#">Praesent a lacus</a> at urna congue rutrum. Nulla enim eros, porttitor eu, tempus id, varius non, nibh. Vestibulum imperdiet, magna nec eleifend semper. Vestibulum elementum.
+This paragraph intentionally serves no function. Content is configured via home.md.

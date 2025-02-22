@@ -64,7 +64,7 @@ This will install the theme into your `/user/themes` directory within Grav. Its 
 
 > Please note that the demo content and configuration is not copied when your plugin or theme is installed via the Admin plugin. Please refer the provided files from the `_demo` folder.
 
-To install this theme, download the zip version of this repository and unzip it under `user/themes`. Then, rename the folder to `oxygen`. You can find these files either on [GitHub](https://github.com/kittyfishfrommars) or via [GetGrav.org](http://getgrav.org/downloads/themes).
+To install this theme, download the zip version of this repository and unzip it under `user/themes`. Then, rename the folder to `oxygen`. You can find these files either on [GitHub](https://github.com/kittyfishfrommars?tab=repositories) or via [GetGrav.org](http://getgrav.org/downloads/themes).
 
 You should now have all the theme files under
 
@@ -78,12 +78,12 @@ You should now have all the theme files under
 If you want to set Oxygen as the default theme, you can do so by following these steps:
 
 * Navigate to `grav/user/config`.
-* Open **[system.yaml](https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/_demo/config/system.yaml)**.
+* Open [system.yaml](https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/_demo/config/system.yaml).
 * Change the `theme:` setting to `theme: oxygen` to enable this theme.
 * Under `markdown:` set `extra: true` to enable Markdown Extra.
 * Under `markdown:` set `auto_line_breaks: true` to enable automatic line breaks.
 * Save your changes.
-* Open **[site.yaml](https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/_demo/config/system.yaml)**.
+* Open [site.yaml](https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/_demo/config/system.yaml).
 * Add this line at the bottom: `taxonomies: [tag]` to enable Taxonomies.
 * Save your changes.
 * Clear the Grav cache. The simplest way to do this is by going to the root Grav directory in Terminal and typing `bin/grav clear-cache`.

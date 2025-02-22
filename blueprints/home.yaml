@@ -1,0 +1,23 @@
+title: home
+extends@:
+  # - parent@
+  type: default
+  context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          fields:
+            content:
+              unset@: true
+            spacer:
+              type: spacer
+              # title: Headline
+              text: 'Note: Please configure content manually in home.md'
+              underline: true
+              ordering@: header.pageOptions
