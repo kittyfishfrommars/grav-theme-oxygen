@@ -14,39 +14,58 @@ form:
           fields:
             header.social:
               type: section
-              title: Headline
+              title: Footer
               underline: true
               fields:
-                .title:
+                .headline:
                   type: text
                   label: Headline
-                  default: Connect with Us
-
+                  default: Stay in touch
                 .byline:
-                  type: editor
-                  label: Byline
-                  size: 'small'
-
-            header.social.button:
-              type: section
-              title: Button
-              underline: true
-              fields:
-                .text:
-                  type: text
-                  label: Text
-                  help: 'Button Text'
-                  default: 'Newsletter'
-                .class:
-                  type: text
-                  label: Class
-                  help: 'Refer to Elements page for available icons'
-                  default: 'normal icon fa-envelope-o'
-                .url:
-                  type: url
-                  label: URL
-                  help: 'Button target'
-                  default: '#'
+                  type: section
+                  fields:
+                    .text:
+                      type: textarea
+                      label: Byline
+                      rows: 3
+                      # size: small
+                    .class:
+                      type: selectize
+                      label: (Optional)  Class
+                      help: Classes to apply to text
+                      description: <i>Choose one, multiple or none at all (default).</i>
+                      selectize:
+                          options:
+                            - text: "bold"
+                              value: "bold"
+                            - text: "italic"
+                              value: "italic"
+                            - text: "uppercase"
+                              value: "uppercase"
+                            - text: "small"
+                              value: "small"
+                            - text: "normal-case"
+                              value: "normal-case"
+                .button:
+                  type: section
+                  title: Button
+                  underline: true
+                  fields:
+                    .text:
+                      type: text
+                      label: Text
+                      help: 'Button Text'
+                      default: 'Newsletter'
+                    .class:
+                      type: text
+                      label: Class
+                      help: 'Refer to Elements page for available icons'
+                      default: 'normal icon fa-envelope-o'
+                    .url:
+                      type: url
+                      label: URL
+                      help: 'Button target'
+                      default: '#'
 
             items:
               type: section

@@ -5,11 +5,12 @@
 * [#6](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/6) Add full-width hook section, requires manual update of [home.md](https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/15fc35e817270063fda3bbf94f86ebf5bbe11a97/_demo/pages/01.home/home.md?plain=1#L25)
 2. [](#improved)
 * Add hover styles to main navigation
-* [PR #9](https://github.com/kittyfishfrommars/grav-theme-oxygen/pull/9) Add cs language support to sitemap, thanks [@petira](https://github.com/petira)
+* Add cs language support to sitemap, thanks [@petira](https://github.com/petira)
 * [#5](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/2) Update README with more detailed [Setup Instructions](https://github.com/kittyfishfrommars/grav-theme-oxygen/tree/main?tab=readme-ov-file#setup).
 3. [](#fix)
+* [#8](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/2) Allow link lists with relative URLs in admin panel
+* [#4](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/4) Correctly save footer values in admin panel
 * [#2](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/2) Fix fontawesome reference for inherited themes
-* [#8](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/2) Fix allow relative URLs in admin panel link lists
 
 # v1.0.4
 ##  14-10-2024

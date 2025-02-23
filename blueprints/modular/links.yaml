@@ -52,7 +52,7 @@ form:
                           label: Title
                           help: 'The title text is clickable, if URL is provided.'
                         .url:
-                          # (#8) type: text, instead of type:url allows for relative URLs
+                          # (#8) type: text, instead of type: url allows for relative URLs
                           type: text
                           label: URL
                           help: 'The link target. Leave blank if your title should not be clickable.'
