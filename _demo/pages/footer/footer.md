@@ -16,13 +16,13 @@ taxonomy:
 social:
   headline: Stay in touch
   byline:
-    # (values) bold | italic | uppercase | normal-case | small
-    # class: 'normal-case'
+    # (values) bold | italic | uppercase | normal-case | small | normal-case
     text: In posuere eleifend <span class="nowrap">odio quisque</span> semper.
   button:
-    # (values) bold | italic | uppercase | normal-case | small | normal
+    # (values) bold | italic | uppercase | normal-case | small | normal-case
+    # icon fa-envelope-o
     text: 'Newsletter'
-    class: 'normal icon fa-envelope-o'
+    class: 'fa-envelope-o'
     url: 'https://kittyfishfrommars.github.io'
   items:
     -
