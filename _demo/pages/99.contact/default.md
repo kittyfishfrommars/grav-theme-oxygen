@@ -21,7 +21,7 @@ taxonomy:
    tag: 'unique-legal'
 ---
 
-### Legal Notice
+### Legal Notice {#legal}
 <div class="color-link-text" markdown="1">
 Joan Q. Public
 Main Road 505

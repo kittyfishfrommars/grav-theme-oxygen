@@ -52,5 +52,5 @@ legal:
     -
       title: 'Legal Notice'
       # url: 'https://www.youtube.com'
-      param: '#privacy'
+      param: '#legal'
 ---
