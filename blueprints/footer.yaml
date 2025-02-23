@@ -31,19 +31,19 @@ form:
                       # size: small
                     .class:
                       type: selectize
-                      label: (Optional)  Class
+                      label: (Optional) Class
                       help: Classes to apply to text
                       description: <i>Choose one, multiple or none at all (default).</i>
                       selectize:
                           options:
+                            - text: 'small'
+                              value: 'small'
                             - text: 'bold'
                               value: 'bold'
                             - text: 'italic'
                               value: 'italic'
                             - text: 'uppercase'
                               value: 'uppercase'
-                            - text: 'small'
-                              value: 'small'
                             - text: 'normal-case'
                               value: 'normal-case'
                 .button:
@@ -65,14 +65,14 @@ form:
                           options:
                             - text: 'fa-envelope-o'
                               value: 'fa-envelope-o'
+                            - text: 'small'
+                              value: 'small'
                             - text: 'bold'
                               value: 'bold'
                             - text: 'italic'
                               value: 'italic'
                             - text: 'uppercase'
                               value: 'uppercase'
-                            - text: 'small'
-                              value: 'small'
                             - text: 'normal-case'
                               value: 'normal-case'
                           default: 'fa-envelope-o'
