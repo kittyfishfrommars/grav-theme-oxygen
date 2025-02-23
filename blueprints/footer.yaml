@@ -36,16 +36,16 @@ form:
                       description: <i>Choose one, multiple or none at all (default).</i>
                       selectize:
                           options:
-                            - text: "bold"
-                              value: "bold"
-                            - text: "italic"
-                              value: "italic"
-                            - text: "uppercase"
-                              value: "uppercase"
-                            - text: "small"
-                              value: "small"
-                            - text: "normal-case"
-                              value: "normal-case"
+                            - text: 'bold'
+                              value: 'bold'
+                            - text: 'italic'
+                              value: 'italic'
+                            - text: 'uppercase'
+                              value: 'uppercase'
+                            - text: 'small'
+                              value: 'small'
+                            - text: 'normal-case'
+                              value: 'normal-case'
                 .button:
                   type: section
                   title: Button
@@ -57,10 +57,25 @@ form:
                       help: 'Button Text'
                       default: 'Newsletter'
                     .class:
-                      type: text
-                      label: Class
-                      help: 'Refer to Elements page for available icons'
-                      default: 'normal icon fa-envelope-o'
+                      type: selectize
+                      label: (Optional) Icon and class
+                      help: Classes to apply to button
+                      description: <i>Refer to Elements page for available icon names</i>
+                      selectize:
+                          options:
+                            - text: 'fa-envelope-o'
+                              value: 'fa-envelope-o'
+                            - text: 'bold'
+                              value: 'bold'
+                            - text: 'italic'
+                              value: 'italic'
+                            - text: 'uppercase'
+                              value: 'uppercase'
+                            - text: 'small'
+                              value: 'small'
+                            - text: 'normal-case'
+                              value: 'normal-case'
+                          default: 'fa-envelope-o'
                     .url:
                       type: url
                       label: URL
