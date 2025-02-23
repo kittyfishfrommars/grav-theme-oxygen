@@ -6,15 +6,15 @@
 				{% if page.header.banner.headline %}
 					<h2>{{ page.header.banner.headline|raw }}</h2>
 				{% endif %}
-				{% if page.header.banner.follower|raw %}
-				<div>
-					<span class="follower {{ page.header.banner.follower.class }}">{{ page.header.banner.follower.text|raw }}</span>
-				<div>	
+				{% if page.header.banner.follower.text %}
+					<div>
+						<span class="follower {{ page.header.banner.follower.class|replace({',': ' '}) }}">{{ page.header.banner.follower.text|raw }}</span>
+					<div>	
 				{% endif %}
-				{% if page.header.banner.blurb %}
-				<div>
-					<span class="blurb {{ page.header.banner.blurb.class }}">{{ page.header.banner.blurb.text|raw }}</span>
-				</div>
+				{% if page.header.banner.blurb.text %}
+					<div>
+						<span class="blurb {{ page.header.banner.blurb.class|replace({',': ' '}) }}">{{ page.header.banner.blurb.text|raw }}</span>
+					</div>
 				{% endif %}
 			</div>
 		</section>

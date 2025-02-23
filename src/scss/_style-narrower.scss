@@ -82,9 +82,7 @@
         padding-right: 1em;
     }
 
-    .wrapper.style3 p,
-    .wrapper.cta p {
-
+    .wrapper.style3 p, .wrapper.cta p {
         /* font-size: 1.1em; */
     }
 
@@ -210,5 +208,15 @@
 
     #banner span {
         padding: 1em 0;
+    }
+
+    #copyright li {
+        float: none;
+        display: block;
+    }
+
+    #copyright li + li::before {
+        content: '';
+        margin: 1em 0;
     }
 }

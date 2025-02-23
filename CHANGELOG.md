@@ -2,7 +2,8 @@
 ##  24-02-2025
 
 1. [](#new)
-* [#6](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/6) Add full-width hook section, requires manual update of [home.md](https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/15fc35e817270063fda3bbf94f86ebf5bbe11a97/_demo/pages/01.home/home.md?plain=1#L25)
+* [#7](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/7) Add dynamic footer links, requires manual update of [footer.md](https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/_demo/pages/footer/footer.md?plain=1)
+* [#6](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/6) Add full-width hook section, requires manual update of [home.md](https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/_demo/pages/01.home/home.md?plain=1)
 2. [](#improved)
 * Add hover styles to main navigation
 * Add cs language support to sitemap, thanks [@petira](https://github.com/petira)

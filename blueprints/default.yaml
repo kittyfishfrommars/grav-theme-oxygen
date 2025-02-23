@@ -45,15 +45,61 @@ form:
                     type: text
                     label: (Optional) Headline
                     help: 'Leave blank for none.'
-                  .blurb.text:
-                    type: text
-                    label: (Optional) Blurb text
-                    help: 'Leave blank for none.'
-                  .blurb.class:
-                    type: text
-                    label: (Optional) Blurb class
-                    help: 'Custom pre-defined CSS classes.'
-                    class: 'uppercase'
+                  # .follower.text:
+                  #   type: text
+                  #   label: (Optional) Follower text
+                  #   help: 'Leave blank for none.'
+                  # .follower.class:
+                  #   type: selectize
+                  #   label: (Optional) Follower class
+                  #   help: 'Custom pre-defined CSS classes.'
+                  #   description: <i>Choose one, multiple or none at all (default).</i>
+                  #   selectize:
+                  #       options:
+                  #         - text: 'opacity-dark'
+                  #           value: 'opacity-dark'
+                  #         - text: 'opacity-light'
+                  #           value: 'opacity-light'
+                  #         - text: 'skew'
+                  #           value: 'skew'
+                  #         - text: 'small'
+                  #           value: 'small'
+                  #         - text: 'bold'
+                  #           value: 'bold'
+                  #         - text: 'italic'
+                  #           value: 'italic'
+                  #         - text: 'uppercase'
+                  #           value: 'uppercase'
+                  #         - text: 'normal-case'
+                  #           value: 'normal-case'
+                  # .blurb.text:
+                  #   type: text
+                  #   label: (Optional) Blurb text
+                  #   help: 'Leave blank for none.'
+                  # .blurb.class:
+                  #   type: selectize
+                  #   label: (Optional) Blurb class
+                  #   help: 'Custom pre-defined CSS classes.'
+                  #   description: <i>Choose one, multiple or none at all (default).</i>
+                  #   selectize:
+                  #       options:
+                  #         - text: 'opacity-dark'
+                  #           value: 'opacity-dark'
+                  #         - text: 'opacity-light'
+                  #           value: 'opacity-light'
+                  #         - text: 'skew'
+                  #           value: 'skew'
+                  #         - text: 'small'
+                  #           value: 'small'
+                  #         - text: 'bold'
+                  #           value: 'bold'
+                  #         - text: 'italic'
+                  #           value: 'italic'
+                  #         - text: 'uppercase'
+                  #           value: 'uppercase'
+                  #         - text: 'normal-case'
+                  #           value: 'normal-case'
+
               header.pageOptions:
                 ordering@: banner
                 # type: section

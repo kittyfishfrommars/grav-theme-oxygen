@@ -842,15 +842,30 @@ input[type = "button"].fit,
 /* Copyright */
 
 #copyright {
+    margin: 0 auto;
     padding: 2em 0;
     position: relative;
     text-align: center;
     text-transform: none;
+    display: inline-block;
+    align-items: center;
+    width: auto;
 }
 
 #copyright a {
     color: inherit;
     text-decoration: none;
+}
+
+#copyright li {
+    list-style-type: none;
+    float: left;
+    display: contents;
+}
+
+#copyright li + li::before {
+    content: '|';
+    margin: auto 0.5em auto 0.5em;
 }
 
 /* Team */
