@@ -77,3 +77,5 @@ Thumbs.db
 # Node
 npm-debug.log
 node_modules
+dist/**/*.css.map
+dist/**/*.js.map
