@@ -1,25 +1,25 @@
 <div id="footer">
 	{% for page in taxonomy.findTaxonomy({'tag':'unique-footer'}) %}
-		{% set footer = page.header.social %}
+		{% set footer = page.header %}
 
 		<section class="container">
 			<header class="major">
-				<h2>{{ footer.headline|raw }}</h2>
-				<span class="byline {{ footer.byline.class|replace({',': ' '}) }}">{{ footer.byline.text|raw }}</span>
+				<h2>{{ footer.content.headline|raw }}</h2>
+				<span class="byline {{ footer.content.byline.class|replace({',': ' '}) }}">{{ footer.content.byline.text|raw }}</span>
 			</header>
 
-			{% if footer.button %}
+			{% if footer.content.button.text %}
 				<div class="mb-3">
-					<a href="{{ footer.button.url }}" class="button button-secondary icon {{ footer.button.class|replace({',': ' '}) }}">
-						{{ footer.button.text }}
+					<a href="{{ footer.content.button.url }}" class="button button-secondary icon {{ footer.content.button.class|replace({',': ' '}) }}">
+						{{ footer.content.button.text }}
 					</a>
 				</div>
 			{% endif %}
 
-			{% if footer.items %}
-				<ul class="icons {% if footer.button %} pt-3 {% endif %}">
-				{% for item in footer.items %}
-					<li><a href="{{ item.url }}" class="{{ item.icon }}" aria-label="{{ item.title }}"><span>{{ item.title }}</span></a></li>
+			{% if footer.social.items %}
+				<ul class="icons {% if footer.content.button.text %} pt-3 {% endif %}">
+				{% for item in footer.social.items %}
+					<li><a href="{{ item.url }}" class="fa {{ item.icon }}" aria-label="{{ item.title }}"><span>{{ item.title }}</span></a></li>
 				{% endfor %}
 				</ul>
 			{% endif %}
@@ -27,10 +27,16 @@
 			<hr />
 		</section>
 
-		{% for post in taxonomy.findTaxonomy({'tag':'unique-legal'}) %}
-			<div id="copyright">
-				<a href="{{ post.url ~ footer.legal.credits.id }}">{{ footer.legal.credits.title|e }}</a> | <a href="{{ post.url ~ footer.legal.privacy.id }}">{{ footer.legal.privacy.title|e }}</a> | <a href="{{ post.url ~ footer.legal.notice.id }}">{{ footer.legal.notice.title|e }}</a>
-			</div>
-		{% endfor %}
+		{% if footer.legal.items %}
+			{% for post in taxonomy.findTaxonomy({'tag':'unique-legal'}) %}
+				<ul id="copyright">
+					{% for item in footer.legal.items %}
+						{% set url = (item.url ? item.url : post.url) %}
+						<li><a href="{{ url }}{{ item.param }}">{{ item.title }}</a></li>
+					{% endfor %}
+				</ul>
+			{% endfor %}
+		{% endif %}
+
 	{% endfor %}
 </div>

@@ -12,15 +12,18 @@ banner:
     url: 'header_home-1500x960_q82.webp'
     # headline: 'oxygen'
     position: '30% 42.5%'
+    # comment-out line below to disable headline
+    # headline: 'Headline'
     # follower:
-      # (values) bold | italic | uppercase | normal-case | small | skew
-      # ... opacity-dark | opacity-light
-      # class: 'uppercase'
-      # text: 'Redux'
-    blurb:
-      class: 'uppercase'
       # comment-out line below to disable blurb
-      # text: 'a performant theme for Grav CMS'
+      # text: 'Oxygen for GRAV CMS'
+      # (values) opacity-dark | opacity-light | skew | small | bold | italic | uppercase | normal-case
+      # class: 'opacity-light,italic'
+    # blurb:
+      # comment-out line below to disable blurb
+      # text: 'a theme by Kittyfish from Mars'
+      # (values) opacity-dark | opacity-light | skew | small | bold | italic | uppercase | normal-case
+      # class: 'opacity-light,small'
 
 hook:
   left:

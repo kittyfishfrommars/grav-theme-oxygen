@@ -30,19 +30,19 @@ form:
                       rows: 3
                     .class:
                       type: selectize
-                      label: (Optional)  Class
+                      label: (Optional) Class
                       help: Classes to apply to text
                       description: <i>Choose one, multiple or none at all (default).</i>
                       selectize:
                           options:
+                            - text: 'small'
+                              value: 'small'
                             - text: 'bold'
                               value: 'bold'
                             - text: 'italic'
                               value: 'italic'
                             - text: 'uppercase'
                               value: 'uppercase'
-                            - text: 'small'
-                              value: 'small'
                             - text: 'normal-case'
                               value: 'normal-case'
                 .button:
@@ -64,19 +64,19 @@ form:
                           options:
                             - text: 'fa-envelope-o'
                               value: 'fa-envelope-o'
+                            - text: 'small'
+                              value: 'small'
                             - text: 'bold'
                               value: 'bold'
                             - text: 'italic'
                               value: 'italic'
                             - text: 'uppercase'
                               value: 'uppercase'
-                            - text: 'small'
-                              value: 'small'
                             - text: 'normal-case'
                               value: 'normal-case'
                           default: 'fa-envelope-o'
                     .url:
-                      type: url
+                      type: text
                       label: URL
                       help: 'Button target'
                       default: '#'
@@ -101,49 +101,36 @@ form:
                       help: 'Refer to Elements page for available icons'
                       default: 'fa fa-cogs'
                     .url:
-                      type: url
+                      type: text
                       label: URL
-                      help: 'Outgoing link'
+                      help: 'External link'
                       default: ''
 
-            header.social.legal:
+            header.legal:
               type: section
               title: Legal
               underline: true
               fields:
-                .credits.title:
-                  type: string
-                  label: Title (Credits)
-                  help: 'Displayed name of link'
-                  default: Credits
-                  validate:
-                    required: true
-                .credits.id:
-                  type: string
-                  label: 'Anchor #id (Credits)'
-                  help: 'Subsection of contact page to link to'
-                  default: '#credits'
-                .privacy.title:
-                  type: string
-                  label: Title (Privacy Policy)
-                  help: 'Displayed name of link'
-                  default: 'Privacy Policy'
-                  validate:
-                    required: true
-                .privacy.id:
-                  type: string
-                  label: 'Anchor #id (Privacy Policy)'
-                  help: 'Subsection of contact page to link to'
-                  default: '#privacy'
-                .notice.title:
-                  type: string
-                  label: Title (Legal Notice)
-                  help: 'Displayed name of link'
-                  default: 'Legal Notice'
-                  validate:
-                    required: true
-                .notice.id:
-                  type: string
-                  label: 'Anchor #id (Legal Notice)'
-                  help: 'Subsection of contact page to link to, leave empty for top'
-                  default: ''
+                header.legal.items:
+                  type: list
+                  style: vertical
+                  fields:
+                    .title:
+                      type: string
+                      label: Title
+                      help: 'Displayed name of link'
+                      default: Privacy Policy
+                      validate:
+                        required: true
+                    .url:
+                      type: text
+                      label: URL
+                      help: '(Optional) External link'
+                      description: '<i>Automatically links to legal page, if left blank</i>'
+                      default: ''
+                    .param:
+                      type: string
+                      label: '(Optional) Parameter'
+                      help: 'Parameter to append to URL'
+                      description: '<i>Appends to URL, ie. anchor link #id</i>'
+                      default: ''
