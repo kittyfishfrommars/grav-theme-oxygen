@@ -7,7 +7,8 @@
 2. [](#improved)
 * Add hover styles to main navigation
 * Add cs language support to sitemap, thanks [@petira](https://github.com/petira)
-* [#5](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/2) Update README with more detailed [Setup Instructions](https://github.com/kittyfishfrommars/grav-theme-oxygen/tree/main?tab=readme-ov-file#setup).
+* [#5](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/2) Update README with more detailed [Setup Instructions](https://github.com/kittyfishfrommars/grav-theme-oxygen/tree/main?tab=readme-ov-file#setup)
+* [#1](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/1) Updated demo content, exemplify Sidebar behavior
 3. [](#fix)
 * [#8](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/2) Allow link lists with relative URLs in admin panel
 * [#4](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/4) Correctly save footer values in admin panel

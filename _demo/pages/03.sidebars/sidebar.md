@@ -3,7 +3,7 @@ title: Sidebars
 subtitle: 'Subtitle'
 
 sidebar:
-    position: right
+    position: left
 
 links:
     items: '@self.modules'
