@@ -12,40 +12,45 @@ sitemap:
 taxonomy:
    tag: 'unique-footer'
 
-# custom fields
-social:
+content:
   headline: Stay in touch
   byline:
     # (values) bold | italic | uppercase | normal-case | small | normal-case
     text: In posuere eleifend <span class="nowrap">odio quisque</span> semper.
   button:
-    # (values) bold | italic | uppercase | normal-case | small | normal-case
-    # icon fa-envelope-o
+    # (values) fa-envelope-o | bold | italic | uppercase | normal-case | small | normal-case
     text: 'Newsletter'
     class: 'fa-envelope-o'
     url: 'https://kittyfishfrommars.github.io'
+
+social:
   items:
     -
       title: YouTube
-      icon: fa fa-youtube-play
+      icon: fa-youtube-play
       url: 'https://youtube.com'
     -
       title: Facebook
-      icon: fa fa-facebook
+      icon: fa-facebook
       url: 'https://facebook.com'
     -
       title: Tickets
       # icon: fa fa-ticket
-      icon: fa fa-tags
+      icon: fa-tags
       url: 'https://github.com/kittyfishfrommars'
-  legal:
-    credits:
+
+legal:
+  items:
+    -
       title: 'Credits'
-      id: '#credits'
-    privacy:
+      url: 'https://www.google.com'
+      parameter: '#credits'
+    -
       title: 'Privacy Policy'
-      id: '#privacy'
-    notice:
+      url: 'https://www.youtube.com'
+      parameter: '#privacy'
+    -
       title: 'Legal Notice'
-    #  id: ''
+      # url: 'https://www.youtube.com'
+      # parameter: '#privacy'
 ---
