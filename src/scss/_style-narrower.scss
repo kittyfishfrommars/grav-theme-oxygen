@@ -83,6 +83,7 @@
     }
 
     .wrapper.style3 p, .wrapper.cta p {
+
         /* font-size: 1.1em; */
     }
 
@@ -211,12 +212,12 @@
     }
 
     #copyright li {
-        float: none;
         display: block;
+        float: none;
     }
 
     #copyright li + li::before {
-        content: '';
+        content: "";
         margin: 1em 0;
     }
 }

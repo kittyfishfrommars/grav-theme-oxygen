@@ -842,13 +842,13 @@ input[type = "button"].fit,
 /* Copyright */
 
 #copyright {
+    align-items: center;
+    display: inline-block;
     margin: 0 auto;
     padding: 2em 0;
     position: relative;
     text-align: center;
     text-transform: none;
-    display: inline-block;
-    align-items: center;
     width: auto;
 }
 
@@ -858,18 +858,18 @@ input[type = "button"].fit,
 }
 
 #copyright li {
-    list-style-type: none;
-    float: left;
     display: contents;
+    float: left;
+    list-style-type: none;
 }
 
 #copyright li + li::before {
-    content: '|';
-    margin: auto 0.5em auto 0.5em;
+    content: "|";
+    margin: auto 0.5em;
 }
 
 /* Team */
-
+ 
 #team h3 {
     font-weight: 700;
     letter-spacing: 2px;
