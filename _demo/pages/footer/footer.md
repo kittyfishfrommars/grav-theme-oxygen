@@ -43,14 +43,14 @@ legal:
   items:
     -
       title: 'Credits'
-      url: 'https://www.google.com'
-      parameter: '#credits'
+      # url: 'https://www.google.com'
+      param: '#credits'
     -
       title: 'Privacy Policy'
-      url: 'https://www.youtube.com'
-      parameter: '#privacy'
+      # url: 'https://www.youtube.com'
+      param: '#privacy'
     -
       title: 'Legal Notice'
       # url: 'https://www.youtube.com'
-      # parameter: '#privacy'
+      param: '#privacy'
 ---

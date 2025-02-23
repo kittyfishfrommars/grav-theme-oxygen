@@ -129,7 +129,7 @@ form:
                       help: '(Optional) External link'
                       description: '<i>Automatically links to legal page, if left blank</i>'
                       default: ''
-                    .parameter:
+                    .param:
                       type: string
                       label: '(Optional) Parameter'
                       help: 'Parameter to append to URL'

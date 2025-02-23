@@ -29,12 +29,12 @@
 
 		{% if footer.legal.items %}
 			{% for post in taxonomy.findTaxonomy({'tag':'unique-legal'}) %}
-				<div id="copyright">
+				<ul id="copyright">
 					{% for item in footer.legal.items %}
 						{% set url = (item.url ? item.url : post.url) %}
-						<li><a href="{{ url }}{{ item.parameter }}">{{ item.title }}</a></li>
+						<li><a href="{{ url }}{{ item.param }}">{{ item.title }}</a></li>
 					{% endfor %}
-				</div>
+				</ul>
 			{% endfor %}
 		{% endif %}
 
