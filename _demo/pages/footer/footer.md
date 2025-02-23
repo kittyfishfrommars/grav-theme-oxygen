@@ -19,8 +19,7 @@ social:
     # (values) bold | italic | uppercase | normal-case | small | normal-case
     text: In posuere eleifend <span class="nowrap">odio quisque</span> semper.
   button:
-    # (values) bold | italic | uppercase | normal-case | small | normal-case
-    # icon fa-envelope-o
+    # (values) fa-envelope-o | bold | italic | uppercase | normal-case | small | normal-case
     text: 'Newsletter'
     class: 'fa-envelope-o'
     url: 'https://kittyfishfrommars.github.io'

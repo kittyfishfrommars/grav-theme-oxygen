@@ -5,12 +5,12 @@
 		<section class="container">
 			<header class="major">
 				<h2>{{ footer.headline|raw }}</h2>
-				<span class="byline {{ footer.byline.class }}">{{ footer.byline.text|raw }}</span>
+				<span class="byline {{ footer.byline.class|replace({',': ' '}) }}">{{ footer.byline.text|raw }}</span>
 			</header>
 
 			{% if footer.button %}
 				<div class="mb-3">
-					<a href="{{ footer.button.url }}" class="button button-secondary {{ footer.button.class }}">
+					<a href="{{ footer.button.url }}" class="button button-secondary icon {{ footer.button.class|replace({',': ' '}) }}">
 						{{ footer.button.text }}
 					</a>
 				</div>

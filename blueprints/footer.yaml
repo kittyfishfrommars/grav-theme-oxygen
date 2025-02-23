@@ -28,7 +28,6 @@ form:
                       type: textarea
                       label: Byline
                       rows: 3
-                      # size: small
                     .class:
                       type: selectize
                       label: (Optional)  Class
