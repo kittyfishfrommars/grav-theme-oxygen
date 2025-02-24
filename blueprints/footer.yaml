@@ -12,7 +12,7 @@ form:
           title: Footer
 
           fields:
-            header.social:
+            header.content:
               type: section
               title: Footer
               underline: true
@@ -25,6 +25,7 @@ form:
                   type: section
                   fields:
                     .text:
+                      # type: editor
                       type: textarea
                       label: Byline
                       rows: 3
@@ -55,15 +56,23 @@ form:
                       label: Text
                       help: 'Button Text'
                       default: 'Newsletter'
+                    .url:
+                      type: text
+                      label: URL
+                      help: 'Button target'
+                      default: '#'
+                    .icon:
+                      type: text
+                      label: Icon
+                      help: 'Icon to display'
+                      description: '<i>Refer to Elements page for available icon names</i>'
+                      default: 'fa-envelope-o'
                     .class:
                       type: selectize
-                      label: (Optional) Icon and class
-                      help: Classes to apply to button
-                      description: <i>Refer to Elements page for available icon names</i>
+                      label: (Optional) Class
+                      help: Additional classes to apply to button
                       selectize:
                           options:
-                            - text: 'fa-envelope-o'
-                              value: 'fa-envelope-o'
                             - text: 'small'
                               value: 'small'
                             - text: 'bold'
@@ -74,44 +83,37 @@ form:
                               value: 'uppercase'
                             - text: 'normal-case'
                               value: 'normal-case'
-                          default: 'fa-envelope-o'
-                    .url:
-                      type: text
-                      label: URL
-                      help: 'Button target'
-                      default: '#'
 
-            items:
+            header.social:
               type: section
               title: Social
               underline: true
               fields:
-                header.social.items:
+                .items:
                   type: list
                   style: vertical
                   fields:
                     .title:
                       type: text
-                      label: Title
+                      label: Label
                       help: 'Aria-label for accessibility'
-                      default: ''
-                    .icon:
-                      type: text
-                      label: Icon
-                      help: 'Refer to Elements page for available icons'
-                      default: 'fa fa-cogs'
                     .url:
                       type: text
                       label: URL
-                      help: 'External link'
-                      default: ''
+                      help: 'External or internal link'
+                    .icon:
+                      type: text
+                      label: Icon
+                      help: 'Icon to display'
+                      description: '<i>Refer to Elements page for available icon names</i>'
+                      default: 'fa-cogs'
 
             header.legal:
               type: section
               title: Legal
               underline: true
               fields:
-                header.legal.items:
+                .items:
                   type: list
                   style: vertical
                   fields:
@@ -119,7 +121,6 @@ form:
                       type: text
                       label: Title
                       help: 'Displayed name of link'
-                      default: Privacy Policy
                       validate:
                         required: true
                     .url:
@@ -127,10 +128,8 @@ form:
                       label: URL
                       help: '(Optional) External link'
                       description: '<i>Automatically links to legal page, if left blank</i>'
-                      default: ''
                     .param:
                       type: text
                       label: '(Optional) Parameter'
                       help: 'Parameter to append to URL'
                       description: '<i>Appends to URL, ie. anchor link #id</i>'
-                      default: ''

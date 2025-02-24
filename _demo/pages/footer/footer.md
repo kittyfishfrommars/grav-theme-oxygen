@@ -15,42 +15,45 @@ taxonomy:
 content:
   headline: Stay in touch
   byline:
+    text: >
+      In posuere eleifend <span class="nowrap">odio quisque</span> semper.
     # (values) bold | italic | uppercase | normal-case | small | normal-case
-    text: In posuere eleifend <span class="nowrap">odio quisque</span> semper.
+    # class: 'normal-case'
   button:
-    # (values) fa-envelope-o | bold | italic | uppercase | normal-case | small | normal-case
     text: 'Newsletter'
-    class: 'fa-envelope-o'
     url: 'https://kittyfishfrommars.github.io'
+    icon: 'fa-envelope-o'
+    # (values) bold | italic | uppercase | normal-case | small | normal-case
+    # class: ''
 
 social:
   items:
     -
       title: YouTube
-      icon: fa-youtube-play
       url: 'https://youtube.com'
+      icon: fa-youtube-play
     -
       title: Facebook
-      icon: fa-facebook
       url: 'https://facebook.com'
+      icon: fa-facebook
     -
       title: Tickets
+      url: 'https://github.com/kittyfishfrommars'
       # icon: fa fa-ticket
       icon: fa-tags
-      url: 'https://github.com/kittyfishfrommars'
 
 legal:
   items:
     -
       title: 'Credits'
-      # url: 'https://www.google.com'
+      # url: ''
       param: '#credits'
     -
       title: 'Privacy Policy'
-      # url: 'https://www.youtube.com'
+      # url: ''
       param: '#privacy'
     -
       title: 'Legal Notice'
-      # url: 'https://www.youtube.com'
+      # url: ''
       param: '#legal'
 ---
