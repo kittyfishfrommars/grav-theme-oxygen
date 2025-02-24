@@ -5,7 +5,7 @@
 	<div class="wrapper style4 plain">
 		<section class="container">
 			<header class="major pb-2">
-				<h2>{{ notices.heading|raw }}</h2>
+				<h2>{{ notices.headline|raw }}</h2>
 				<span class="byline">{{ notices.byline|raw }}</span>
 			</header>
 				<div class="clearfix">
@@ -15,12 +15,12 @@
 							<span class="fa {{ item.icon }}"></span>
 							<h3>{% spaceless %}
 								{% if item.url %}
-									<a href="{{ item.url }}">{{ item.heading|raw }}</a>
+									<a href="{{ item.url }}">{{ item.title|raw }}</a>
 								{% else %}
-									{{ item.heading|raw }}
+									{{ item.title|raw }}
 								{% endif %}
 							{% endspaceless %}</h3>
-							<p>{{ item.point|raw }}</p>
+							<p>{{ item.text|raw }}</p>
 						</li>
 					{% endfor %}			
 					</ul>

@@ -10,7 +10,7 @@ sitemap:
 banner:
     # leave url empty to disable banner
     url: 'header_home-1500x960_q82.webp'
-    # headline: 'oxygen'
+    # headline: 'Home'
     position: '30% 42.5%'
     # comment-out line below to disable headline
     # headline: 'Headline'
@@ -28,12 +28,12 @@ banner:
 hook:
   left:
     headline: "Look, It's Kittyfish from Mars."
-    text:
+    text: >
         This theme is crazy fast, accessible and GDPR-compliant out of the box. Source code and build tools are available at <a href="https://github.com/kittyfishfrommars" target="_blank">github.com/kittyfishfrommars</a>. Provided as-is and free for personal and commercial use. No strings attached. Have fun!
   right:
     headline: Getting Started
     # comment-out line below to right section, display hook full width
-    text:
+    text: >
         Once you're happy with your site's content, head on over to <a href="https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/README.md#theme-options">Theme Options</a> and enable indexing for your favorite search engine.
   button:
     # comment-out line below to disable button
@@ -45,7 +45,7 @@ hook:
 cta:
     headline: Curio vitae metus semper
     class: color-link-secondary
-    copy:
+    text: >
        Pellentesque pede. Donec pulvinar ullamcorper metus. In eu odio at lectus pulvinar mollis.  Vestibulum sem magna, elementum vestibulum arcu.
     button:
         text: Button
@@ -53,81 +53,93 @@ cta:
 
 # rendered in a 3-column grid, confiurable by SCSS
 notices:
-    heading: 'Curio vitae metus semper'
+    headline: Curio vitae metus semper
     byline: 'pulvinar mollis. Vestibulum sem magna, elementum vestibulum arcu.'
     items:
-        - heading: 'Nulla luctus eleifend'
-          point: 'In posuere eleifend odio. Quisque semper augue. Maecenas ligula... <a href="#">read more</a>'
+        - title: Nulla luctus eleifend
+          text: >
+            In posuere eleifend odio. Quisque semper augue. Maecenas ligula... <a href="#">read more</a>
           url: '#'
           icon: fa-info color-primary
-        - heading: 'Etiam posuere augue'
-          point: 'Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat... <a href="#">read more</a>'
+        - title: Etiam posuere augue
+          text: >
+            Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat... <a href="#">read more</a>
           icon: fa-phone color-primary
           url: '#'
-        - heading: 'Fusce ultrices fringilla'
-          point: 'Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin orci... <a href="#">read more</a>'
+        - title: Fusce ultrices fringilla
+          text: >
+            Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin orci... <a href="#">read more</a>
           icon: fa-comments-o color-primary
           url: '#'
-
-        - heading: 'Fusce ultrices fringilla'
-          point: 'Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Gravida orci.'
+        - title: Fusce ultrices fringilla
+          text: >
+            Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Gravida orci.
           url: '#'
           icon: fa-volume-up color-primary
-        - heading: 'Nulla luctus eleifend'
-          point: 'In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula pellentesque.'
+        - title: Nulla luctus eleifend
+          text: >
+            In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula pellentesque.
           # icon: fa-shield color-primary
           icon: fa-star-half-o color-primary
           url: '#'
-        - heading: 'Etiam posuere augue'
-          point: 'Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat liguala.'
+        - title: Etiam posuere augue
+          text: >
+            Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat liguala.
           # icon: lightbulb-o color-warning
           icon: fa-map-marker color-danger        
           # url: '#'
-
-        - heading: 'Nulla luctus eleifend'
-          point: 'In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula pellentesque.'
+        - title: Nulla luctus eleifend
+          text: >
+            In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula pellentesque.
           # icon: fa-exclamation-triangle color-warning
           icon: fa-bolt color-warning
           # url: '#'
-        - heading: 'Fusce ultrices fringilla'
-          point: 'Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor.'
+        - title: Fusce ultrices fringilla
+          text: >
+            Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor.
           icon: fa-check-circle-o color-success
           # url: '#'
-        - heading: 'Etiam posuere augue'
-          point: 'Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat liguala.'
+        - title: Etiam posuere augue
+          text: >
+            Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat liguala.
           icon: fa-times-circle-o color-danger
           # url: '#'
 
 portals:
-    heading:
-      # (values) uppercase | normal-case | small | align-left-md
-      # class: 'align-left-md'
+    headline:
+      # (values) align-left-md | uppercase | normal-case | small
+      # class: 'normal-case'
       text: Curio vitae metus semper
     byline:
-        # (values) uppercase | normal-case | small | align-left-md
+        # (values) color-link-secondary | align-left-md | uppercase | normal-case | small
         class: 'color-link-secondary'
-        text: 'Pulvinar mollis. Vestibulum <a href="#">sem magna</a>, elementum vestibulum arcus.'
+        text: >
+          Pulvinar mollis. Vestibulum <a href="#">sem magna</a>, elementum vestibulum arcus.
     items:
         - thumbnail: person.png
-          heading: 'Joan Q. Public'
+          title: 'Joan Q. Public'
           alt: 'Joan Q. Public'
           url: '#'
-          teaser: 'In posuere eleifend odio quisque semper augue wisi ligula.'
+          text: >
+            In posuere eleifend odio quisque semper augue wisi ligula.
         - thumbnail: person.png
-          heading: 'Julie Citizen'
+          title: 'Julie Citizen'
           alt: 'Julie Citizen'
           url: '#'
-          teaser: 'In posuere eleifend odio quisque semper augue wisi ligula.'
+          text: >
+            In posuere eleifend odio quisque semper augue wisi ligula.
         - thumbnail: person.png
-          heading: 'Dr. Zarah Quinn'
+          title: 'Dr. Zarah Quinn'
           alt: 'Dr. Zarah Quinn'
           url: '#'
-          teaser: 'In posuere eleifend odio quisque semper augue wisi ligula.'
+          text: >
+            In posuere eleifend odio quisque semper augue wisi ligula.
         - thumbnail: person.png
-          heading: 'Ming the Merciless'
+          title: 'Ming the Merciless'
           alt: 'Emperor Ming, Ruler of the Universe'
           url: '#'
-          teaser: 'In posuere eleifend odio quisque semper augue wisi ligula.'
+          text: >
+            In posuere eleifend odio quisque semper augue wisi ligula.
 
 ---
 
