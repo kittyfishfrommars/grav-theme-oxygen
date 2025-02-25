@@ -95,6 +95,7 @@ sup {
 hr {
     border: 0;
     border-top: solid 1px config.$color-text;
+    clear: both;
     margin-bottom: 1.5em;
 }
 
@@ -206,28 +207,29 @@ input[type = "text"] {
 
 /* Image */
 
-.image {
-    border: 0;
+#content img {
+    border: 1px solid config.$color-disabled;
+
+    /* stylelint-disable */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    /* stylelint-enable */
+
+    float: left; /* default */
+    margin: 8px 2.5rem 2.5rem 0;
+    max-width: 100%;
     position: relative;
-}
 
-.image.fit {
-    display: block;
-}
+    &.float-right {
+        float: right;
+        margin: 8px 0 2.5rem 2.5rem;
+    }
 
-.image.fit img {
-    display: block;
-    width: 100%;
-}
-
-.image.feature {
-    display: block;
-    margin: 0 0 2em;
-}
-
-.image.feature img {
-    display: block;
-    width: 100%;
+    &.fit  {
+        width: 100%;
+    }
 }
 
 /* Icon */

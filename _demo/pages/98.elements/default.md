@@ -52,6 +52,56 @@ Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor s
 
 - - - - - - -
 
+## Image
+
+All images must be 840px width minimum to be crispy on mobile.
+
+
+### Fit
+
+`![](pic01.jpg){.fit}`.
+
+![](pic01.jpg){.fit}
+
+- - - - - - -
+
+### .float-left (default)
+
+`![](pic02.jpg)`.
+
+![](pic02.jpg) Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Integer ac pellentesque praesent tincidunt felis sagittis eget.
+
+
+- - - - - - -
+
+### .float-right
+
+`![](pic04.jpg){.float-right}`.
+
+![](pic04.jpg){.float-right} Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod.
+
+- - - - - - -
+
+### Grid Gallery .box alt
+
+<div class="box alt">
+	<div class="row 50% uniform">
+		<div class="4u" markdown="1"><span class="image fit">![](pic02.jpg)</span></div>
+		<div class="4u" markdown="1"><span class="image fit">![](pic04.jpg)</span></div>
+		<div class="4u$" markdown="1"><span class="image fit">![](pic03.jpg)</span></div>
+		<!-- Break -->
+		<div class="4u" markdown="1"><span class="image fit">![](pic04.jpg)</span></div>
+		<div class="4u" markdown="1"><span class="image fit">![](pic03.jpg)</span></div>
+		<div class="4u$" markdown="1"><span class="image fit">![](pic02.jpg)</span></div>
+		<!-- Break -->
+		<div class="4u" markdown="1"><span class="image fit">![](pic03.jpg)</span></div>
+		<div class="4u" markdown="1"><span class="image fit">![](pic02.jpg)</span></div>
+		<div class="4u$" markdown="1"><span class="image fit">![](pic04.jpg)</span></div>
+	</div>
+</div>
+
+- - - - - - -
+
 <!-- Lists -->
 ## Lists
 
@@ -349,36 +399,6 @@ Item 3
 		</div>
 	</div>
 </form>
-
-- - - - - - -
-
-## Image
-
-### Fit
-
-<span class="image fit">![](pic01.jpg)</span>
-
-<div class="box alt">
-	<div class="row 50% uniform">
-		<div class="4u" markdown="1"><span class="image fit">![](pic02.jpg)</span></div>
-		<div class="4u" markdown="1"><span class="image fit">![](pic03.jpg)</span></div>
-		<div class="4u$" markdown="1"><span class="image fit">![](pic04.jpg)</span></div>
-		<!-- Break -->
-		<div class="4u" markdown="1"><span class="image fit">![](pic04.jpg)</span></div>
-		<div class="4u" markdown="1"><span class="image fit">![](pic02.jpg)</span></div>
-		<div class="4u$" markdown="1"><span class="image fit">![](pic03.jpg)</span></div>
-		<!-- Break -->
-		<div class="4u" markdown="1"><span class="image fit">![](pic03.jpg)</span></div>
-		<div class="4u" markdown="1"><span class="image fit">![](pic04.jpg)</span></div>
-		<div class="4u$" markdown="1"><span class="image fit">![](pic02.jpg)</span></div>
-	</div>
-</div>
-
-### Left &amp; Right
-
-<span class="image left">![](pic08.jpg)</span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.
-
-<span class="image right">![](pic09.jpg)</span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.
 
 - - - - - - -
 

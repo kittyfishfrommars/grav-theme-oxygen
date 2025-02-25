@@ -220,4 +220,14 @@
         content: "";
         margin: 1em 0;
     }
+
+    /* Image */
+
+    #content img {
+        clear: both;
+        float: none;
+        max-width: 100%;
+        margin: 2rem 0 2rem 0;
+        width: 100%;
+    }
 }

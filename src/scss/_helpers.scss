@@ -54,8 +54,28 @@
     text-transform: none !important;
 }
 
+.float-none {
+    float: none;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.text-right {
+    text-align: left;
+}
+
 .text-center {
     text-align: center;
+}
+
+.text-right {
+    text-align: right;
 }
 
 .bold {
