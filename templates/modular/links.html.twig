@@ -7,17 +7,17 @@
 				</header>
 			{% endif %}
 
-			{% if item.description %}
-				<p>{{ item.description|raw }}</p>
+			{% if item.byline.text %}
+				<p>{{ item.byline.text|raw }}</p>
 			{% endif %}
 
-			<ul class="default {{ item.class }}">
+			<ul class="default {{ item.type }}">
 				{% for link in item.links %}
 					<li>
 						{% if link.url %}
 							<a href="{{ getUrl(link.url) }}">{{ link.text|raw }}</a>
 						{% else %}
-							<span class="italic">{{ link.text|raw }}</span>
+							<span>{{ link.text|raw }}</span>
 						{% endif %}
 						<br>{{ link.description|raw }}
 					</li>

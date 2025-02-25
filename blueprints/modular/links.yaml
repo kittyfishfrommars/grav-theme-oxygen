@@ -24,14 +24,16 @@ form:
                     .headline:
                       type: text
                       label: Headline
-                      help: 'Large text, preferably one short word.'
-                      default: ''
-                    .description:
-                      type: text
-                      label: '(Optional) Subline'
-                      help: 'A short text below the headline. Leave blank for none.'
-                      default: ''
-                    .class:
+                      help: 'Large text, preferably one or two short words.'
+                      default: 'Quick Links'
+                    .byline:
+                      type: section
+                      fields:
+                        .text:
+                          type: text
+                          label: '(Optional) Byline'
+                          help: 'A short text below the headline. Leave blank for none.'
+                    .type:
                       type: select
                       label: List style type
                       help: 'Displays a dot, a number or nothing before a list item.'
