@@ -5,10 +5,11 @@ taxonomy:
   tag: links
 items:
   - headline: Quick Links
-    class: list-none
-    description: >
-      Sidebar Left - useful for FAQs and Quick Links. On Mobile this section
-      sits above page content. 
+    byline:
+      text: >
+        Sidebar Left - useful for FAQs and Quick Links. On Mobile this section
+        sits above page content. 
+    type: list-none
     links:
       - text: Sidebar Left
         url: /sidebars/sidebar-left
@@ -19,7 +20,7 @@ items:
       - text: An entry without an URL
         description: Just in case you need the sidebar for something else
   - headline: Disc
-    class: list-disc
+    type: list-disc
     links:
       - url: '#'
         text: First Pellentesque lectus gravida blandit
@@ -34,7 +35,7 @@ items:
         description: |
           Maecenas vitae orci feugiat pharetra
   - headline: Decimal
-    class: list-decimal
+    type: list-decimal
     links:
       - url: '#'
         text: First Pellentesque lectus gravida blandit

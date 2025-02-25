@@ -1,14 +1,15 @@
 ---
-title: FAQ
+title: Quick Links
 routable: false
 taxonomy:
   tag: links
 items:
-  - headline: FAQ
-    description: >
-      Sidebar Left - useful for FAQs and Quick Links. On Mobile this section
-      sits above page content. 
-    class: list-none
+  - headline: Quick Links
+    byline:
+      text: >
+        Sidebar Left - useful for FAQs and Quick Links. On Mobile this section
+        sits above page content. 
+    type: list-none
     links:
       - text: Sidebar Left
         url: /sidebars/sidebar-left
@@ -20,7 +21,7 @@ items:
         description: Just in case you need the sidebar for something else
   - headline: Disc
     description: null
-    class: list-disc
+    type: list-disc
     links:
       - text: First Pellentesque lectus gravida blandit
         url: '#'
@@ -33,7 +34,7 @@ items:
         description: Maecenas vitae orci feugiat pharetra
   - headline: Decimal
     description: null
-    class: list-decimal
+    type: list-decimal
     links:
       - text: First Pellentesque lectus gravida blandit
         url: '#'
