@@ -7,7 +7,7 @@ items:
   - headline: References
     byline:
       text: >
-        Sidebar Right is useful for References and Footnotes.
+        Choose <i>Sidebar Right</i> for References and Footnotes.
         On Mobile this section sits below page content.
     type: list-disc
     links:
@@ -28,15 +28,15 @@ items:
       - # url: '#'
         text: "Decide you're hungry"
         description: |
-          Maecenas vitae congue pharetra ipsum
+          But discover the fridge is empty.
       - url: '#'
         text: Steal an egg
         description: |
-          Maecenas vitae orci feugiat pharetra 
+          Move like a fox and don't get caught.
       - url: '#'
         text: Make an omelette
         description: |
-          Maecenas vitae orci feugiat pharetra
+          Bon Appétit!
   - headline: list-none
     type: list-none
     links:
