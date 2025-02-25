@@ -4,8 +4,8 @@
 	<div class="wrapper style5 portals">
 		<section id="team" class="container">
 			<header class="major">
-				{% if portals.heading %}
-					<h2 class="{{ portals.heading.class }}">{{ portals.heading.text|raw }}</h2>
+				{% if portals.headline %}
+					<h2 class="{{ portals.headline.class }}">{{ portals.headline.text|raw }}</h2>
 				{% endif %}
 				{% if portals.byline.text %}
 					<span class="byline {{ portals.byline.class }}">{{ portals.byline.text|raw }}</span>
@@ -17,8 +17,8 @@
 					<a href="{{ portal.url }}" class="image">
 						<img alt="{{ portal.alt|default('') }}" src="{{ data_source.media[portal.thumbnail].resize(162,162).url }}">
 					</a>
-					<h3>{{ portal.heading|raw }}</h3>
-					<p>{{ portal.teaser|raw }}</p>
+					<h3>{{ portal.title|raw }}</h3>
+					<p>{{ portal.text|raw }}</p>
 				</div>
 				{% endfor %}
 			</div>

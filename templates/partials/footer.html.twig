@@ -10,7 +10,7 @@
 
 			{% if footer.content.button.text %}
 				<div class="mb-3">
-					<a href="{{ footer.content.button.url }}" class="button button-secondary icon {{ footer.content.button.class|replace({',': ' '}) }}">
+					<a href="{{ footer.content.button.url }}" class="button button-secondary icon {{ footer.content.button.icon }} {{ footer.content.button.class|replace({',': ' '}) }}">
 						{{ footer.content.button.text }}
 					</a>
 				</div>

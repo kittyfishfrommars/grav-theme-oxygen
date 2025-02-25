@@ -7,8 +7,8 @@ items:
   - headline: References
     byline:
       text: >
-        Sidebar Right is useful for References and Footnotes. On Mobile this
-        section sits below page content.
+        Sidebar Right is useful for References and Footnotes.
+        On Mobile this section sits below page content.
     type: list-disc
     links:
       - text: Sidebar Left

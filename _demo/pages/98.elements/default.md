@@ -52,10 +52,12 @@ Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor s
 
 - - - - - - -
 
-## Image
+## Images
 
-All images must be 840px width minimum to be crispy on mobile.
+### Note
 
+* All images must be 840px width minimum to be crispy on mobile
+* Full width `{.fit}` images must be 1400px width minimum to be crispy on desktop
 
 ### Fit
 
@@ -91,12 +93,12 @@ All images must be 840px width minimum to be crispy on mobile.
 		<div class="4u$" markdown="1"><span class="image fit">![](pic03.jpg)</span></div>
 		<!-- Break -->
 		<div class="4u" markdown="1"><span class="image fit">![](pic04.jpg)</span></div>
+		<div class="4u" markdown="1"><span class="image fit">![](pic02.jpg)</span></div>
+		<div class="4u$" markdown="1"><span class="image fit">![](pic03.jpg)</span></div>
+		<!-- Break -->
+		<div class="4u" markdown="1"><span class="image fit">![](pic04.jpg)</span></div>
 		<div class="4u" markdown="1"><span class="image fit">![](pic03.jpg)</span></div>
 		<div class="4u$" markdown="1"><span class="image fit">![](pic02.jpg)</span></div>
-		<!-- Break -->
-		<div class="4u" markdown="1"><span class="image fit">![](pic03.jpg)</span></div>
-		<div class="4u" markdown="1"><span class="image fit">![](pic02.jpg)</span></div>
-		<div class="4u$" markdown="1"><span class="image fit">![](pic04.jpg)</span></div>
 	</div>
 </div>
 

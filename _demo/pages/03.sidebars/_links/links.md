@@ -7,8 +7,8 @@ items:
   - headline: Quick Links
     byline:
       text: >
-        Sidebar Left is useful for FAQs and Quick Links. On mobile this section
-        sits above page content.
+        Sidebar Left - useful for FAQs and Quick Links.
+        On Mobile this section sits above page content.
     type: list-disc
     links:
       - text: Sidebar Left
