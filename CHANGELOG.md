@@ -1,11 +1,11 @@
 # v2.0.0
-##  24-02-2025
+##  04-03-2025
 
 1. [](#new)
-* **Oxygen v2.0.0 Breaking Changes:** This major release improves integration with the admin panel. Please import the [_demo/pages](https://github.com/kittyfishfrommars/grav-theme-oxygen/tree/main/_demo/pages) for a new data structure.
-* [#7](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/7) Add dynamic footer links, requires manual update of [footer.md](https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/_demo/pages/footer/footer.md?plain=1)
-* [#6](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/6) Add full-width hook section, requires manual update of [home.md](https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/_demo/pages/01.home/home.md?plain=1)
-* Update modular links admin panel integration, requires manual update of [links.md](https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/_demo/pages/03.sidebars/_links/links.md?plain=1)
+* **Oxygen v2.0.0 Breaking Changes:** This major release improves integration with the admin panel. Please import the [_demo/pages](https://github.com/kittyfishfrommars/grav-theme-oxygen/tree/main/_demo/pages) for a new data structure
+* [#7](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/7) Add dynamic footer links
+* [#6](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/6) Add full-width hook section
+* Update modular links logic
 2. [](#improved)
 * Add hover styles to main navigation
 * Add cs language support to sitemap, thanks [@petira](https://github.com/petira)
@@ -15,7 +15,7 @@
 3. [](#fix)
 * [#4](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/4) Correctly save footer values in admin panel
 * [#2](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/2) Fix fontawesome reference for inherited themes
-* [#1](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/1) Updated demo content, exemplify Sidebar behavior
+* [#1](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/1) Update sidebar examples
 
 # v1.0.4
 ##  14-10-2024
