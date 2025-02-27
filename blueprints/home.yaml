@@ -1,23 +1,22 @@
-title: home
+title: Home
 extends@:
-  # - parent@
-  type: default
-  context: blueprints://pages
+    type: default
+    context: 'blueprints://pages'
 
 form:
-  fields:
-    tabs:
-      type: tabs
-      active: 1
-
-      fields:
-        content:
-          fields:
-            content:
-              unset@: true
-            spacer:
-              type: spacer
-              # title: Headline
-              text: 'Note: Please configure content manually in home.md'
-              underline: true
-              ordering@: header.pageOptions
+    fields:
+        tabs:
+            type: tabs
+            active: 1
+            fields:
+                content:
+                    fields:
+                        content:
+                            unset@: true
+                        spacer:
+                            type: section
+                            title: Requires modules
+                            text: Content will be populated by modules.
+                            description: <i>Content will be populated by modules.</i>
+                            underline: true
+                            ordering@: header.pageOptions
