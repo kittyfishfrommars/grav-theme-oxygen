@@ -103,7 +103,7 @@ form:
                       label: Icon
                       help: 'Icon to display'
                       description: '<i>Refer to Elements page for available icon names</i>'
-                      default: 'fa-cogs'
+                      default: 'fa-leaf'
 
             header.legal:
               type: section
