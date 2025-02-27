@@ -218,12 +218,14 @@ input[type = "text"] {
 
     /* stylelint-enable */
 
-    float: left; /* default */
+    clear: left;
+    float: left;
     margin: 8px 2.5rem 2.5rem 0;
     max-width: 100%;
     position: relative;
 
     &.float-right {
+        clear: right;
         float: right;
         margin: 8px 0 2.5rem 2.5rem;
     }
