@@ -137,9 +137,10 @@ header.major {
     text-transform: uppercase;
 }
 
-header.major h2 {
+header.major h1 {
     font-size: 2.6em;
     font-weight: 700;
+    line-height: 100%;
 }
 
 header.major .byline {
@@ -791,6 +792,8 @@ input[type = "button"].fit,
 
 #main #sidebar .major h2 {
     font-size: 1.8em;
+    line-height: 100%;
+    margin: 1px 0 2.5rem;
 }
 
 /* Extra */
