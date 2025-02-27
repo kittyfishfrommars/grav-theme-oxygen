@@ -25,7 +25,6 @@ form:
                       type: text
                       label: Headline
                       help: 'Large text, preferably one or two short words.'
-                      default: 'Quick Links'
                     .byline:
                       type: section
                       fields:

@@ -54,12 +54,10 @@ form:
                       type: text
                       label: Text
                       help: 'Button Text'
-                      default: 'Newsletter'
                     .url:
                       type: text
                       label: URL
                       help: 'Button target'
-                      default: '#'
                     .icon:
                       type: text
                       label: Icon
