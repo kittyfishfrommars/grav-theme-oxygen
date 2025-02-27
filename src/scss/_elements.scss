@@ -25,11 +25,16 @@ blockquote p {
 
     li {
         display: inline-block;
-        text-align: center;
+        max-width: 100%;
+        min-width: 275px;
     }
 
     .fa {
         font-size: 1.8em;
+    }
+
+    span {
+        display: inline-block;
     }
 }
 

@@ -429,39 +429,38 @@ print 'It took ' + i + ' iterations to sort the deck.';
 ```
 
 <div class="row">
-<div class="6u$ 12u$(small)" markdown="1">
+  <div class="6u$ 12u$(small)" markdown="1">
 
-### Icons
+  ### Icons (default)
 
-<ul class="icons">
-	<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-	<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-	<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-	<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-	<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-</ul>
+  <ul class="icons">
+    <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+    <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+    <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+    <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+    <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+  </ul>
 
+  </div>
+
+  <div class="6u$ 12u$(small)" markdown="1">
+
+  ### Icons (alternate)
+
+  <ul class="icons alt">
+    <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+    <li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+    <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+    <li><a href="#" class="icon alt fa-github"><span class="label">Github</span></a></li>
+    <li><a href="#" class="icon alt fa-dribbble"><span class="label">Dribbble</span></a></li>
+  </ul>
+
+  </div>
 </div>
 
-<div class="6u$ 12u$(small)" markdown="1">
+<div markdown="1">
 
-### Alternate
-
-<ul class="icons alt">
-	<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-	<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-	<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-	<li><a href="#" class="icon alt fa-github"><span class="label">Github</span></a></li>
-	<li><a href="#" class="icon alt fa-dribbble"><span class="label">Dribbble</span></a></li>
-</ul>
-
-</div>
-</div>
-
-<div class="row">
-<div class="12u$" markdown="1">
-
-### Icon Overview
+## Icons Overview{#icons}
 
 <ul class="icons icons-all">
     <li>
@@ -1942,5 +1941,4 @@ print 'It took ' + i + ' iterations to sort the deck.';
     </li>
 </ul>
 
-</div>
 </div>
