@@ -1,11 +1,20 @@
 ---
-title: 'Default'
+title: Default
 subtitle: 'This is a subtitle'
+media_order: invasion.jpeg
+banner:
+    position: 'center center'
+pageOptions:
+    noIndex: false
 ---
 
 ## Headline 2{#headline-2}
 
-Aliquam sem leo, vulputate sed, convallis at, ultricies quis. Vulputate sed, convallis at, ultricies quis, justo. Donec nonummy magna quis risus.
+![invasion](invasion.jpeg "invasion"){.float-left}
+
+Aliquam sem leo, vulputate sed, convallis at, ultricies quis. Vulputate sed, convallis at, ultricies quis, justo. Donec nonummy magna quis risus. Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor enim accumsan lacinia. Donec condimentum, urna non semper, ligula enim ornare nibh, quis laoreet eros quam eget ante. Aliquam libero. Vivamus nisl nibh, iaculis vitae, viverra sit amet, ullamcorper vitae, turpis. Aliquam erat volutpat. Vestibulum dui sem, pulvinar sed, imperdiet nec, iaculis nec, leo. Fusce odio. Etiam arcu dui, faucibus eget, placerat vel, sodales eget, orci. Donec ornare neque ac sem. Mauris aliquet. Aliquam sem leo, vulputate sed.
+
+![invasion](invasion.jpeg "invasion"){.float-right}
 
 ### Headline 3{#headline-3}
 
