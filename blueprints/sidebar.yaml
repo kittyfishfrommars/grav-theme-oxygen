@@ -1,28 +1,34 @@
 title: Sidebar
 extends@:
     type: default
-    context: blueprints://pages
+    context: 'blueprints://pages'
 
 form:
-  fields:
-    tabs:
-      type: tabs
-      active: 1
-
-      fields:
-          content:
+    fields:
+        tabs:
+            type: tabs
+            active: 1
             fields:
-              header.sidebar:
-                type: section
-                # title: Sidebar
-                # underline: true
-                ordering@: content
-                fields:
-                  .position:
-                    type: toggle
-                    label: Sidebar Position
-                    help: 'Sidebar will be populated by modules.'
-                    default: right
-                    options:
-                      left: left
-                      right: right
+                content:
+                    fields:
+                        header.sidebar:
+                            type: section
+                            title: Sidebar
+                            underline: true
+                            ordering@: header.pageOptions
+                            fields:
+                                .position:
+                                    type: toggle
+                                    label: Sidebar Position
+                                    help: <i>Content will be populated by modules.</i>
+                                    default: left
+                                    options:
+                                        left: left
+                                        right: right
+                        spacer:
+                            type: section
+                            title: Requires modules
+                            text: Content will be populated by modules.
+                            description: <i>Content will be populated by modules.</i>
+                            underline: true
+                            ordering@: header.pageOptions

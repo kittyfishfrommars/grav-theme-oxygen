@@ -1,4 +1,5 @@
-title: Footer
+title: Links
+routable: false
 
 form:
   fields:
@@ -7,9 +8,9 @@ form:
       active: 1
 
       fields:
-        footer:
+        links:
           type: tab
-          title: Footer
+          title: Links
 
           fields:
             header.items:

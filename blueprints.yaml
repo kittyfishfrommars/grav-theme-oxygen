@@ -1,54 +1,69 @@
 name: Oxygen
 version: 1.0.3
-description: 'A crazy fast, accessible and GDPR-compliant theme out of the box + build tools.'
+description: 'A crazy fast, accessible and GDPR-compliant theme + build tools.'
 icon: sun-o
 author:
-  name: Kittyfish from Mars
-  email: kittfishfrommars@gmail.com
-  url: https://github.com/kittyfishfrommars
-keywords: grav, theme, accessiblity, performance, maintenance, legal, gulp
-homepage: https://github.com/kittyfishfrommars/grav-theme-oxygen
-demo: https://kittyfishfrommars.github.io/grav/grav-theme-oxygen
-readme: https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/README.md
-docs: https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/README.md
-bugs: https://github.com/kittyfishfrommars/grav-theme-oxygen/issues
+    name: Kittyfish from Mars
+    email: kittfishfrommars@gmail.com
+    url: 'https://github.com/kittyfishfrommars'
+keywords: 'grav, theme, accessiblity, performance, maintenance, legal, gulp'
+homepage: 'https://github.com/kittyfishfrommars/grav-theme-oxygen'
+demo: 'https://kittyfishfrommars.github.io/grav/grav-theme-oxygen'
+readme: 'https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/README.md'
+docs: 'https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/README.md'
+bugs: 'https://github.com/kittyfishfrommars/grav-theme-oxygen/issues'
 license: MIT
-
 dependencies:
-  - { name: grav, version: '>=1.7.0' }
-  - { name: grav-plugin-error, version: '>=1.8.0' }
-  - { name: grav-plugin-markdown-notices, version: '>=1.1.0' }
-  - { name: grav-plugin-problems, version: '>=2.1.1' }
-  - { name: grav-plugin-sitemap, version: '>=5.0.0' }
-
+    -
+        name: grav
+        version: '>=1.7.0'
+    -
+        name: grav-plugin-error
+        version: '>=1.8.0'
+    -
+        name: grav-plugin-markdown-notices
+        version: '>=1.1.0'
+    -
+        name: grav-plugin-problems
+        version: '>=2.1.1'
+    -
+        name: grav-plugin-sitemap
+        version: '>=5.0.0'
 form:
-  validation: strict
-  fields:
-    spacer:
-      type: spacer
-      title: Theme Options
-      text: >
-          Please refer to <a target="_blank" href="https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/README.md#theme-options">README - Theme Options</a> for a more detailed explanation of each setting.
-      underline: true
-    index:
-      type: toggle
-      label: Search Engine Index
-      help: '(Default: disabled) Allow this website to be indexed by search engines, specific page exceptions may apply.'
-      default: false
-      highlight: true
-      options:
-        0: PLUGIN_ADMIN.DISABLED
-        1: PLUGIN_ADMIN.ENABLED
-      validate:
-        type: bool
-    dropdown:
-      type: toggle
-      label: Dropdown in Navigation
-      help: '(Default: enabled) Whether to display submenus in a dropdown navigation on desktop.'
-      default: 1
-      highlight: 1
-      options:
-        0: PLUGIN_ADMIN.DISABLED
-        1: PLUGIN_ADMIN.ENABLED
-      validate:
-        type: bool
+    validation: strict
+    fields:
+        spacer:
+            type: spacer
+            title: Theme Options
+            text: >
+                Please refer to <a target="_blank"
+                href="https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/README.md#theme-options">README
+                - Theme Options</a> for a more detailed explanation of each
+                setting.
+            underline: true
+        index:
+            type: toggle
+            label: Search Engine Index
+            help: >-
+                (Default: disabled) Allow this website to be indexed by search
+                engines, specific page exceptions may apply.
+            default: false
+            highlight: true
+            options:
+                '0': PLUGIN_ADMIN.DISABLED
+                '1': PLUGIN_ADMIN.ENABLED
+            validate:
+                type: bool
+        dropdown:
+            type: toggle
+            label: Dropdown in Navigation
+            help: >-
+                (Default: enabled) Whether to display submenus in a dropdown
+                navigation on desktop.
+            default: 1
+            highlight: 1
+            options:
+                '0': PLUGIN_ADMIN.DISABLED
+                '1': PLUGIN_ADMIN.ENABLED
+            validate:
+                type: bool
