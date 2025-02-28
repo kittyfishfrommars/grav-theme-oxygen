@@ -2,17 +2,17 @@
 	<div class="wrapper style2 evenpart">
 		<section class="container">
 			<div class="row double">
-				<div class="{{ (page.header.hook.right.text) ? '6u' : '12u' }}">
+				<div class="{{ (page.header.hook.right.byline.text) ? '6u' : '12u' }}">
 					<header class="major">
 						<h2>{{ header.hook.left.headline|raw }}</h2>
-						<span class="byline">{{ header.hook.left.text|raw }}</span>
+						<span class="byline {{ header.left.byline.class|replace({',': ' '}) }}">{{ header.hook.left.byline.text|raw }}</span>
 					</header>
-			{% if (page.header.hook.right.text) %}
+			{% if (page.header.hook.right.byline.text) %}
 				</div>
 				<div class="6u">
 					<div class="{{ (page.header.hook.button.text) ? 'mb-2' }}">
 						<h3>{{ header.hook.right.headline|raw }}</h3>
-						{{ header.hook.right.text|raw }}
+						<span class="byline {{ header.right.byline.class|replace({',': ' '}) }}">{{ header.hook.right.byline.text|raw }}</span>
 					</div>
 			{% endif %}
 			{% if page.header.hook.button.text %}

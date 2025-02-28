@@ -1,0 +1,125 @@
+title: Hook
+routable: false
+
+form:
+    fields:
+        tabs:
+            type: tabs
+            active: 1
+            fields:
+                hook:
+                    type: tab
+                    title: Hook
+                    fields:
+                        header.hook:
+                            type: section
+                            title: Hook
+                            underline: true
+                            fields:
+                                .left:
+                                    type: section
+                                    title: Left
+                                    underline: true
+                                    fields:
+                                        .headline:
+                                            type: text
+                                            label: Headline
+                                            help: >
+                                                Short text, preferably one or two words.
+                                        .byline:
+                                            type: section
+                                            fields:
+                                                .text:
+                                                    type: textarea
+                                                    label: Byline
+                                                    help: >
+                                                        Short text below the headline. Leave blank for none.
+                                                    rows: 3
+                                                .class:
+                                                    type: selectize
+                                                    label: (Optional) Class
+                                                    help: Classes to apply to text
+                                                    description: >
+                                                        <i>Choose one, multiple or none at all (default).</i>
+                                                    selectize:
+                                                        options:
+                                                            -
+                                                                text: small
+                                                                value: small
+                                                            -
+                                                                text: bold
+                                                                value: bold
+                                                            -
+                                                                text: italic
+                                                                value: italic
+                                                            -
+                                                                text: uppercase
+                                                                value: uppercase
+                                                            -
+                                                                text: normal-case
+                                                                value: normal-case
+                                .right:
+                                    type: section
+                                    title: Right
+                                    underline: true
+                                    fields:
+                                        .headline:
+                                            type: text
+                                            label: Headline
+                                            help: >
+                                                Short text, preferably one or two words.
+                                        .byline:
+                                            type: section
+                                            fields:
+                                                .text:
+                                                    type: textarea
+                                                    label: Byline
+                                                    help: >
+                                                        Short text below the headline. Leave blank for none.
+                                                    rows: 3
+                                                .class:
+                                                    type: selectize
+                                                    label: (Optional) Class
+                                                    help: Classes to apply to text
+                                                    description: >
+                                                        <i>Choose one, multiple or none at all (default).</i>
+                                                    selectize:
+                                                        options:
+                                                            -
+                                                                text: small
+                                                                value: small
+                                                            -
+                                                                text: bold
+                                                                value: bold
+                                                            -
+                                                                text: italic
+                                                                value: italic
+                                                            -
+                                                                text: uppercase
+                                                                value: uppercase
+                                                            -
+                                                                text: normal-case
+                                                                value: normal-case
+                                .button:
+                                    type: section
+                                    title: Button
+                                    underline: true
+                                    fields:
+                                        .text:
+                                            type: text
+                                            label: Text
+                                            help: Button Text
+                                        .url:
+                                            type: text
+                                            label: URL
+                                            help: Button target
+                                        .class:
+                                            type: select
+                                            label: (Optional) Class
+                                            help: Additional classes to apply to button
+                                            description: '<i>Aligns button on desktop. Always centered on mobile view.</i>'
+                                            default: 'text-left'
+                                            options:
+                                                'text-left': 'text-left'
+                                                'text-center': 'text-center'
+                                                'text-right': 'text-right'
