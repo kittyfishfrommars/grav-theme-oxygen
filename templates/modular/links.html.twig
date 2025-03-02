@@ -1,28 +1,29 @@
-{% for module in page.collection('links') %}
-	{% for item in module.header.items %}
-		<section>
-			{% if item.headline %}
-				<header class="major">
-					<h2>{{ item.headline|raw }}</h2>
-				</header>
-			{% endif %}
 
-			{% if item.byline.text %}
-				<p>{{ item.byline.text|raw }}</p>
-			{% endif %}
+{% if page.header.links %}
+{% set links = page.header.links %}
+	<section>
+		{% if links.headline %}
+			<header class="major">
+				<h2>{{ links.headline|raw }}</h2>
+			</header>
+		{% endif %}
 
-			<ul class="default {{ item.type }}">
-				{% for link in item.links %}
-					<li>
-						{% if link.url %}
-							<a href="{{ getUrl(link.url) }}">{{ link.text|raw }}</a>
-						{% else %}
-							<span>{{ link.text|raw }}</span>
-						{% endif %}
-						<br>{{ link.description|raw }}
-					</li>
-				{% endfor %}
-			</ul>
-		</section>
-	{% endfor %}
-{% endfor %}
+		{% if links.byline.text %}
+			<p>{{ links.byline.text|raw }}</p>
+		{% endif %}
+
+		<ul class="default {{ links.type }}">
+			{% for item in links.items %}
+				<li>
+					{% if item.url %}
+						<a href="{{ getUrl(item.url) }}">{{ item.text|raw }}</a>
+					{% else %}
+						<span>{{ item.text|raw }}</span>
+					{% endif %}
+					<br>
+					{{ item.description|raw }}
+				</li>
+			{% endfor %}
+		</ul>
+	</section>
+{% endif %}

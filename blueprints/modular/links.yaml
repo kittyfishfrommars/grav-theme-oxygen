@@ -13,52 +13,48 @@ form:
           title: Links
 
           fields:
-            header.items:
+            header.links:
               type: section
               title: Links
               underline: true
               fields:
-                header.items:
-                  type: list
-                  style: vertical
+                .headline:
+                  type: text
+                  label: Headline
+                  help: 'Large text, preferably one or two short words.'
+                .byline:
+                  type: section
                   fields:
-                    .headline:
+                    .text:
                       type: text
-                      label: Headline
-                      help: 'Large text, preferably one or two short words.'
-                    .byline:
-                      type: section
-                      fields:
-                        .text:
-                          type: text
-                          label: '(Optional) Byline'
-                          help: 'Short text below the headline. Leave blank for none.'
-                    .type:
-                      type: select
-                      label: List style type
-                      help: 'Displays a dot, a number or nothing before a list item.'
-                      default: 'list-disc'
-                      options:
-                        'list-disc': 'list-disc'
-                        'list-decimal': 'list-decimal'
-                        'list-none': 'list-none'
-                    .links:
-                      type: list
-                      style: horizontal
-                      label: Items
-                      collapsed: false
-                      collapsible: true
-                      fields:
-                        .text:
-                          type: text
-                          label: Title
-                          help: 'Title text is clickable, if URL is provided.'
-                        .url:
-                          type: text
-                          label: URL
-                          help: 'External or internal link. Leave blank if your title should not be clickable.'
-                        .description:
-                          type: text
-                          label: '(Optional) Description'
-                          help: 'Short text below title. Leave blank for none.'
-                          
+                      label: '(Optional) Byline'
+                      help: 'Short text below the headline. Leave blank for none.'
+                .type:
+                  type: select
+                  label: List style type
+                  help: 'Displays a dot, a number or nothing before a list item.'
+                  default: 'list-disc'
+                  options:
+                    'list-disc': 'list-disc'
+                    'list-decimal': 'list-decimal'
+                    'list-none': 'list-none'
+                .items:
+                  type: list
+                  style: horizontal
+                  label: Items
+                  collapsed: false
+                  collapsible: true
+                  fields:
+                    .text:
+                      type: text
+                      label: Title
+                      help: 'Title text is clickable, if URL is provided.'
+                    .url:
+                      type: text
+                      label: URL
+                      help: 'External or internal link. Leave blank if your title should not be clickable.'
+                    .description:
+                      type: text
+                      label: '(Optional) Description'
+                      help: 'Short text below title. Leave blank for none.'
+                      
