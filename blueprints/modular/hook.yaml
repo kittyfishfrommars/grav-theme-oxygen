@@ -24,23 +24,21 @@ form:
                                         .headline:
                                             type: text
                                             label: Headline
-                                            help: >
-                                                Short text, preferably one or two words.
+                                            help: Short and catchy introduction.
                                         .byline:
                                             type: section
                                             fields:
                                                 .text:
                                                     type: textarea
                                                     label: Byline
-                                                    help: >
-                                                        Short text below the headline. Leave blank for none.
+                                                    help: Text below headline
                                                     rows: 3
                                                 .class:
                                                     type: selectize
                                                     label: (Optional) Class
                                                     help: Classes to apply to text
                                                     description: >
-                                                        <i>Choose one, multiple or none at all (default).</i>
+                                                        <i>Choose one, multiple or leave blank (default).</i>
                                                     selectize:
                                                         options:
                                                             -
@@ -66,23 +64,21 @@ form:
                                         .headline:
                                             type: text
                                             label: Headline
-                                            help: >
-                                                Short text, preferably one or two words.
+                                            help: Short and catchy introduction
                                         .byline:
                                             type: section
                                             fields:
                                                 .text:
                                                     type: textarea
                                                     label: Byline
-                                                    help: >
-                                                        Short text below the headline. Leave blank for none.
+                                                    help: Text below headline
                                                     rows: 3
                                                 .class:
                                                     type: selectize
                                                     label: (Optional) Class
                                                     help: Classes to apply to text
                                                     description: >
-                                                        <i>Choose one, multiple or none at all (default).</i>
+                                                        <i>Choose one, multiple or leave blank (default).</i>
                                                     selectize:
                                                         options:
                                                             -
@@ -112,11 +108,11 @@ form:
                                         .url:
                                             type: text
                                             label: URL
-                                            help: Button target
+                                            help: External or internal link
                                         .class:
                                             type: select
                                             label: (Optional) Class
-                                            help: Additional classes to apply to button
+                                            help: Additional class to apply to button.
                                             description: '<i>Aligns button on desktop. Always centered on mobile view.</i>'
                                             default: 'text-left'
                                             options:

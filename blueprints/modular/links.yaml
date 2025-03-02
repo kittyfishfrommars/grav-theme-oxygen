@@ -32,7 +32,7 @@ form:
                         .text:
                           type: text
                           label: '(Optional) Byline'
-                          help: 'A short text below the headline. Leave blank for none.'
+                          help: 'Short text below the headline. Leave blank for none.'
                     .type:
                       type: select
                       label: List style type
@@ -45,21 +45,20 @@ form:
                     .links:
                       type: list
                       style: horizontal
-                      label: List of link items
+                      label: Items
                       collapsed: false
                       collapsible: true
                       fields:
                         .text:
                           type: text
                           label: Title
-                          help: 'The title text is clickable, if URL is provided.'
+                          help: 'Title text is clickable, if URL is provided.'
                         .url:
-                          # (#8) type: text, instead of type: url allows for relative URLs
                           type: text
                           label: URL
-                          help: 'The link target. Leave blank if your title should not be clickable.'
+                          help: 'External or internal link. Leave blank if your title should not be clickable.'
                         .description:
                           type: text
                           label: '(Optional) Description'
-                          help: 'A short text underneath the title. Leave blank for none.'
+                          help: 'Short text below title. Leave blank for none.'
                           

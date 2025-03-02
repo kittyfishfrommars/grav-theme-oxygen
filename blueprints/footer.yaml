@@ -30,9 +30,8 @@ form:
                                             type: selectize
                                             label: (Optional) Class
                                             help: Classes to apply to text
-                                            description: >-
-                                                <i>Choose one, multiple or none at all
-                                                (default).</i>
+                                            description: >
+                                                <i>Choose one, multiple or leave blank (default).</i>
                                             selectize:
                                                 options:
                                                     -
@@ -58,7 +57,7 @@ form:
                                         .text:
                                             type: text
                                             label: Text
-                                            help: Button Text
+                                            help: Button text
                                         .url:
                                             type: text
                                             label: URL
@@ -66,10 +65,9 @@ form:
                                         .icon:
                                             type: text
                                             label: Icon
-                                            help: Icon to display
-                                            description: >-
-                                                <i>Refer to Elements page for available
-                                                icon names</i>
+                                            help: Icon identifier
+                                            description: >
+                                                <i>Refer to Elements page for available icon names.</i>
                                             default: fa-envelope-o
                                         .class:
                                             type: selectize
@@ -112,11 +110,10 @@ form:
                                         .icon:
                                             type: text
                                             label: Icon
-                                            help: Icon to display
-                                            description: >-
-                                                <i>Refer to Elements page for available
-                                                icon names</i>
-                                            default: fa-leaf
+                                            help: Icon identifier
+                                            description: >
+                                                <i>Refer to Elements page for available icon names.</i>
+                                            default: fa-star-o
                         header.legal:
                             type: section
                             title: Legal
@@ -129,20 +126,17 @@ form:
                                         .title:
                                             type: text
                                             label: Title
-                                            help: Displayed name of link
                                             validate:
                                                 required: true
                                         .url:
                                             type: text
                                             label: URL
-                                            help: (Optional) External link
-                                            description: >-
-                                                <i>Automatically links to legal page, if
-                                                left blank</i>
+                                            help: Link target
+                                            description: >
+                                                <i>Automatically links to legal page if left blank.</i>
                                         .param:
                                             type: text
                                             label: (Optional) Parameter
                                             help: Parameter to append to URL
-                                            description: >-
-                                                <i>Appends to URL, ie. anchor link
-                                                #id</i>
+                                            description: >
+                                                <i>Appends to URL, ie. anchor link #id.</i>

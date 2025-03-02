@@ -19,23 +19,21 @@ form:
                                 .headline:
                                     type: text
                                     label: Headline
-                                    help: >
-                                        Short text, preferably one or two words.
+                                    help: Catchy headline
                                 .byline:
                                     type: section
                                     fields:
                                         .text:
                                             type: textarea
                                             label: Byline
-                                            help: >
-                                                Short text below the headline. Leave blank for none.
+                                            help: Short text below headline
                                             rows: 3
                                         .class:
                                             type: selectize
                                             label: (Optional) Class
                                             help: Classes to apply to text
                                             description: >
-                                                <i>Choose one, multiple or none at all (default).</i>
+                                                <i>Choose one, multiple or leave blank (default).</i>
                                             selectize:
                                                 options:
                                                     -
@@ -71,7 +69,7 @@ form:
                                             label: (Optional) Class
                                             help: Additional classes to apply to button
                                             description: >
-                                                <i>Choose one, multiple or none at all (default).</i>
+                                                <i>Choose one, multiple or leave blank (default).</i>
                                             selectize:
                                                 options:
                                                     -

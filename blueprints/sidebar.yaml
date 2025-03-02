@@ -20,7 +20,6 @@ form:
                                 .position:
                                     type: toggle
                                     label: Sidebar Position
-                                    help: <i>Content will be populated by modules.</i>
                                     default: left
                                     options:
                                         left: left

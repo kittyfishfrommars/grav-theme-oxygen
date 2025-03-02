@@ -17,6 +17,5 @@ form:
                             type: section
                             title: Requires modules
                             text: Content will be populated by modules.
-                            description: <i>Content will be populated by modules.</i>
                             underline: true
                             ordering@: header.pageOptions

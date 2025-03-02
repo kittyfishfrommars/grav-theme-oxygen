@@ -25,15 +25,14 @@ form:
                                         .text:
                                             type: textarea
                                             label: Byline
-                                            help: >
-                                                Short text below the headline. Leave blank for none.
+                                            help: Short text below the headline. Leave blank for none
                                             rows: 3
                                         .class:
                                             type: selectize
                                             label: (Optional) Class
                                             help: Classes to apply to text
                                             description: >
-                                                <i>Choose one, multiple or none at all (default).</i>
+                                                <i>Choose one, multiple or leave blank (default).</i>
                                             selectize:
                                                 options:
                                                     -
@@ -63,29 +62,29 @@ form:
                                         .title:
                                             type: Title
                                             label: Text
-                                            help: Headline above item
+                                            help: Headline
                                         .text:
                                             type: textarea
                                             label: Text
-                                            help: Short, descriptive paragraph
+                                            help: Short, descriptive paragraph below title
                                             rows: 3
                                         .url:
                                             type: text
                                             label: URL
                                             help: Read More target
                                             description: >
-                                                <i>Leave empty for none (default)</i>
+                                                <i>Leave blank for none (default).</i>
                                         .icon:
                                             type: text
                                             label: icon
                                             help: Icon identifier
                                             description: >
-                                                <i>Refer to Elements page for available icon names</i>
+                                                <i>Refer to Elements page for available icon names.</i>
                                             default: fa-leaf
                                         .iconColor:
                                             type: select
                                             label: Icon Color
-                                            help: 'Displays a dot, a number or nothing before a list item.'
+                                            help: 'Displays a dot, a number or nothing before a list item'
                                             default: 'color-primary'
                                             options:
                                                 'color-primary': 'color-primary'

@@ -53,7 +53,7 @@ form:
                   #   type: selectize
                   #   label: (Optional) Follower class
                   #   help: 'Custom pre-defined CSS classes.'
-                  #   description: <i>Choose one, multiple or none at all (default).</i>
+                  #   description: <i>Choose one, multiple or leave blank (default).</i>
                   #   selectize:
                   #       options:
                   #         - text: 'opacity-dark'
@@ -80,7 +80,7 @@ form:
                   #   type: selectize
                   #   label: (Optional) Blurb class
                   #   help: 'Custom pre-defined CSS classes.'
-                  #   description: <i>Choose one, multiple or none at all (default).</i>
+                  #   description: <i>Choose one, multiple or leave blank (default).</i>
                   #   selectize:
                   #       options:
                   #         - text: 'opacity-dark'
