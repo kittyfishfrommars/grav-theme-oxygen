@@ -6,13 +6,13 @@
 		<section class="container">
 			<header class="major pb-2">
 				<h2>{{ notices.headline|raw }}</h2>
-				<span class="byline">{{ notices.byline|raw }}</span>
+				<span class="byline {{ notices.byline.class|replace({',': ' '}) }}">{{ notices.byline.text|raw }}</span>
 			</header>
 				<div class="clearfix">
 					<ul class="special-icons grid-default">
 					{% for item in notices.items %}
 						<li class="special-icons-{{ loop.index }}">
-							<span class="fa {{ item.icon }}"></span>
+							<span class="fa {{ item.iconColor ? : 'color-primary' }} {{ item.icon }}"></span>
 							<h3>{% spaceless %}
 								{% if item.url %}
 									<a href="{{ item.url }}">{{ item.title|raw }}</a>

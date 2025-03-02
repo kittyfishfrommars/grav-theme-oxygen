@@ -1,0 +1,96 @@
+title: Notices
+routable: false
+
+form:
+    fields:
+        tabs:
+            type: tabs
+            active: 1
+            fields:
+                notices:
+                    type: tab
+                    title: Notices
+                    fields:
+                        header.notices:
+                            type: section
+                            title: Notices
+                            underline: true
+                            fields:
+                                .headline:
+                                    type: text
+                                    label: Headline
+                                .byline:
+                                    type: section
+                                    fields:
+                                        .text:
+                                            type: textarea
+                                            label: Byline
+                                            help: >
+                                                Short text below the headline. Leave blank for none.
+                                            rows: 3
+                                        .class:
+                                            type: selectize
+                                            label: (Optional) Class
+                                            help: Classes to apply to text
+                                            description: >
+                                                <i>Choose one, multiple or none at all (default).</i>
+                                            selectize:
+                                                options:
+                                                    -
+                                                        text: small
+                                                        value: small
+                                                    -
+                                                        text: bold
+                                                        value: bold
+                                                    -
+                                                        text: italic
+                                                        value: italic
+                                                    -
+                                                        text: uppercase
+                                                        value: uppercase
+                                                    -
+                                                        text: normal-case
+                                                        value: normal-case
+                                .spacer:        
+                                    type: section
+                                    title: Items
+                                    underline: true
+                                .items:
+                                    type: list
+                                    underline: true
+                                    style: vertical
+                                    fields:
+                                        .title:
+                                            type: Title
+                                            label: Text
+                                            help: Headline above item
+                                        .text:
+                                            type: textarea
+                                            label: Text
+                                            help: Short, descriptive paragraph
+                                            rows: 3
+                                        .url:
+                                            type: text
+                                            label: URL
+                                            help: Read More target
+                                            description: >
+                                                <i>Leave empty for none (default)</i>
+                                        .icon:
+                                            type: text
+                                            label: icon
+                                            help: Icon identifier
+                                            description: >
+                                                <i>Refer to Elements page for available icon names</i>
+                                            default: fa-leaf
+                                        .iconColor:
+                                            type: select
+                                            label: Icon Color
+                                            help: 'Displays a dot, a number or nothing before a list item.'
+                                            default: 'color-primary'
+                                            options:
+                                                'color-primary': 'color-primary'
+                                                'color-secondary': 'color-secondary'
+                                                'color-success': 'color-success'
+                                                'color-warning': 'color-warning'
+                                                'color-danger': 'color-danger'
+                                                'color-text': 'color-text'
