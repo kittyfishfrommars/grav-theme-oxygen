@@ -5,8 +5,11 @@ subtitle: 'Subtitle'
 sidebar:
     position: left
 
-links:
-    items: '@self.modules'
+content:
+    items: '@self.modular'
+    order:
+        by: default
+        dir: asc
 ---
 
 This is a demo of a menu dropdown.

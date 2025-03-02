@@ -5,8 +5,11 @@ title: 'Sidebar Right'
 sidebar:
   position: right
 
-links:
-  items: '@self.modules'
+content:
+    items: '@self.modular'
+    order:
+        by: default
+        dir: asc
 ---
 
 This is a demo of a subpage within a menu dropdown.
