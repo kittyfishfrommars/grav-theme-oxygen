@@ -15,7 +15,7 @@ form:
                             unset@: true
                         spacer:
                             type: section
-                            title: Requires modules
+                            title: Requires Modules
                             text: Content will be populated by modules.
                             underline: true
                             ordering@: header.pageOptions

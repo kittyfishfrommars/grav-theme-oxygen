@@ -38,12 +38,13 @@ form:
                     'list-disc': 'list-disc'
                     'list-decimal': 'list-decimal'
                     'list-none': 'list-none'
+                .spacer:
+                    type: section
+                    title: Items
+                    underline: true
                 .items:
                   type: list
-                  style: horizontal
-                  label: Items
-                  collapsed: false
-                  collapsible: true
+                  style: vertical
                   fields:
                     .text:
                       type: text

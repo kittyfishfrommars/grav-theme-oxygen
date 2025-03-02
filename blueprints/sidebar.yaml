@@ -26,7 +26,7 @@ form:
                                         right: right
                         spacer:
                             type: section
-                            title: Requires modules
+                            title: Requires Modules
                             text: Content will be populated by modules.
                             description: <i>Content will be populated by modules.</i>
                             underline: true
