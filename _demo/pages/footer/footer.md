@@ -7,8 +7,8 @@ pageOptions:
     noIndex: true
 sitemap:
    ignore: true
-# do not change taxonomy definition
-# unique category is an identifier in templates/partials/footer.html.twig
+
+# do not change taxonomy definition. unique tag is an identifier
 taxonomy:
    tag: 'unique-footer'
 

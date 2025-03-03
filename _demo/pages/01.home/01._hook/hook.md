@@ -14,12 +14,14 @@ hook:
     # comment-out line below to display hook full width
     byline:
       text: >
-          Once you're happy with your site's content, head on over to <a href="https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/README.md#theme-options">Theme Options</a> and enable indexing for your favorite search engine.
+          To begin, copy everything from the <a href="https://github.com/kittyfishfrommars/grav-theme-oxygen/tree/main/_demo">demo</a> into your /user directory. You'll find many examples and useful settings.
+
+          Once you are happy with your presentation, enable the <a href="https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/README.md#theme-options">Theme Options</a> so search engines can find your site.
       # class: ''
   button:
     # comment-out line below to disable button
-    text: 'Read More'
-    url: '#'
+    text: 'README'
+    url: 'https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/README.md'
     # values: text-left | text-center | text-right
     # class: 'text-left'
 ---
