@@ -8,7 +8,7 @@ links:
     headline: References
     byline:
       text: >
-        Choose <i>Sidebar Right</i> for References and Footnotes.
+        Choose <i>Sidebar Right</i> for References, Footnotes and further reading material.
         On Mobile this section sits below page content.
     type: list-disc
     items:

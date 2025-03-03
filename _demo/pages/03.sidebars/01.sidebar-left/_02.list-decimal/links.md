@@ -5,10 +5,10 @@ taxonomy:
   tag: links
 
 links:
-  headline: list-decimal
+  headline: Step-by-Step
   byline:
     text: >
-      Example of a step-by-step tutorial.
+      Example of a steps tutorial.
   type: list-decimal
   items:
     - # url: '#'

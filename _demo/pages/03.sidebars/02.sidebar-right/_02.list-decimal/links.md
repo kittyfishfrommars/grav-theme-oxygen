@@ -5,22 +5,22 @@ taxonomy:
   tag: links
 
 links:
-  headline: list-decimal
+  headline: Footnotes
   byline:
     text: >
-      Example of a step-by-step tutorial.
+      Sources used in this article:
   type: list-decimal
   items:
-    - # url: '#'
-      text: "Decide you're hungry"
-      description: >
-        But discover the fridge is empty.
     - url: '#'
-      text: Steal an egg
-      description: >
-        Move like a fox and don't get caught.
+      text: First Pellentesque lectus gravida blandit
+      description: |
+        Maecenas vitae congue pharetra ipsum
     - url: '#'
-      text: Make an omelette
-      description: >
-        Bon Appétit!
+      text: Second ipsum
+      description: |
+        Maecenas vitae orci feugiat pharetra 
+    - url: '#'
+      text: Third Phasellus nibh congue
+      description: |
+        Maecenas vitae orci feugiat pharetra
 ---
