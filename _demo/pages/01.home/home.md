@@ -11,11 +11,11 @@ content:
     order:
         by: default
         dir: asc
-        custom:
-            - _hook
-            - _highlights
-            - _callout
-            - _features
+        # custom:
+        #     - _hook
+        #     - _highlights
+        #     - _callout
+        #     - _features
 
 banner:
     # leave url empty to disable banner
