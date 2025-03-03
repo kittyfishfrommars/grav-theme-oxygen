@@ -1,5 +1,3 @@
-{% set body_classes = header.body_classes %}
-<!-- Base -->
 <!DOCTYPE HTML>
 <html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
 <head>
@@ -41,7 +39,7 @@
 {% endblock head %}
 </head>
 
-<body class="{{ body_classes }}">
+<body>
 
 	{% block header %}
 

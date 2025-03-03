@@ -1,7 +1,7 @@
 ---
 title: 'Home'
 menu: Home
-body_classes: homepage
+
 # grav-plugin-sitemap overrides
 sitemap:
   changefreq: weekly
