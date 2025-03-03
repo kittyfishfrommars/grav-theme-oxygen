@@ -5,21 +5,20 @@
 {% endblock banner %}
 
 {% block body %}
-<!-- Main -->
-	<div id="main" class="wrapper style4 plain">
 
-		<!-- Content -->
-		<div id="content" class="container">
-			<section>
-				{% include 'partials/heading.html.twig' %}
+<div id="main" class="wrapper style4 plain">
 
-				<h1>{{ 'PLUGIN_ERROR.ERROR'|t|e }} {{ header.http_response_code }}</h1>
+	<div id="content" class="container">
+		<section>
+			{% include 'partials/heading.html.twig' %}
 
-				{% set sitemap = pages.find('/sitemap') %}
-				{{ page.content|replace({'%SITEMAP%': '<a href="' ~ sitemap.url ~ '">' ~ sitemap.title ~ '</a>'})|t|raw }}
+			<h1>{{ 'PLUGIN_ERROR.ERROR'|t|e }} {{ header.http_response_code }}</h1>
 
-			</section>
-		</div>
+			{% set sitemap = pages.find('/sitemap') %}
+			{{ page.content|replace({'%SITEMAP%': '<a href="' ~ sitemap.url ~ '">' ~ sitemap.title ~ '</a>'})|t|raw }}
+
+		</section>
 	</div>
+</div>
 
 {% endblock body %}
