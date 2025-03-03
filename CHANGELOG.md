@@ -3,10 +3,10 @@
 
 1. [](#new)
 * **Oxygen v2.0.0 Breaking Changes:** This major release improves integration with the admin panel. Please import the [_demo/pages](https://github.com/kittyfishfrommars/grav-theme-oxygen/tree/main/_demo/pages) for a new data structure
-* [#3](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/3) Add admin panel integraion for home
+* [#3](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/3) Add admin panel integration for home
 * [#7](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/7) Add dynamic footer links
 * [#6](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/6) Add full-width hook section
-* Update modular links logic
+* Update modular logic
 2. [](#improved)
 * Add hover styles to main navigation
 * Add cs language support to sitemap, thanks [@petira](https://github.com/petira)
