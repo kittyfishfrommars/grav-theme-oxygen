@@ -33,7 +33,7 @@ form:
                                             label: (Optional) Class
                                             help: Classes to apply to text
                                             description: >
-                                                <i>Choose one, multiple or leave blank (default).</i>
+                                                <small><i>Choose one, multiple or leave blank (default).</i></small>
                                             selectize:
                                                 options:
                                                     -
@@ -69,7 +69,7 @@ form:
                                             label: (Optional) Class
                                             help: Additional classes to apply to button
                                             description: >
-                                                <i>Choose one, multiple or leave blank (default).</i>
+                                                <small><i>Choose one, multiple or leave blank (default).</i></small>
                                             selectize:
                                                 options:
                                                     -

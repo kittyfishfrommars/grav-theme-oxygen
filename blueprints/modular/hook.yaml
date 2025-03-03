@@ -38,7 +38,7 @@ form:
                                                     label: (Optional) Class
                                                     help: Classes to apply to text
                                                     description: >
-                                                        <i>Choose one, multiple or leave blank (default).</i>
+                                                        <small><i>Choose one, multiple or leave blank (default).</i></small>
                                                     selectize:
                                                         options:
                                                             -
@@ -78,7 +78,7 @@ form:
                                                     label: (Optional) Class
                                                     help: Classes to apply to text
                                                     description: >
-                                                        <i>Choose one, multiple or leave blank (default).</i>
+                                                        <small><i>Choose one, multiple or leave blank (default).</i></small>
                                                     selectize:
                                                         options:
                                                             -
@@ -113,7 +113,8 @@ form:
                                             type: select
                                             label: (Optional) Class
                                             help: Additional class to apply to button.
-                                            description: '<i>Aligns button on desktop. Always centered on mobile view.</i>'
+                                            description: >
+                                                <small><i>Aligns button on desktop. Always centered on mobile view.</i></small>
                                             default: 'text-left'
                                             options:
                                                 'text-left': 'text-left'

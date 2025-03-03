@@ -32,7 +32,7 @@ form:
                                             label: (Optional) Class
                                             help: Classes to apply to text
                                             description: >
-                                                <i>Choose one, multiple or leave blank (default).</i>
+                                                <small><i>Choose one, multiple or leave blank (default).</i></small>
                                             selectize:
                                                 options:
                                                     -
@@ -73,13 +73,13 @@ form:
                                             label: URL
                                             help: Read More target
                                             description: >
-                                                <i>Leave blank for none (default).</i>
+                                                <small><i>Leave blank for none (default).</i></small>
                                         .icon:
                                             type: text
                                             label: icon
                                             help: Icon identifier
                                             description: >
-                                                <i>Refer to Elements page for available icon names.</i>
+                                                <small><i>Refer to Elements page for available icon names.</i></small>
                                             default: fa-leaf
                                         .iconColor:
                                             type: select

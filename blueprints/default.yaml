@@ -24,18 +24,21 @@ form:
                 type: fieldset
                 title: Banner
                 # help: 'optional'
-                info: ' click to expand'
+                info: ' click to expand / collapse'
                 # text: 'Leave text fields blank'
                 icon: camera
-                collapsed: true
+                collapsed: false
                 collapsible: true
                 fields:
                   .url:
                     type: mediapicker
-                    folder: 'self@'
                     label: Image
-                    help: 'Leave blank for none. Please refer to demo for image dimensions.'
+                    help: 'Leave blank for none.'
+                    description: >
+                      <small><i>Recommended size: 1500x960px. Leave blank for none.</i></small>
                     preview_images: true
+                    accept:
+                      - image/*
                   .position:
                     type: text
                     label: Position
@@ -53,7 +56,7 @@ form:
                   #   type: selectize
                   #   label: (Optional) Follower class
                   #   help: 'Custom pre-defined CSS classes.'
-                  #   description: <i>Choose one, multiple or leave blank (default).</i>
+                  #   description: <small><i>Choose one, multiple or leave blank (default).</i></small>
                   #   selectize:
                   #       options:
                   #         - text: 'opacity-dark'
@@ -80,7 +83,8 @@ form:
                   #   type: selectize
                   #   label: (Optional) Blurb class
                   #   help: 'Custom pre-defined CSS classes.'
-                  #   description: <i>Choose one, multiple or leave blank (default).</i>
+                  #   description: >
+                  #       <small><i>Choose one, multiple or leave blank (default).</i></small>
                   #   selectize:
                   #       options:
                   #         - text: 'opacity-dark'
@@ -102,13 +106,12 @@ form:
 
               header.pageOptions:
                 ordering@: banner
-                # type: section
                 type: fieldset
                 title: Page Options
-                info: ' click to expand'
+                info: ' click to expand / collapse'
                 # underline: true
                 icon: cog
-                collapsed: true
+                collapsed: false
                 collapsible: true
                 fields:
                   .noIndex:

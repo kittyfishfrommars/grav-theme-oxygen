@@ -31,7 +31,7 @@ form:
                                             label: (Optional) Class
                                             help: Classes to apply to text
                                             description: >
-                                                <i>Choose one, multiple or leave blank (default).</i>
+                                                <small><i>Choose one, multiple or leave blank (default).</i></small>
                                             selectize:
                                                 options:
                                                     -
@@ -67,7 +67,7 @@ form:
                                             label: Icon
                                             help: Icon identifier
                                             description: >
-                                                <i>Refer to Elements page for available icon names.</i>
+                                                <small><i>Refer to Elements page for available icon names.</i></small>
                                             default: fa-envelope-o
                                         .class:
                                             type: selectize
@@ -112,7 +112,7 @@ form:
                                             label: Icon
                                             help: Icon identifier
                                             description: >
-                                                <i>Refer to Elements page for available icon names.</i>
+                                                <small><i>Refer to Elements page for available icon names.</i></small>
                                             default: fa-star-o
                         header.legal:
                             type: section
@@ -133,10 +133,10 @@ form:
                                             label: URL
                                             help: Link target
                                             description: >
-                                                <i>Automatically links to legal page if left blank.</i>
+                                                <small><i>Automatically links to legal page if left blank.</i></small>
                                         .param:
                                             type: text
                                             label: (Optional) Parameter
                                             help: Parameter to append to URL
                                             description: >
-                                                <i>Appends to URL, ie. anchor link #id.</i>
+                                                <small><i>Appends to URL, ie. anchor link #id.</i></small>
