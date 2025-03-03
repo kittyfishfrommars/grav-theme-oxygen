@@ -30,8 +30,27 @@ form:
                 collapsed: false
                 collapsible: true
                 fields:
+                  # see https://github.com/getgrav/grav/issues/3909
+                  # Upload field
+                  # .mediaCollection:
+                  #   disabled: true
+                  #   type: file
+                  #   # type: pagemedia
+                  #   label: Upload image
+                  #   description: >
+                  #       <i>Recommended size: 1500x960px.</i>
+                  #   style: vertical
+                  #   destination: 'image://banner'
+                  #   multiple: true
+                  #   limit: 255
+                  #   random_name: false
+                  #   avoid_overwriting: false
+                  #   accept:
+                  #     - image/*
                   .url:
+                    # type: pagemediaselect
                     type: mediapicker
+                    # folder: 'image://banner'
                     label: Image
                     help: 'Leave blank for none.'
                     description: >
