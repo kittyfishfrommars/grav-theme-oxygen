@@ -4,6 +4,7 @@
   {% set language = grav.language %}
   {% set lang = language.enabled ? (language.active ?: language.default) : null %}
   {% set count = 1 %}
+  {% set showChildren = 1 %}
 
 <div id="main" class="wrapper style4 plain">
 
@@ -16,7 +17,7 @@
 
         <div class="sitemap">
             <ul>
-                {% if config.theme.dropdown.enabled %}
+                {% if showChildren %}
                     {{ macros.loop(pages) }}
                 {% else %}
                     {% for page in pages.children.visible %}
