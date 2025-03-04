@@ -1,4 +1,4 @@
-title: Sidebar
+title: Error
 extends@:
     type: default
     context: 'blueprints://pages'
