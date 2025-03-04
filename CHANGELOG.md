@@ -1,15 +1,16 @@
 # v2.0.0
-##  04-03-2025
+##  18-03-2025
 
 1. [](#new)
 * **Oxygen v2.0.0 Breaking Changes:** This major release improves integration with the admin panel. Please import the [_demo/pages](https://github.com/kittyfishfrommars/grav-theme-oxygen/tree/main/_demo/pages) for a new data structure
+* Make modules available for pages that support it, adding more customization options
 * [#3](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/3) Add admin panel integration for home
 * [#7](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/7) Add dynamic footer links
 * [#6](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/6) Add full-width hook section
-* Update modular logic
 2. [](#improved)
 * Add hover styles to main navigation
 * Add cs language support to sitemap, thanks [@petira](https://github.com/petira)
+* Better error page
 * [#11](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/11) Add CSS or image float in content
 * [#8](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/2) Allow link lists with relative URLs in admin panel
 * [#5](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/2) Update README with more detailed [Setup Instructions](https://github.com/kittyfishfrommars/grav-theme-oxygen/tree/main?tab=readme-ov-file#setup)
