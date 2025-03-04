@@ -1,5 +1,4 @@
 title: Footer
-routable: false
 
 form:
     fields:
@@ -11,6 +10,28 @@ form:
                     type: tab
                     title: Footer
                     fields:
+                        # @start: DEFAULTS
+                        # tag is an identifier, do not change
+                        header.taxonomy.tag:
+                            type: hidden
+                            default: 'unique-footer'
+                        # not a routable page, but an internal reference
+                        header.routable:
+                            type: hidden
+                            default: false
+                        # not visible in menus
+                        header.visible:
+                            type: hidden
+                            default: false
+                        # do exclude from search engines                   
+                        header.pageOptions.noIndex:
+                            type: hidden
+                            default: true
+                        # do exclude from sitemap
+                        header.sitemap.ignore:
+                            type: hidden
+                            default: true
+                        # @end: DEFAULTS
                         header.content:
                             type: section
                             title: Footer
