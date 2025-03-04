@@ -7,10 +7,14 @@
 {% block body %}
 	<div id="main" class="wrapper style4 plain">
 		<div id="content" class="container">
+
 			<section>
 				{% include 'partials/heading.html.twig' %}
 				{{ page.content|raw }}
 			</section>
+
+			{% include 'modular/modular.html.twig' %}
+
 		</div>
 	</div>
 {% endblock body %}

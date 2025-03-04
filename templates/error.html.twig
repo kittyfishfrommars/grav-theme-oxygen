@@ -17,9 +17,12 @@
 			{% set sitemap = pages.find('/sitemap') %}
 			{{ msgError|replace({'%SITEMAP%': '<a href="' ~ sitemap.url ~ '">' ~ sitemap.title ~ '</a>'})|t|raw }}
 		</section>
-		<section class="">
+		<section>
 			{{ page.content|raw }}
 		</section>
+
+		{% include 'modular/modular.html.twig' %}
+
 	</div>
 </div>
 
