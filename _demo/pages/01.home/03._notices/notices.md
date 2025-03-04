@@ -1,6 +1,6 @@
 ---
 title: Notices
-routable: false
+
 
 # rendered in a 3-column grid, confiurable by SCSS
 notices:

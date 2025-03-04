@@ -1,6 +1,6 @@
 ---
 title: list-disc
-routable: false
+
 taxonomy:
   tag: links
 

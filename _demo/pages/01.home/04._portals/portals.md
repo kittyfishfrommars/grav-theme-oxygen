@@ -1,6 +1,6 @@
 ---
 title: Portals
-routable: false
+
 
 portals:
     headline: 'Curio vitae metus semper'

@@ -1,6 +1,6 @@
 ---
 title: list-none
-routable: false
+
 taxonomy:
   tag: links
 

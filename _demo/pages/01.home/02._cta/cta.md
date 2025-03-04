@@ -1,6 +1,6 @@
 ---
 title: CTA
-routable: false
+
 
 cta:
     headline: Curio vitae metus semper

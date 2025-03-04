@@ -1,6 +1,6 @@
 ---
 title: list-decimal
-routable: false
+
 taxonomy:
   tag: links
 
