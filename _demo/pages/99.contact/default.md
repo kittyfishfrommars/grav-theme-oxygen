@@ -5,6 +5,8 @@ menu: 'Contact'
 # slug: 'Impressum'
 slug: 'contact'
 visible: true
+content:
+    items: '@self.modular'
 pageOptions:
    # set noIndex to true to disable indexing of this page
    noIndex: false

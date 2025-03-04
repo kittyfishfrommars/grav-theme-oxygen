@@ -1,5 +1,7 @@
 ---
 title: Elements
+content:
+    items: '@self.modular'
 sitemap:
   ignore: true
 ---
