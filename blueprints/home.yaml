@@ -11,6 +11,11 @@ form:
             fields:
                 content:
                     fields:
+                        # @start: DEFAULTS
+                        header.content.items:
+                            type: hidden
+                            default: '@self.modular'
+                        # @end: DEFAULTS
                         content:
                             unset@: true
                         spacer:
