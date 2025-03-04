@@ -12,15 +12,6 @@ form:
                 content:
                     fields:
                         # @start: DEFAULTS
-                        header.content.items:
-                            type: hidden
-                            default: '@self.modular'
                         # @end: DEFAULTS
                         content:
                             unset@: true
-                        spacer:
-                            type: section
-                            title: Requires Modules
-                            text: Content will be populated by modules.
-                            underline: true
-                            ordering@: header.pageOptions

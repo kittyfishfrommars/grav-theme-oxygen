@@ -127,7 +127,6 @@ form:
                   #           value: 'uppercase'
                   #         - text: 'normal-case'
                   #           value: 'normal-case'
-
               header.pageOptions:
                 ordering@: banner
                 type: fieldset
@@ -149,3 +148,9 @@ form:
                       0: PLUGIN_ADMIN.ENABLED
                     validate:
                       type: bool
+              sectionModules:
+                  type: section
+                  title: Modules Available
+                  text: Additional content can be populated by modules.
+                  underline: true
+                  ordering@: 99

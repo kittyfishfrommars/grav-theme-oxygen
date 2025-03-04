@@ -12,9 +12,6 @@ form:
                 content:
                     fields:
                         # @start: DEFAULTS
-                        header.content.items:
-                            type: hidden
-                            default: '@self.modular'
                         # @end: DEFAULTS
                         header.sidebar:
                             type: fieldset
@@ -34,9 +31,3 @@ form:
                                     options:
                                         left: left
                                         right: right
-                        spacer:
-                            type: section
-                            title: Requires Modules
-                            text: Content will be populated by modules.
-                            underline: true
-                            ordering@: header.pageOptions

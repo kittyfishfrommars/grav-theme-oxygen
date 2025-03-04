@@ -12,9 +12,6 @@ form:
                 content:
                     fields:
                         # @start: DEFAULTS
-                        header.content.items:
-                            type: hidden
-                            default: '@self.modular'
                         # not a routable page, but an internal reference
                         header.routable:
                             type: hidden
@@ -39,11 +36,11 @@ form:
                             type: hidden
                             default: 404
                         # @end: DEFAULTS
-                        spacer:
-                            type: section
-                            title: Requires Modules
+                        header.pageOptions:
+                            unset@: true
+                        sectionModules:
                             text: > 
-                                Content will be populated by modules. 
+                                Additional content can be populated by modules. 
                                 <br><br>
                                 Error messages will be provided by [grav-plugin-error](https://github.com/getgrav/grav-plugin-error).
-                            underline: true
+
