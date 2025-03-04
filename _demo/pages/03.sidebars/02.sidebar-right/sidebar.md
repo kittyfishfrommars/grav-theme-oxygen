@@ -1,6 +1,5 @@
 ---
 title: 'Sidebar Right'
-# subtitle: 'Subtitle'
 
 sidebar:
   position: right

@@ -1,6 +1,5 @@
 ---
 title: Sidebars
-subtitle: 'Subtitle'
 
 sidebar:
     position: left

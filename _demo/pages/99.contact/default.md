@@ -1,14 +1,13 @@
 ---
 # title: 'Impressum'
 title: 'Contact'
-# subtitle: 'Integer sit amet pede vel arcu aliquet pretium'
 menu: 'Contact'
 # slug: 'Impressum'
 slug: 'contact'
 visible: true
 pageOptions:
    # set noIndex to true to disable indexing of this page
-    noIndex: false
+   noIndex: false
 # grav-plugin-sitemap overrides
 sitemap:
    changefreq: monthly

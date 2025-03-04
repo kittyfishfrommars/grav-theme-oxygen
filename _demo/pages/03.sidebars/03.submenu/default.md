@@ -1,6 +1,5 @@
 ---
 title: 'Submenu'
-subtitle: 'This is a subtitle'
 ---
 
 This is a demo of a dropdown and its submenu.
