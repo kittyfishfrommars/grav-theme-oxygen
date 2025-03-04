@@ -6,6 +6,7 @@ en:
       <br>
       You can check the %SITEMAP% for all pages.
   PLUGIN_SITEMAP:
+    TITLE_SITEMAP: Sitemap
     TITLE_TITLE: Title
     TITLE_LOCATION: URL
     TITLE_LASTMOD: Last modified
@@ -17,6 +18,7 @@ de:
       <br>
       Die %SITEMAP% bietet eine Übersicht über alle verfügbaren Seiten.
   PLUGIN_SITEMAP:
+    TITLE_SITEMAP: Sitemap
     TITLE_TITLE: Titel
     TITLE_LOCATION: URL
     TITLE_LASTMOD: Letzte Aktualisierung
@@ -28,6 +30,7 @@ cs:
       <br>
       %SITEMAP% poskytuje přehled všech dostupných stránek.
   PLUGIN_SITEMAP:
+    TITLE_SITEMAP: Sitemap
     TITLE_TITLE: Název
     TITLE_LOCATION: URL
     TITLE_LASTMOD: Naposledy změněno
