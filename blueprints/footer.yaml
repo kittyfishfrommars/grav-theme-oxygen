@@ -14,7 +14,7 @@ form:
                         # tag is an identifier, do not change
                         header.taxonomy.tag:
                             type: hidden
-                            default: 'unique-footer'
+                            default: 'id-footer'
                         # not a routable page, but an internal reference
                         header.routable:
                             type: hidden

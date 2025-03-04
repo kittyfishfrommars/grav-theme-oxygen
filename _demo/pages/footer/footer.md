@@ -8,9 +8,9 @@ pageOptions:
 sitemap:
    ignore: true
 
-# do not change taxonomy definition. unique tag is an identifier
+# do not change taxonomy definition. id tag is an identifier
 taxonomy:
-   tag: 'unique-footer'
+   tag: 'id-footer'
 
 content:
   headline: Stay in touch

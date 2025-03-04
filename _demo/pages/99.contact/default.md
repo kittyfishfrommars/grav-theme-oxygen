@@ -17,9 +17,9 @@ sitemap:
    # disallow indexing via sitemap.xml plugin
    ignore: false
 # do not change taxonomy definition
-# unique category is an identifier in templates/partials/footer.html.twig
+# id category is an identifier in templates/partials/footer.html.twig
 taxonomy:
-   tag: 'unique-legal'
+   tag: 'id-legal'
 ---
 
 ### Legal Notice {#legal}

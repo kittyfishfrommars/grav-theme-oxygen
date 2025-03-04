@@ -1,5 +1,5 @@
 <div id="footer">
-	{% for page in taxonomy.findTaxonomy({'tag':'unique-footer'}) %}
+	{% for page in taxonomy.findTaxonomy({'tag':'id-footer'}) %}
 		{% set footer = page.header %}
 
 		<section class="container">
@@ -28,7 +28,7 @@
 		</section>
 
 		{% if footer.legal.items %}
-			{% for post in taxonomy.findTaxonomy({'tag':'unique-legal'}) %}
+			{% for post in taxonomy.findTaxonomy({'tag':'id-legal'}) %}
 				<ul id="copyright">
 					{% for item in footer.legal.items %}
 						{% set url = (item.url ? item.url : post.url) %}
