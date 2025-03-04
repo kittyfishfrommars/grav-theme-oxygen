@@ -1,11 +1,10 @@
 en:
   PLUGIN_ERROR:
-    ERROR: Error
+    ERROR: 'Error'
     ERROR_MESSAGE: >
-      Sorry, the page you are looking isn't here.
-
-
-      The %SITEMAP% provides an overview of all pages.
+      Sorry, this page can't be found. :( 
+      <br>
+      You can check the %SITEMAP% for all pages.
   PLUGIN_SITEMAP:
     TITLE_TITLE: Title
     TITLE_LOCATION: URL
@@ -14,9 +13,8 @@ de:
   PLUGIN_ERROR:
     ERROR: Fehler
     ERROR_MESSAGE: >
-      Diese Seite gibt es leider nicht.
-
-
+      Pardon, diese Seite wurde leider nicht gefunden.
+      <br>
       Die %SITEMAP% bietet eine Übersicht über alle verfügbaren Seiten.
   PLUGIN_SITEMAP:
     TITLE_TITLE: Titel
@@ -27,8 +25,7 @@ cs:
     ERROR: Chyba
     ERROR_MESSAGE: >
       Vypadá to, že hledaná stránka tu není.
-
-
+      <br>
       %SITEMAP% poskytuje přehled všech dostupných stránek.
   PLUGIN_SITEMAP:
     TITLE_TITLE: Název

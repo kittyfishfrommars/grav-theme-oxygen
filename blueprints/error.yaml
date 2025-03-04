@@ -1,0 +1,49 @@
+title: Sidebar
+extends@:
+    type: default
+    context: 'blueprints://pages'
+
+form:
+    fields:
+        tabs:
+            type: tabs
+            active: 1
+            fields:
+                content:
+                    fields:
+                        # @start: DEFAULTS
+                        header.content.items:
+                            type: hidden
+                            default: '@self.modular'
+                        # not a routable page, but an internal reference
+                        header.routable:
+                            type: hidden
+                            default: false
+                        # not visible in menus
+                        header.visible:
+                            type: hidden
+                            default: false
+                        # do exclude from search engines                   
+                        header.pageOptions.noIndex:
+                            type: hidden
+                            default: true
+                        # do exclude from sitemap
+                        header.sitemap.ignore:
+                            type: hidden
+                            default: true
+                        # set grav-plugin-error params
+                        header.template:
+                            type: hidden
+                            default: error
+                        header.http_response_code:
+                            type: hidden
+                            default: 404
+                        # @end: DEFAULTS
+                        spacer:
+                            type: section
+                            title: Requires Modules
+                            text: > 
+                                Content will be populated by modules. 
+                                <br><br>
+                                Error messages will be provided by [grav-plugin-error](https://github.com/getgrav/grav-plugin-error).
+                            underline: true

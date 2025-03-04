@@ -4,19 +4,21 @@
 	{% include 'partials/banner.html.twig' %}
 {% endblock banner %}
 
+{% do page.title(page.title ~ ' ' ~ header.http_response_code) %}
+
 {% block body %}
 
 <div id="main" class="wrapper style4 plain">
 
 	<div id="content" class="container">
-		<section>
-			{% include 'partials/heading.html.twig' %}
-
-			<h1>{{ 'PLUGIN_ERROR.ERROR'|t|e }} {{ header.http_response_code }}</h1>
-
+		<section class="mb-3">
+			{% include 'partials/heading.html.twig' with {title: 'Fabien'} %}
+			{% set msgError = 'PLUGIN_ERROR.ERROR_MESSAGE'|t %}
 			{% set sitemap = pages.find('/sitemap') %}
-			{{ page.content|replace({'%SITEMAP%': '<a href="' ~ sitemap.url ~ '">' ~ sitemap.title ~ '</a>'})|t|raw }}
-
+			{{ msgError|replace({'%SITEMAP%': '<a href="' ~ sitemap.url ~ '">' ~ sitemap.title ~ '</a>'})|t|raw }}
+		</section>
+		<section class="">
+			{{ page.content|raw }}
 		</section>
 	</div>
 </div>
