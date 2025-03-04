@@ -17,9 +17,14 @@ form:
                             default: '@self.modular'
                         # @end: DEFAULTS
                         header.sidebar:
-                            type: section
+                            type: fieldset
                             title: Sidebar
-                            underline: true
+                            info: ' click to expand / collapse'
+                            # underline: true
+                            icon: align-left
+                            collapsed: false
+                            collapsible: true
+                            # ordering@: content
                             ordering@: header.pageOptions
                             fields:
                                 .position:

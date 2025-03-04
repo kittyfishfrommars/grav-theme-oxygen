@@ -12,6 +12,11 @@ form:
       fields:
           content:
             fields:
+              # @start: DEFAULTS
+              header.content.items:
+                  type: hidden
+                  default: '@self.modular'
+              # @end: DEFAULTS
               spacer:
                 type: spacer
                 # title: A title
