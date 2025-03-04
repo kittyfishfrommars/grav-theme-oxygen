@@ -1,19 +1,14 @@
 {% extends 'partials/base.html.twig' %}
 
-{% block body %}
-  {% set language = grav.language %}
-  {% set lang = language.enabled ? (language.active ?: language.default) : null %}
-  {% set count = 1 %}
-  {% set showChildren = 1 %}
+{% set showChildren = 1 %}
+{% import 'macros/loop.html.twig' as macros %}
 
+{% block body %}
 <div id="main" class="wrapper style4 plain">
 
   <div id="content" class="container">
     <section>
-      {% include 'partials/heading.html.twig' %}
-
-      <!-- Sitemap -->
-      {% import 'macros/loop.html.twig' as macros %}
+        {% include 'partials/heading.html.twig' %}
 
         <div class="sitemap">
             <ul>
@@ -40,6 +35,8 @@
                 {% endfor %}
             </ul>
         </div>
+
+	    {% include 'modular/modular.html.twig' %}
 
     </section>
   </div>
