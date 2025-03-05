@@ -68,10 +68,10 @@ form:
                     label: Position
                     help: 'CSS values for background-position'
                     default: 'center center'
-                  .headline:
-                    type: text
-                    label: (Optional) Headline
-                    help: 'Leave blank for none.'
+                  # .headline:
+                  #   type: text
+                  #   label: (Optional) Headline
+                  #   help: 'Leave blank for none.'
                   # .follower.text:
                   #   type: text
                   #   label: (Optional) Follower text
