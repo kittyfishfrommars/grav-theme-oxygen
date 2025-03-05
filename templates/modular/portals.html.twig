@@ -1,14 +1,14 @@
 {% if header.portals %}
 {% set portals = header.portals %}
 	<div class="wrapper style5 portals">
-		<section id="team" class="container">
+		<section id="portals" class="container">
 			<header class="major">
-				{% if portals.headline %}
+			{% if portals.headline %}
 					<h2>{{ portals.headline|raw }}</h2>
-				{% endif %}
-				{% if portals.byline.text %}
-					<span class="byline color-link-secondary {{ portals.byline.class|replace({',': ' '}) }}">{{ portals.byline.text|raw }}</span>
-				{% endif %}
+			{% endif %}
+			{% if portals.byline.text %}
+				<span class="byline color-link-secondary pb-2 {{ portals.byline.class|replace({',': ' '}) }}">{{ portals.byline.text|raw }}</span>
+			{% endif %}
 			</header>
 			<div class="row">
 				{% for portal in portals.items|slice(0, 4) %}

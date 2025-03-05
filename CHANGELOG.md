@@ -8,9 +8,9 @@
 * [#7](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/7) Add dynamic footer links
 * [#6](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/6) Add full-width hook section
 2. [](#improved)
-* Add hover styles to main navigation
+* Layout fixes: hover styles to main navigation, font-sizes, margins/paddings
 * Add cs language support to sitemap, thanks [@petira](https://github.com/petira)
-* Better error page
+* Improved and simplified error and sitemap pages
 * [#11](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/11) Add CSS or image float in content
 * [#8](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/2) Allow link lists with relative URLs in admin panel
 * [#5](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/2) Update README with more detailed [Setup Instructions](https://github.com/kittyfishfrommars/grav-theme-oxygen/tree/main?tab=readme-ov-file#setup)

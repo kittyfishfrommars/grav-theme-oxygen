@@ -12,8 +12,10 @@
 				</div>
 				<div class="6u">
 					<div class="{{ (hook.button.text) ? 'mb-2' }}">
-						<h3>{{ hook.right.headline|raw }}</h3>
-						<span class="byline {{ hook.right.byline.class|replace({',': ' '}) }}">{{ hook.right.byline.text|raw }}</span>
+						<header class="major">
+							<h2>{{ hook.right.headline|raw }}</h2>
+							<span class="byline {{ hook.right.byline.class|replace({',': ' '}) }}">{{ hook.right.byline.text|raw }}</span>
+						</header>
 					</div>
 			{% endif %}
 			{% if hook.button.text %}

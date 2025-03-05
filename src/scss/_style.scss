@@ -25,13 +25,13 @@ body, p, li, input, select, textarea {
 
 h1, h2, h3, h4, h5, h6 {
     color: inherit;
-    font-weight: 700;
     line-height: config.$line-height-headlines;
     margin-bottom: config.$margin-bottom;
+    font-weight: normal;
 }
 
 h2 {
-    font-size: 2.6em;
+    font-size: 1.6em;
 }
 
 h3 {
@@ -72,7 +72,7 @@ em, i {
 
 p {
     line-height: 1.5em;
-    margin-bottom: config.$margin-bottom;
+    margin-bottom: config.$margin-bottom * 2;
 }
 
 p.medium {
@@ -135,6 +135,10 @@ section.special, article.special {
 header.major {
     text-align: center;
     text-transform: uppercase;
+
+    h1, h2, h3, h4 {
+        font-weight: bold;
+    }
 }
 
 header.major h1 {
@@ -198,7 +202,11 @@ input[type = "text"] {
     color: rgb(85 85 85 / 50%) !important;
 }
 
-/* Image */
+/* Content */
+
+#content {
+    padding-bottom: config.$margin-bottom *2;
+}
 
 #content img {
     border: 1px solid config.$color-disabled;
@@ -272,7 +280,6 @@ ol.default {
     list-style-type: decimal;
     margin: 0 0 1em 1.1em;
 }
-
 
 ul li,
 ol li,
@@ -509,7 +516,7 @@ input[type = "button"].fit,
 /* Wrapper */
 
 .wrapper {
-    padding: 4em 0;
+    padding: 4rem 0 0;
 }
 
 .wrapper.style1 {
@@ -546,7 +553,7 @@ input[type = "button"].fit,
 
 .wrapper.style2 .major .byline,
 .wrapper.evenpart .major .byline {
-    font-size: 1.4em;
+    font-size: 1.2em;
     letter-spacing: normal;
     line-height: config.$line-height-headlines;
     text-transform: none;
@@ -565,7 +572,7 @@ input[type = "button"].fit,
 .wrapper.cta {
     background-color: config.$color-primary;
     color: config.$color-secondary;
-    padding-bottom: 5em;
+    padding-bottom: 4rem;
     text-align: center;
 }
 
@@ -577,7 +584,7 @@ input[type = "button"].fit,
 
 .wrapper.style3 p,
 .wrapper.cta p {
-    font-size: 1.6em;
+    font-size: 1.4em;
 }
 
 /* Sidebar */
@@ -585,12 +592,14 @@ input[type = "button"].fit,
 .wrapper.style4,
 .wrapper.plain {
     background-color: config.$color-bg-primary;
+    padding-bottom: 4rem;
 }
 
 .wrapper.style5,
 .wrapper.portals {
     background-color: config.$color-primary;
     color: config.$color-secondary;
+    padding-bottom: 2rem;
     text-align: center;
 }
 
@@ -765,7 +774,7 @@ input[type = "button"].fit,
 /* Main */
 
 #main {
-    padding: 4em 0;
+    padding: 4em 0 0;
 }
 
 #main #content .major, #main #sidebar .major {
@@ -813,7 +822,7 @@ input[type = "button"].fit,
 .social {
     background-color: config.$color-bg-secondary;
     color: config.$color-secondary;
-    padding: 5em 0 4em;
+    padding: 3em 0 2em;
     text-align: center;
 }
 

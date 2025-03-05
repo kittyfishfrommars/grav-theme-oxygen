@@ -135,7 +135,23 @@
     color: config.$color-text;
 }
 
-/* MARGIN */
+/* MARGINS */
+
+.mt-1 {
+    margin-top: 1rem !important;
+}
+
+.mt-2 {
+    margin-top: 2rem !important;
+}
+
+.mt-3 {
+    margin-top: 3rem !important;
+}
+
+.mt-4 {
+    margin-top: 3rem !important;
+}
 
 .mb-1 {
     margin-bottom: 1rem !important;
@@ -161,7 +177,7 @@
     margin-right: 3rem !important;
 }
 
-/* PADDING */
+/* PADDINGS */
 
 .pt-0 {
     padding-top: 1rem !important;
