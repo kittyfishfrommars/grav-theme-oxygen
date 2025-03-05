@@ -86,8 +86,8 @@
     font-style: italic !important;
 }
 
-.small { 
-    font-size: 80%; 
+.small, .small * { 
+    font-size: 90% !important; 
     line-height: 1.5em; 
 }
 
@@ -163,6 +163,10 @@
 
 /* PADDING */
 
+.pt-0 {
+    padding-top: 1rem !important;
+}
+
 .pt-1 {
     padding-top: 1rem !important;
 }
@@ -173,6 +177,22 @@
 
 .pt-3 {
     padding-top: 3rem !important;
+}
+
+.pb-0 {
+    padding-bottom: 0 !important;
+}
+
+.pb-1 {
+    padding-bottom: 1rem !important;
+}
+
+.pb-2 {
+    padding-bottom: 2rem !important;
+}
+
+.pb-3 {
+    padding-bottom: 3rem !important;
 }
 
 

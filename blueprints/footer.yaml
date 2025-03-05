@@ -1,4 +1,7 @@
-title: Footer
+title: Error
+extends@:
+    type: default
+    context: 'blueprints://pages'
 
 form:
     fields:
@@ -6,15 +9,9 @@ form:
             type: tabs
             active: 1
             fields:
-                footer:
-                    type: tab
-                    title: Footer
+                content:
                     fields:
                         # @start: DEFAULTS
-                        # tag is an identifier, do not change
-                        header.taxonomy.tag:
-                            type: hidden
-                            default: 'id-footer'
                         # not a routable page, but an internal reference
                         header.routable:
                             type: hidden
@@ -32,132 +29,7 @@ form:
                             type: hidden
                             default: true
                         # @end: DEFAULTS
-                        header.content:
-                            type: section
-                            title: Footer
-                            underline: true
-                            fields:
-                                .headline:
-                                    type: text
-                                    label: Headline
-                                .byline:
-                                    type: section
-                                    fields:
-                                        .text:
-                                            type: textarea
-                                            label: Byline
-                                            rows: 3
-                                        .class:
-                                            type: selectize
-                                            label: (Optional) Class
-                                            help: Classes to apply to text
-                                            description: >
-                                                <small><i>Choose one, multiple or leave blank (default).</i></small>
-                                            selectize:
-                                                options:
-                                                    -
-                                                        text: small
-                                                        value: small
-                                                    -
-                                                        text: bold
-                                                        value: bold
-                                                    -
-                                                        text: italic
-                                                        value: italic
-                                                    -
-                                                        text: uppercase
-                                                        value: uppercase
-                                                    -
-                                                        text: normal-case
-                                                        value: normal-case
-                                .button:
-                                    type: section
-                                    title: Button
-                                    underline: true
-                                    fields:
-                                        .text:
-                                            type: text
-                                            label: Text
-                                            help: Button text
-                                        .url:
-                                            type: text
-                                            label: URL
-                                            help: Button target
-                                        .icon:
-                                            type: text
-                                            label: Icon
-                                            help: Icon identifier
-                                            description: >
-                                                <small><i>Refer to Elements page for available icon names.</i></small>
-                                            default: fa-envelope-o
-                                        .class:
-                                            type: selectize
-                                            label: (Optional) Class
-                                            help: Additional classes to apply to button
-                                            selectize:
-                                                options:
-                                                    -
-                                                        text: small
-                                                        value: small
-                                                    -
-                                                        text: bold
-                                                        value: bold
-                                                    -
-                                                        text: italic
-                                                        value: italic
-                                                    -
-                                                        text: uppercase
-                                                        value: uppercase
-                                                    -
-                                                        text: normal-case
-                                                        value: normal-case
-                        header.social:
-                            type: section
-                            title: Social
-                            underline: true
-                            fields:
-                                .items:
-                                    type: list
-                                    style: vertical
-                                    fields:
-                                        .title:
-                                            type: text
-                                            label: Label
-                                            help: Aria-label for accessibility
-                                        .url:
-                                            type: text
-                                            label: URL
-                                            help: External or internal link
-                                        .icon:
-                                            type: text
-                                            label: Icon
-                                            help: Icon identifier
-                                            description: >
-                                                <small><i>Refer to Elements page for available icon names.</i></small>
-                                            default: fa-star-o
-                        header.legal:
-                            type: section
-                            title: Legal
-                            underline: true
-                            fields:
-                                .items:
-                                    type: list
-                                    style: vertical
-                                    fields:
-                                        .title:
-                                            type: text
-                                            label: Title
-                                            validate:
-                                                required: true
-                                        .url:
-                                            type: text
-                                            label: URL
-                                            help: Link target
-                                            description: >
-                                                <small><i>Automatically links to legal page if left blank.</i></small>
-                                        .param:
-                                            type: text
-                                            label: (Optional) Parameter
-                                            help: Parameter to append to URL
-                                            description: >
-                                                <small><i>Appends to URL, ie. anchor link #id.</i></small>
+                        header.pageOptions:
+                            unset@: true
+                        header.banner:
+                            unset@: true

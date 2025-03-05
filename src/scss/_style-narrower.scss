@@ -212,12 +212,12 @@
         padding: 1em 0;
     }
 
-    #copyright li {
+    .social-links li {
         display: block;
         float: none;
     }
 
-    #copyright li + li::before {
+    .social-links li + li::before {
         content: "";
         margin: 1em 0;
     }
