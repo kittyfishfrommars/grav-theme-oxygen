@@ -43,21 +43,13 @@
 
 	{% block header %}
 
-		<!-- Header Wrapper -->
 		<div class="wrapper style1">
-
-			<!-- Header -->
 			<div id="header">
 				<div class="container">
-
-					<!-- Logo -->
-					<h1><a href="{{ addSlash(home_url) }}" id="logo">{{ site.title }}</a></h1>
-
-					<!-- Nav -->
+					<a href="{{ addSlash(home_url) }}" id="logo">{{ site.title }}</a>
 					<nav id="nav">
 						{% include 'partials/navigation.html.twig' %}
 					</nav>
-
 				</div>
 			</div>
 
@@ -69,7 +61,9 @@
 
 	{% block body %}
 		{% block content %}
+
 			{{ page.content|raw }}
+
 		{% endblock content %}
 	{% endblock body %}
 
