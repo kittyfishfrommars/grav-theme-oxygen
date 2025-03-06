@@ -1,3 +1,6 @@
-{% for module in page.collection() %}
+
+{% set modules = modules|default(page.collection()) %}
+
+{% for module in modules %}
 	{{ module.content|raw }}
 {% endfor %}

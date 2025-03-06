@@ -5,7 +5,6 @@
 {% endblock banner %}
 
 {% block body %}
-{% set delimiter = '<hr />' %}
 
 <div id="main" class="wrapper style4 plain">
 	<div class="container">
@@ -13,7 +12,8 @@
 
 			{% if page.header.sidebar.position|lower  == 'left' %}
 				<div id="sidebar" class="4u mb-3">
-					{% include 'modular/modular.html.twig' %}
+					{% set modules = page.collection().ofType('modular/links') %}
+					{% include 'modular/modular.html.twig' with { 'modules' : modules } %}
 				</div>
 			{% endif %}
 
@@ -21,25 +21,21 @@
 			<div id="content" class="8u skel-cell-important mb-3">
 				<section>
 					{% include 'partials/heading.html.twig' %}
-					{{ page.content|split(delimiter)[0]|raw }}
+					{{ page.content|raw }}
 				</section>
 			</div>
 
 			{% if page.header.sidebar.position|lower  == 'right' %}
 				<div id="sidebar" class="4u">
-					{% include 'modular/modular.html.twig' %}
+					{% set modules = page.collection().ofType('modular/links') %}
+					{% include 'modular/modular.html.twig' with { 'modules' : modules } %}
 				</div>
 			{% endif %}
 
-			<!-- Content below Sidebar -->
-			<div id="content" class="12u">
-				<section>
-					{{ page.content|split('<hr />')|slice(1)|join('<hr />')|raw }}
-				</section>
-			</div>
-
 		</div>
 	</div>
+	{% set modules = page.collection()|filter(module => module.template != 'modular/links') %}
+	{% include 'modular/modular.html.twig' with { 'modules' : modules } %}
 </div>
 
 {% endblock body %}
