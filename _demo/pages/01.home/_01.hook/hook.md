@@ -1,6 +1,5 @@
 ---
 title: Hook
-routable: false
 
 hook:
   left:

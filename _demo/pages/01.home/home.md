@@ -1,5 +1,5 @@
 ---
-title: 'Home'
+title: Home
 menu: Home
 
 # grav-plugin-sitemap overrides

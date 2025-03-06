@@ -210,32 +210,33 @@ Item 3
 - - - - - - -
 
 ## .actions .button-secondary
-
-<ul class="actions">
-	<li><a href="#" class="button button-secondary special">Special</a></li>
-	<li><a href="#" class="button button-secondary">Default</a></li>
-</ul>
-<ul class="actions">
-	<li><a href="#" class="button button-secondary special big">Big</a></li>
-	<li><a href="#" class="button button-secondary">Default</a></li>
-	<li><a href="#" class="button button-secondary small">Small</a></li>
-</ul>
-<ul class="actions fit">
-	<li><a href="#" class="button button-secondary special fit">Fit</a></li>
-	<li><a href="#" class="button button-secondary fit">Fit</a></li>
-</ul>
-<ul class="actions fit small">
-	<li><a href="#" class="button button-secondary special fit small">Fit + Small</a></li>
-	<li><a href="#" class="button button-secondary fit small">Fit + Small</a></li>
-</ul>
-<ul class="actions">
-	<li><a href="#" class="button button-secondary special icon fa-search">Icon</a></li>
-	<li><a href="#" class="button button-secondary icon fa-download">Icon</a></li>
-</ul>
-<ul class="actions">
-	<li><span class="button button-secondary special disabled">Special</span></li>
-	<li><span class="button button-secondary disabled">Default</span></li>
-</ul>
+<div class="social">
+  <ul class="actions">
+    <li><a href="#" class="button button-secondary special">Special</a></li>
+    <li><a href="#" class="button button-secondary">Default</a></li>
+  </ul>
+  <ul class="actions">
+    <li><a href="#" class="button button-secondary special big">Big</a></li>
+    <li><a href="#" class="button button-secondary">Default</a></li>
+    <li><a href="#" class="button button-secondary small">Small</a></li>
+  </ul>
+  <ul class="actions fit">
+    <li><a href="#" class="button button-secondary special fit">Fit</a></li>
+    <li><a href="#" class="button button-secondary fit">Fit</a></li>
+  </ul>
+  <ul class="actions fit small">
+    <li><a href="#" class="button button-secondary special fit small">Fit + Small</a></li>
+    <li><a href="#" class="button button-secondary fit small">Fit + Small</a></li>
+  </ul>
+  <ul class="actions">
+    <li><a href="#" class="button button-secondary special icon fa-search">Icon</a></li>
+    <li><a href="#" class="button button-secondary icon fa-download">Icon</a></li>
+  </ul>
+  <ul class="actions">
+    <li><span class="button button-secondary special disabled">Special</span></li>
+    <li><span class="button button-secondary disabled">Default</span></li>
+  </ul>
+</div>
 
 - - - - - - -
 
@@ -436,7 +437,6 @@ print 'It took ' + i + ' iterations to sort the deck.';
   ### Icons (default)
 
   <ul class="icons">
-    <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
     <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
     <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
     <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
@@ -450,7 +450,6 @@ print 'It took ' + i + ' iterations to sort the deck.';
   ### Icons (alternate)
 
   <ul class="icons alt">
-    <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
     <li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
     <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
     <li><a href="#" class="icon alt fa-github"><span class="label">Github</span></a></li>
@@ -1912,14 +1911,6 @@ print 'It took ' + i + ' iterations to sort the deck.';
     <li>
       <i class="fa fa-fw">&#xf08c</i>
       <span>fa-linkedin-square</span>
-    </li>
-    <li>
-      <i class="fa fa-fw">&#xf099</i>
-      <span>fa-twitter</span>
-    </li>
-    <li>
-      <i class="fa fa-fw">&#xf081</i>
-      <span>fa-twitter-square</span>
     </li>
     <li>
       <i class="fa fa-fw">&#xf09a</i>
