@@ -1,12 +1,9 @@
 ---
 title: Portals
-
-
 portals:
     headline: 'Curio vitae metus semper'
     byline:
         text: 'Pulvinar mollis. Vestibulum <a href="#">sem magna</a>, elementum vestibulum arcus.'
-        # class:
     items:
         -
             title: 'Joan Q. Public'
