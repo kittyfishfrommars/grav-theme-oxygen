@@ -20,12 +20,13 @@ form:
                             type: editor
                         header.mediaCollection:
                             disabled: true
-                            # label: Media
                             # type: file
                             type: pagemedia
-                            # destination: 'self@'
-                            # destination: 'image://'
+                            # label: Media
                             style: vertical
+                            destination: 'self@'
+                            # destination: 'image://shared'
+                            # folder: 'image://shared'
                             multiple: true
                             # limit: 255
                             random_name: false

@@ -66,8 +66,8 @@ form:
                                     help: Upload image
                                     style: vertical
                                     destination: 'self@'
-                                    # destination: image://portals
-                                    # folder: image://portals
+                                    # destination: 'image://shared'
+                                    # folder: 'image://shared'
                                     multiple: true
                                     # limit: 255
                                     random_name: false
