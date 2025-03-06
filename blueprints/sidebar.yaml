@@ -22,7 +22,7 @@ form:
                             collapsed: false
                             collapsible: true
                             # ordering@: content
-                            ordering@: header.pageOptions
+                            ordering@: header.banner
                             fields:
                                 .position:
                                     type: toggle

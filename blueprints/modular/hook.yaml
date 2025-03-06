@@ -14,7 +14,7 @@ form:
                     fields:
                         header.hook:
                             type: section
-                            title: Hook
+                            title: Module Hook
                             underline: true
                             fields:
                                 .left:
@@ -57,6 +57,30 @@ form:
                                                             -
                                                                 text: normal-case
                                                                 value: normal-case
+                                        .button:
+                                            type: fieldset
+                                            title: Button
+                                            underline: true
+                                            fields:
+                                                .text:
+                                                    type: text
+                                                    label: Text
+                                                    help: Button Text
+                                                .url:
+                                                    type: text
+                                                    label: URL
+                                                    help: External or internal link
+                                                .class:
+                                                    type: select
+                                                    label: (Optional) Class
+                                                    help: Additional class to apply to button.
+                                                    description: >
+                                                        <small><i>Aligns button on desktop. Always centered on mobile view.</i></small>
+                                                    default: 'text-left'
+                                                    options:
+                                                        'text-left': 'text-left'
+                                                        'text-center': 'text-center'
+                                                        'text-right': 'text-right'
                                 .right:
                                     type: section
                                     title: Right
@@ -97,27 +121,27 @@ form:
                                                             -
                                                                 text: normal-case
                                                                 value: normal-case
-                                .button:
-                                    type: section
-                                    title: Button
-                                    underline: true
-                                    fields:
-                                        .text:
-                                            type: text
-                                            label: Text
-                                            help: Button Text
-                                        .url:
-                                            type: text
-                                            label: URL
-                                            help: External or internal link
-                                        .class:
-                                            type: select
-                                            label: (Optional) Class
-                                            help: Additional class to apply to button.
-                                            description: >
-                                                <small><i>Aligns button on desktop. Always centered on mobile view.</i></small>
-                                            default: 'text-left'
-                                            options:
-                                                'text-left': 'text-left'
-                                                'text-center': 'text-center'
-                                                'text-right': 'text-right'
+                                        .button:
+                                            type: fieldset
+                                            title: Button
+                                            underline: true
+                                            fields:
+                                                .text:
+                                                    type: text
+                                                    label: Text
+                                                    help: Button Text
+                                                .url:
+                                                    type: text
+                                                    label: URL
+                                                    help: External or internal link
+                                                .class:
+                                                    type: select
+                                                    label: (Optional) Class
+                                                    help: Additional class to apply to button.
+                                                    description: >
+                                                        <small><i>Aligns button on desktop. Always centered on mobile view.</i></small>
+                                                    default: 'text-left'
+                                                    options:
+                                                        'text-left': 'text-left'
+                                                        'text-center': 'text-center'
+                                                        'text-right': 'text-right'

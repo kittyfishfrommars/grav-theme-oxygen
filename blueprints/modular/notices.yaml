@@ -14,7 +14,7 @@ form:
                     fields:
                         header.notices:
                             type: section
-                            title: Notices
+                            title: Module Notices
                             underline: true
                             fields:
                                 .headline:

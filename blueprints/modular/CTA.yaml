@@ -14,7 +14,7 @@ form:
                     fields:
                         header.cta:
                             type: section
-                            title: CTA
+                            title: Module CTA
                             underline: true
                             fields:
                                 .headline:
@@ -53,9 +53,10 @@ form:
                                                         text: normal-case
                                                         value: normal-case
                                 .button:
-                                    type: section
+                                    type: fieldset
                                     title: Button
                                     underline: true
+
                                     fields:
                                         .text:
                                             type: text

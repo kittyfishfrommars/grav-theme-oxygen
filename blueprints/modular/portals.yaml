@@ -14,7 +14,7 @@ form:
                     fields:
                         header.portals:
                             type: section
-                            title: Portals
+                            title: Module Portals
                             underline: true
                             fields:
                                 .headline:

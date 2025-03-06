@@ -14,7 +14,7 @@ form:
                     fields:
                         header.social:
                             type: section
-                            title: Social
+                            title: Module Social
                             underline: true
                             fields:
                                 .headline:
@@ -51,7 +51,7 @@ form:
                                                         text: normal-case
                                                         value: normal-case
                                 .button:
-                                    type: section
+                                    type: fieldset
                                     title: Button
                                     underline: true
                                     fields:

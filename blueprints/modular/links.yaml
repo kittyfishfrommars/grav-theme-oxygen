@@ -20,7 +20,7 @@ form:
                         # @end: DEFAULTS
                         header.links:
                             type: section
-                            title: Links
+                            title: Module Links
                             underline: true
                             fields:
                                 .headline:
