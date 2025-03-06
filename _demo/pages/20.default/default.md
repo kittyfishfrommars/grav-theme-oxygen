@@ -1,7 +1,7 @@
 ---
 title: Default
 content:
-    items: '@self.modular'
+    items: '@self.modules'
 
 banner:
     url: 'banner_default-1500x960_q100.webp'

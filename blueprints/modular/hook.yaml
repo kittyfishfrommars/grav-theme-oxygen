@@ -17,98 +17,22 @@ form:
                             title: Module Hook
                             underline: true
                             fields:
-                                .left:
-                                    type: section
-                                    title: Left
+                                .items:
+                                    type: list
+                                    style: vertical
                                     underline: true
                                     fields:
                                         .headline:
                                             type: text
                                             label: Headline
-                                            help: Short and catchy introduction.
+                                            help: One or two short words only.
                                         .byline:
                                             type: section
                                             fields:
                                                 .text:
                                                     type: textarea
                                                     label: Byline
-                                                    help: Text below headline
-                                                    rows: 3
-                                                .class:
-                                                    type: selectize
-                                                    label: (Optional) Class
-                                                    help: Classes to apply to text
-                                                    description: >
-                                                        <small><i>Choose one, multiple or leave blank (default).</i></small>
-                                                    selectize:
-                                                        options:
-                                                            -
-                                                                text: text-left
-                                                                value: text-left
-                                                            -
-                                                                text: text-right
-                                                                value: text-right
-                                                            -
-                                                                text: text-center
-                                                                value: text-center
-                                                            -
-                                                                text: text-justify
-                                                                value: text-justify
-                                                            -
-                                                                text: small
-                                                                value: small
-                                                            -
-                                                                text: bold
-                                                                value: bold
-                                                            -
-                                                                text: italic
-                                                                value: italic
-                                                            -
-                                                                text: uppercase
-                                                                value: uppercase
-                                                            -
-                                                                text: normal-case
-                                                                value: normal-case
-                                        .button:
-                                            type: fieldset
-                                            title: Button
-                                            underline: true
-                                            fields:
-                                                .text:
-                                                    type: text
-                                                    label: Text
-                                                    help: Button Text
-                                                .url:
-                                                    type: text
-                                                    label: URL
-                                                    help: External or internal link
-                                                .class:
-                                                    type: select
-                                                    label: (Optional) Class
-                                                    help: Additional class to apply to button.
-                                                    description: >
-                                                        <small><i>Aligns button on desktop. Always centered on mobile view.</i></small>
-                                                    default: 'text-center'
-                                                    options:
-                                                        'text-left': 'text-left'
-                                                        'text-center': 'text-center'
-                                                        'text-right': 'text-right'
-                                .right:
-                                    type: section
-                                    title: Right
-                                    underline: true
-                                    fields:
-                                        .headline:
-                                            type: text
-                                            label: Headline
-                                            help: Short and catchy introduction
-                                        .byline:
-                                            type: section
-                                            fields:
-                                                .text:
-                                                    type: textarea
-                                                    label: Byline
-                                                    help: Text below headline
+                                                    help: Short and catchy introduction.
                                                     rows: 3
                                                 .class:
                                                     type: selectize

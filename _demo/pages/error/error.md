@@ -1,7 +1,7 @@
 ---
 title: Oops...
 content:
-    items: '@self.modular'
+    items: '@self.modules'
 pageOptions:
     noIndex: true
 routable: false

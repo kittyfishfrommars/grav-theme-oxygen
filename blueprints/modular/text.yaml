@@ -10,7 +10,7 @@ form:
             fields:
                 content:
                     type: tab
-                    title: 'Text'
+                    title: Text
                     fields:
                         spacer:
                             type: section

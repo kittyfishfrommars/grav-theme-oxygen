@@ -7,7 +7,7 @@ sitemap:
   changefreq: weekly
   priority: !!float 1
 content:
-    items: '@self.modular'
+    items: '@self.modules'
     order:
         by: default
         dir: asc

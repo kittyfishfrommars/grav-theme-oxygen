@@ -15,7 +15,7 @@ form:
               # @start: DEFAULTS
               header.content.items:
                   type: hidden
-                  default: '@self.modular'
+                  default: '@self.modules'
               # @end: DEFAULTS
               spacer:
                 type: spacer

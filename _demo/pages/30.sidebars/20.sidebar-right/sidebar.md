@@ -5,7 +5,7 @@ sidebar:
   position: right
 
 content:
-    items: '@self.modular'
+    items: '@self.modules'
     order:
         by: default
         dir: asc

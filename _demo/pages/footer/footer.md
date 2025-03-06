@@ -3,7 +3,7 @@ title: Footer
 routable: false
 visible: false
 content:
-    items: '@self.modular'
+    items: '@self.modules'
 expires: 0
 pageOptions:
     noIndex: true
