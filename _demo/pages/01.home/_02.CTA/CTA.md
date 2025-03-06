@@ -1,7 +1,6 @@
 ---
 title: CTA
 
-
 cta:
     headline: Curio vitae metus semper
     byline: 

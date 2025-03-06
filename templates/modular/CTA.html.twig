@@ -5,7 +5,7 @@
 				<h2>{{ header.cta.headline|raw }}</h2>
 			</header>
 			<p class="color-link-secondary {{ header.cta.byline.class|replace({',': ' '}) }}">{{ header.cta.byline.text|raw }}</p>
-			<a href="{{ header.cta.button.url }}" class="button alt {{ header.cta.button.class|replace({',': ' '}) }}">{{ header.cta.button.text|raw }}</a>
+			<a href="{{ header.cta.button.url }}" class="button alt mt-1 {{ header.cta.button.class|replace({',': ' '}) }}">{{ header.cta.button.text|raw }}</a>
 		</section>
 	</div>
 {% endif %}
