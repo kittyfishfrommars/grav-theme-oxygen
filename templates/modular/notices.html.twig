@@ -1,7 +1,7 @@
-{% set columns = columns ?: 3 %}
-{% set column_units = column_units ?: (12 // columns) %}
 {% if page.header.notices %}
-{% set notices = page.header.notices %}
+	{% set columns = columns ?: 3 %}
+	{% set column_units = column_units ?: (12 // columns) %}
+	{% set notices = page.header.notices %}
 	<div class="wrapper style4 plain">
 		<section class="container">
 			<header class="major pb-2">

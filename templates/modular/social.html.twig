@@ -1,42 +1,42 @@
-{% set social = page.header.social %}
+{% if header.social %}
+	{% set social = page.header.social %}
+	<div class="social">
 
-<div class="social">
+		<section class="container">
+			<header class="major">
+				<h2>{{ social.headline|raw }}</h2>
+				<span class="byline {{ social.byline.class|replace({',': ' '}) }}">{{ social.byline.text|raw }}</span>
+			</header>
 
-	<section class="container">
-		<header class="major">
-			<h2>{{ social.headline|raw }}</h2>
-			<span class="byline {{ social.byline.class|replace({',': ' '}) }}">{{ social.byline.text|raw }}</span>
-		</header>
+			{% if social.button.text %}
+				<div class="mt-4 mb-2">
+					<a href="{{ social.button.url }}" class="button button-secondary icon {{ social.button.icon }} {{ social.button.class|replace({',': ' '}) }}">
+						{{ social.button.text }}
+					</a>
+				</div>
+			{% endif %}
 
-		{% if social.button.text %}
-			<div class="mt-4 mb-2">
-				<a href="{{ social.button.url }}" class="button button-secondary icon {{ social.button.icon }} {{ social.button.class|replace({',': ' '}) }}">
-					{{ social.button.text }}
-				</a>
-			</div>
-		{% endif %}
-
-		{% if social.icons.items %}
-			<ul class="icons {% if social.button.text %} pt-3 {% endif %}">
-			{% for item in social.icons.items %}
-				<li><a href="{{ item.url }}" class="fa {{ item.icon }}" aria-label="{{ item.title }}"><span>{{ item.title }}</span></a></li>
-			{% endfor %}
-			</ul>
-		{% endif %}
-
-		<hr />
-	</section>
-		{{ page.content|raw }}
-
-	{% if social.links.items %}
-		{% for post in taxonomy.findTaxonomy({'tag':'id-legal'}) %}
-			<ul class="social-links">
-				{% for item in social.links.items %}
-					{% set url = (item.url ? item.url : post.url) %}
-					<li><a href="{{ url }}{{ item.param }}">{{ item.title }}</a></li>
+			{% if social.icons.items %}
+				<ul class="icons {% if social.button.text %} pt-3 {% endif %}">
+				{% for item in social.icons.items %}
+					<li><a href="{{ item.url }}" class="fa {{ item.icon }}" aria-label="{{ item.title }}"><span>{{ item.title }}</span></a></li>
 				{% endfor %}
-			</ul>
-		{% endfor %}
-	{% endif %}
+				</ul>
+			{% endif %}
 
-</div>
+			<hr />
+		</section>
+
+		{% if social.links.items %}
+			{% for post in taxonomy.findTaxonomy({'tag':'id-legal'}) %}
+				<ul class="social-links">
+					{% for item in social.links.items %}
+						{% set url = (item.url ? item.url : post.url) %}
+						<li><a href="{{ url }}{{ item.param }}">{{ item.title }}</a></li>
+					{% endfor %}
+				</ul>
+			{% endfor %}
+		{% endif %}
+
+	</div>
+{% endif %}

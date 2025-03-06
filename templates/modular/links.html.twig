@@ -1,17 +1,15 @@
 
 {% if page.header.links %}
-{% set links = page.header.links %}
+	{% set links = page.header.links %}
 	<section>
 		{% if links.headline %}
 			<header class="major">
 				<h2>{{ links.headline|raw }}</h2>
 			</header>
 		{% endif %}
-
 		{% if links.byline.text %}
 			<p>{{ links.byline.text|raw }}</p>
 		{% endif %}
-
 		<ul class="default {{ links.type }}">
 			{% for item in links.items %}
 				<li>

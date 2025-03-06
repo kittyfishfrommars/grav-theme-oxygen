@@ -9,33 +9,32 @@
 <div id="main" class="wrapper style4 plain">
 	<div class="container">
 		<div class="row">
-
 			{% if page.header.sidebar.position|lower  == 'left' %}
 				<div id="sidebar" class="4u mb-3">
 					{% set modules = page.collection().ofType('modular/links') %}
-					{% include 'modular/modular.html.twig' with { 'modules' : modules } %}
+					{% if modules is not empty %}
+						{% include 'modular/modular.html.twig' with { 'modules' : modules } %}
+					{% endif %}
 				</div>
 			{% endif %}
-
-			<!-- Content besides Sidebar -->
 			<div id="content" class="8u skel-cell-important mb-3">
 				<section>
 					{% include 'partials/heading.html.twig' %}
 					{{ page.content|raw }}
 				</section>
 			</div>
-
 			{% if page.header.sidebar.position|lower  == 'right' %}
 				<div id="sidebar" class="4u">
 					{% set modules = page.collection().ofType('modular/links') %}
 					{% include 'modular/modular.html.twig' with { 'modules' : modules } %}
 				</div>
 			{% endif %}
-
 		</div>
 	</div>
 	{% set modules = page.collection()|filter(module => module.template != 'modular/links') %}
-	{% include 'modular/modular.html.twig' with { 'modules' : modules } %}
+	{% if modules is not empty %}
+		{% include 'modular/modular.html.twig' with { 'modules' : modules } %}
+	{% endif %}
 </div>
 
 {% endblock body %}
