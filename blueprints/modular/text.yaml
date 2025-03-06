@@ -19,15 +19,12 @@ form:
                         content:
                             type: editor
                         header.mediaCollection:
-                            # disabled: true
-                            # type: file
+                            disabled: true
                             # label: Media
-                            # help: Files are saved in a common location
+                            # type: file
                             type: pagemedia
                             # destination: 'self@'
-                            # destination: 'page://images'
-                            destination: 'image://'
-                            # folder: 'user://images'
+                            # destination: 'image://'
                             style: vertical
                             multiple: true
                             # limit: 255
