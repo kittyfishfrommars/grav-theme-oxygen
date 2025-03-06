@@ -3,14 +3,14 @@
 	{% set right = page.header.hook.right %}
 	{% set hasLeft = (left.headline) or (left.byline.text) or (left.button.text) %}
 	{% set hasRight = (right.headline) or (right.byline.text) or (right.button.text) %}
-	<div class="wrapper style2 evenpart">
+	<div class="wrapper hook evenpart">
 		<section class="container">
 			<div class="row double">
 
 				{% if hasLeft %}
 					<div class="{{ (hasRight) ? '6u' : '12u' }}">
 						<header class="major">
-							<h2>{{ left.headline|raw }}</h2>
+							<h2 class="text-center">{{ left.headline|raw }}</h2>
 							<span class="byline {{ left.byline.class|replace({',': ' '}) }}">{{ left.byline.text|raw }}</span>
 						</header>
 						{% if left.button.text %}
@@ -25,7 +25,7 @@
 					<div class="{{ (hasLeft) ? '6u' : '12u' }}">
 						<div>
 							<header class="major">
-								<h2>{{ right.headline|raw }}</h2>
+								<h2 class="text-center">{{ right.headline|raw }}</h2>
 								<span class="byline {{ right.byline.class|replace({',': ' '}) }}">{{ right.byline.text|raw }}</span>
 							</header>
 						</div>

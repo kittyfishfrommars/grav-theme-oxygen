@@ -43,6 +43,18 @@ form:
                                                     selectize:
                                                         options:
                                                             -
+                                                                text: text-left
+                                                                value: text-left
+                                                            -
+                                                                text: text-right
+                                                                value: text-right
+                                                            -
+                                                                text: text-center
+                                                                value: text-center
+                                                            -
+                                                                text: text-justify
+                                                                value: text-justify
+                                                            -
                                                                 text: small
                                                                 value: small
                                                             -
@@ -76,7 +88,7 @@ form:
                                                     help: Additional class to apply to button.
                                                     description: >
                                                         <small><i>Aligns button on desktop. Always centered on mobile view.</i></small>
-                                                    default: 'text-left'
+                                                    default: 'text-center'
                                                     options:
                                                         'text-left': 'text-left'
                                                         'text-center': 'text-center'
@@ -107,6 +119,18 @@ form:
                                                     selectize:
                                                         options:
                                                             -
+                                                                text: text-left
+                                                                value: text-left
+                                                            -
+                                                                text: text-right
+                                                                value: text-right
+                                                            -
+                                                                text: text-center
+                                                                value: text-center
+                                                            -
+                                                                text: text-justify
+                                                                value: text-justify
+                                                            -
                                                                 text: small
                                                                 value: small
                                                             -
@@ -140,7 +164,7 @@ form:
                                                     help: Additional class to apply to button.
                                                     description: >
                                                         <small><i>Aligns button on desktop. Always centered on mobile view.</i></small>
-                                                    default: 'text-left'
+                                                    default: 'text-center'
                                                     options:
                                                         'text-left': 'text-left'
                                                         'text-center': 'text-center'
