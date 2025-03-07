@@ -533,7 +533,7 @@ input[type = "button"].fit,
 
 .wrapper.hook {
     background-color: config.$color-bg-primary;
-    padding: 4rem 0 2rem 0;
+    padding: 4rem 0 2rem;
 }
 
 .wrapper.hook .major {
@@ -768,7 +768,7 @@ input[type = "button"].fit,
 /* Main */
 
 #main {
-    padding: 4em 0 0;
+    padding: 3rem 0 0;
 }
 
 #main #content .major, #main #sidebar .major {

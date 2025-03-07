@@ -127,6 +127,16 @@
     list-style-type: decimal !important;
 }
 
+/* BORDERS */
+
+.border-t-dashed {
+    border-top: 1px dashed config.$color-disabled;
+}
+
+.border-b-dashed {
+    border-bottom: 1px dashed config.$color-disabled;
+}
+
 /* TRANSPARENT BACKGROUND OVERLAY */
 
 .opacity-dark {

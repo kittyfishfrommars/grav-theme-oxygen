@@ -1,7 +1,7 @@
 {% if page.header.hook %}
 	{% set hook = page.header.hook %}
 	{% set isOdd = hook.items|length % 2 == 1 %}
-	<div class="wrapper hook">
+	<div class="wrapper hook border-t-dashed border-b-dashed">
 		<section class="container">
 			<div class="row double">
 				{% for item in hook.items %}
