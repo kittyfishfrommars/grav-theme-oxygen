@@ -1,41 +1,22 @@
 {% if page.header.hook %}
-	{% set left = page.header.hook.left %}
-	{% set right = page.header.hook.right %}
-	{% set hasLeft = (left.headline) or (left.byline.text) or (left.button.text) %}
-	{% set hasRight = (right.headline) or (right.byline.text) or (right.button.text) %}
-	<div class="wrapper hook evenpart">
+	{% set hook = page.header.hook %}
+	{% set isOdd = hook.items|length % 2 == 1 %}
+	<div class="wrapper hook">
 		<section class="container">
 			<div class="row double">
-
-				{% if hasLeft %}
-					<div class="{{ (hasRight) ? '6u' : '12u' }}">
+				{% for item in hook.items %}
+					<div class="mb-2 {{ (isOdd and (loop.index == 1) ) ? '12u' : '6u' }}">
 						<header class="major">
-							<h2 class="text-center">{{ left.headline|raw }}</h2>
-							<span class="byline {{ left.byline.class|replace({',': ' '}) }}">{{ left.byline.text|raw }}</span>
+							<h2 class="text-center">{{ item.headline|raw }}</h2>
+							<span class="byline {{ item.byline.class|replace({',': ' '}) }}">{{ item.byline.text|raw }}</span>
 						</header>
-						{% if left.button.text %}
-							<div class="mt-3 {{ left.button.class }}">
-								<a href="{{ left.button.url }}" class="button mb-1">{{ left.button.text|raw }}</a>
+						{% if item.button.text %}
+							<div class="mt-3 {{ item.button.class }}">
+								<a href="{{ item.button.url }}" class="button mb-0">{{ item.button.text|raw }}</a>
 							</div>
 						{% endif %}
 					</div>
-				{% endif %}
-
-				{% if hasRight %}
-					<div class="{{ (hasLeft) ? '6u' : '12u' }}">
-						<div>
-							<header class="major">
-								<h2 class="text-center">{{ right.headline|raw }}</h2>
-								<span class="byline {{ right.byline.class|replace({',': ' '}) }}">{{ right.byline.text|raw }}</span>
-							</header>
-						</div>
-						{% if right.button.text %}
-							<div class="mt-3 {{ right.button.class }}">
-								<a href="{{ right.button.url }}" class="button mb-1">{{ right.button.text|raw }}</a>
-							</div>
-						{% endif %}
-					</div>
-				{% endif %}
+				{% endfor %}
 
 			</div>
 		</section>

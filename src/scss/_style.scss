@@ -68,7 +68,7 @@ a.color-link-secondary,
 }
 
 strong, b {
-    font-weight: 700;
+    font-weight: 400;
 }
 
 em, i {
@@ -77,13 +77,12 @@ em, i {
 
 p {
     line-height: 1.5em;
-    margin-bottom: config.$margin-bottom * 2;
+    margin-bottom: config.$margin-bottom;
 }
 
-p.medium {
-    font-size: 1.4em;
+p + h1, p + h2, p + h3, p + h4, p + h5, p + h6 {
+    padding-top: config.$margin-bottom * 0.5;
 }
-
 
 sub {
     font-size: 0.8em;
@@ -532,22 +531,16 @@ input[type = "button"].fit,
     margin: 0;
 }
 
-.wrapper.hook,
-.wrapper.evenpart {
+.wrapper.hook {
     background-color: config.$color-bg-primary;
+    padding: 4rem 0 2rem 0;
 }
 
-.wrapper.evenpart {
-    padding-bottom: 4rem;
-}
-
-.wrapper.hook .major,
-.wrapper.evenpart .major {
+.wrapper.hook .major {
     text-align: left;
 }
 
-.wrapper.hook .major h2,
-.wrapper.evenpart .major h2 {
+.wrapper.hook .major h2 {
     display: block;
     font-size: 1.8em;
     font-weight: 400;
@@ -556,16 +549,14 @@ input[type = "button"].fit,
     text-transform: uppercase;
 }
 
-.wrapper.hook .major .byline,
-.wrapper.evenpart .major .byline {
+.wrapper.hook .major .byline{
     font-size: 1.2em;
     letter-spacing: normal;
     line-height: config.$line-height-headlines;
     text-transform: none;
 }
 
-.wrapper.hook h3,
-.wrapper.evenpart h3 {
+.wrapper.hook h3 {
     display: block;
     font-size: 1.6em;
     font-weight: 400;
