@@ -38,7 +38,6 @@ banner:
 ---
 
 The Oxygen Theme for Grav CMS is crazy fast, accessible and GDPR-compliant right out of the box. 
+Available for free, it's source code and build tools are available at <a href="https://github.com/kittyfishfrommars" target="_blank">github.com/kittyfishfrommars</a>. 
+Provided as-is for personal and commercial use. No strings attached. **Now with modular building blocks!**
 
-Oxygen's source code and build tools are available at <a href="https://github.com/kittyfishfrommars" target="_blank">github.com/kittyfishfrommars</a>. 
-
-Provided as-is and free for personal and commercial use. No strings attached. **Now with modular building blocks!**

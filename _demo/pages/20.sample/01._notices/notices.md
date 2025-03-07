@@ -11,22 +11,22 @@ notices:
         # (values) align-left-md | uppercase | normal-case | bold | small
         # class: ''
     items:
-        - title: Nulla luctus eleifend
+        - title: A tale about a kitten
           text: >
-            In posuere eleifend odio. Quisque semper augue. Maecenas ligula... <a href="#">read more</a>
+            In posuere eleifend odio. Quisque semper augue. Maecenas ligula.
           url: '#'
           icon: fa-github-alt
           # (values) color-primary | color-secondary | color-success | color-warning | color-danger
           iconColor: color-primary
-        - title: Etiam posuere augue
+        - title: an unlikely Friendship
           text: >
-            Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat... <a href="#">read more</a>
+            Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat.
           url: '#'
           icon: fa-heart
           iconColor: color-primary
-        - title: Fusce ultrices fringilla
+        - title: and Rocketry
           text: >
-            Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin orci... <a href="#">read more</a>
+            Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin orci.
           url: '#'
           icon: fa-rocket
           iconColor: color-primary
