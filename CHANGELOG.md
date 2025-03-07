@@ -2,15 +2,15 @@
 ##  18-03-2025
 
 1. [](#new)
-* **Oxygen v2.0.0 Breaking Changes:** This major release improves integration with the admin panel. Please import the [_demo/pages](https://github.com/kittyfishfrommars/grav-theme-oxygen/tree/main/_demo/pages) for a new data structure
+* **Oxygen v2.0.0 Breaking Changes:** This major release improves integration with the admin panel. Please import all [_demo](https://github.com/kittyfishfrommars/grav-theme-oxygen/tree/main/_demo) content for a new data structure
 * Introduce modules as building blocks
-* [#3](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/3) Add admin panel integration
+* [#3](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/3) Add configurable pages
 * [#7](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/7) Add dynamic footer links
 * [#6](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/6) Add full-width hook section
 2. [](#improved)
-* Layout fixes: hover styles to main navigation, font-sizes, margins/paddings
-* Add cs language support to sitemap, thanks [@petira](https://github.com/petira)
 * Improved and simplified error and sitemap pages
+* Add cs language support to sitemap, thanks [@petira](https://github.com/petira)
+* Layout fixes: hover styles to main navigation, font-sizes, margins/paddings
 * [#11](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/11) Add CSS or image float in content
 * [#8](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/2) Allow link lists with relative URLs in admin panel
 * [#5](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/2) Update README with more detailed [Setup Instructions](https://github.com/kittyfishfrommars/grav-theme-oxygen/tree/main?tab=readme-ov-file#setup)
@@ -18,6 +18,7 @@
 * [#4](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/4) Correctly save footer values in admin panel
 * [#2](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/2) Fix fontawesome reference for inherited themes
 * [#1](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/1) Update sidebar examples
+* ...and whimsical sample story
 
 # v1.0.4
 ##  14-10-2024
