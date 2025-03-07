@@ -1,5 +1,5 @@
 ---
-title: Home
+title: "Look, It's Kittyfish from Mars."
 menu: Home
 
 # grav-plugin-sitemap overrides
@@ -37,4 +37,8 @@ banner:
 
 ---
 
-This paragraph intentionally serves no function. Content is configured via modules.
+The Oxygen Theme for Grav CMS is crazy fast, accessible and GDPR-compliant right out of the box. 
+
+Oxygen's source code and build tools are available at <a href="https://github.com/kittyfishfrommars" target="_blank">github.com/kittyfishfrommars</a>. 
+
+Provided as-is and free for personal and commercial use. No strings attached. **Now with modular building blocks!**
