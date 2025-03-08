@@ -644,19 +644,18 @@ input[type = "button"].fit,
     display: inline-block;
     position: absolute;
     right: 0;
-    top: 20px;
+    top: 0;
 }
 
 #nav > ul {
     margin: 0;
-    position: relative;
+    position: static;
 }
 
 #nav > ul > li {
-    border-radius: 80px;
     display: inline-block;
-    margin-left: 0.25em;
-    padding: 0 0.5em;
+    margin: 0;
+    padding: 1.7rem 0.5rem 1rem;
 }
 
 #nav > ul > li a {
@@ -666,10 +665,6 @@ input[type = "button"].fit,
     letter-spacing: 2px;
     text-decoration: none;
     text-transform: uppercase;
-}
-
-#nav > ul > li:first-child {
-    margin-left: 0;
 }
 
 .dropotron a.nav-active, 
@@ -689,12 +684,11 @@ input[type = "button"].fit,
     border-radius: 4px;
     color: config.$color-secondary;
     list-style-type: none !important;
-    margin: 0;
-    min-width: 20rem;
+    margin: 0 0 0 -2rem;
     padding: 0;
 }
 
-.dropotron > li {
+.dropotron li {
     border-top: solid 1px config.$color-nav-border;
     line-height: 1.5em;
     list-style-type: none !important;

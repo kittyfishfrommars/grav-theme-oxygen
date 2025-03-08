@@ -5,9 +5,14 @@
 @media ( width <= 1280px ) {
 
     #logo {
-        font-size: 100%;
+        font-size: 120%;
         font-weight: bold;
-        line-height: 4.1em !important;
+        line-height: 3.5em !important;
+    }
+
+    #nav > ul > li {
+        padding-bottom: 0.5rem;
+        padding-top: 1.1rem;
     }
 
     #banner {

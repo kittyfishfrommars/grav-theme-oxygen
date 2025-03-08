@@ -25,8 +25,13 @@
 	{% endblock %}
 
 	{% block javascripts %}
-		{% do assets.addJs('theme://vendor/js/jquery-3.7.1.min.js?fp=4702', {group: 'delay', loading: 'defer'}) %}
-		{% do assets.addJs('theme://vendor/js/jquery.dropotron.min.js?fp=4702', {group: 'delay', loading: 'defer'}) %}
+		{% if (config.theme.jquery == 1) %}
+			{% do assets.addJs('theme://vendor/js/jquery-3.7.1.min.js?fp=4702', {group: 'delay', loading: 'defer'}) %}
+		{% endif %}
+		{% do assets.addJs('theme://vendor/js/dropdown.min.js?fp=4702', {group: 'delay', loading: 'defer'}) %}
+		{% if (config.theme.dropdown == 1) %}
+			{% do assets.addJs('theme://vendor/js/jquery.dropotron.min.js?fp=4702', {group: 'delay', loading: 'defer'}) %}
+		{% endif %}
 		{% do assets.addJs('theme://vendor/js/skel.min.js?fp=4702', {group: 'delay', loading: 'defer'}) %}
 		{% do assets.addJs('theme://vendor/js/skel-layers.min.js?fp=4702', {group: 'delay', loading: 'defer'}) %}
 		{% do assets.addJs('theme://dist/js/scripts.js?fp=4702', {group: 'delay', loading: 'defer'}) %}
@@ -42,21 +47,17 @@
 <body>
 
 	{% block header %}
-
 		<div class="wrapper style1">
 			<div id="header">
 				<div class="container">
 					<a href="{{ addSlash(home_url) }}" id="logo">{{ site.title }}</a>
-					<nav id="nav">
 						{% include 'partials/navigation.html.twig' %}
-					</nav>
 				</div>
 			</div>
 
 			{% block banner %}{% endblock banner %}
 
 		</div>
-
 	{% endblock header %}
 
 	{% block body %}
