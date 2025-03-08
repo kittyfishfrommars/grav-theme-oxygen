@@ -14,8 +14,9 @@
 		<section class="mb-3">
 			{% include 'partials/heading.html.twig' with {title: 'Fabien'} %}
 			{% set msgError = 'PLUGIN_ERROR.ERROR_MESSAGE'|t %}
-			{% set sitemap = base.url ~ '/sitemap' %}
-			{{ msgError|replace({'%SITEMAP%': '<a href="' ~ sitemap ~ '">' ~ 'PLUGIN_SITEMAP.TITLE_SITEMAP'|t ~ '</a>'})|t|raw }}
+			{% set url = base_url_simple ~ '/sitemap' %}
+
+			{{ msgError|replace({'%SITEMAP%': '<a href="' ~ url ~ '">' ~ 'PLUGIN_SITEMAP.TITLE_SITEMAP'|t ~ '</a>'})|t|raw }}
 		</section>
 		<section>
 			{{ page.content|raw }}
