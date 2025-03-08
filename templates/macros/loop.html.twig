@@ -2,7 +2,7 @@
 {% import _self as macros %}
 
     {% for p in page.children.visible %}
-        {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
+        {% set current_page = (p.active or p.activeChild) ? 'nav-active' : '' %}
         {% if p.children.visible.count > 0 %}
             <li class="has-children {{ current_page }}">
                 <a class="{{ current_page ? 'nav-active' }}" href="{{ p.url }}">

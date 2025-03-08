@@ -641,17 +641,19 @@ input[type = "button"].fit,
 }
 
 #nav {
+    display: inline-block;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 20px;
 }
 
 #nav > ul {
     margin: 0;
+    position: relative;
 }
 
 #nav > ul > li {
-    border-radius: 4px;
+    border-radius: 80px;
     display: inline-block;
     margin-left: 0.25em;
     padding: 0 0.5em;
@@ -662,7 +664,6 @@ input[type = "button"].fit,
     font-size: 1em;
     font-weight: 400;
     letter-spacing: 2px;
-    line-height: 4em;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -671,11 +672,9 @@ input[type = "button"].fit,
     margin-left: 0;
 }
 
-#nav > ul > li.active a {
-    color: config.$color-secondary;
-}
-
-#nav > ul > li a.nav-active, #nav > ul > li a:hover  {
+.dropotron a.nav-active, 
+#nav a.nav-active, 
+#nav > ul > li a:hover  {
     color: config.$color-nav-active;
 }
 
@@ -690,10 +689,9 @@ input[type = "button"].fit,
     border-radius: 4px;
     color: config.$color-secondary;
     list-style-type: none !important;
-    margin: 0 0 0 -3rem;
+    margin: 0;
     min-width: 20rem;
-    padding: 0 0 0.5rem;
-    top: 2em;
+    padding: 0;
 }
 
 .dropotron > li {
@@ -704,7 +702,11 @@ input[type = "button"].fit,
 }
 
 .dropotron > li:first-child {
-    border-top: solid 1px transparent;
+    border-top: 0.25em solid config.$color-nav-bg;
+}
+
+.dropotron > li:last-child {
+    border-bottom: 0.25em solid config.$color-nav-bg;
 }
 
 .dropotron > li > a {
