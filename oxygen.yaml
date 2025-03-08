@@ -5,3 +5,6 @@ enabled: true
 index: false
 # if main navigation should display submenus in a dropdown on desktop
 dropdown: true
+# if jquery should be included, only necessary for some other plugins
+# TODO https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/14
+jquery: true

@@ -134,8 +134,6 @@ Manually updating this theme is pretty simple. Here is what you will need to do 
 
 #### Enable site-wide indexing
 
-For a granular approach to indexing per page, please refer to Grav's [#page-options].
-
 By default Oxygen additionally instructs [search engines](https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag) to not index any content, so you can setup your new site in your own time. Once you are ready to go live you have two ways to remove the `noindex` meta tag:
 
 **Method 1: Admin Panel**
@@ -148,7 +146,7 @@ Enable indexing through the [Grav Admin Panel](https://github.com/getgrav/grav-p
 
 **Method 2: Manual Edit**
 
-Create [user/env/mysite.com/config/themes/oxygen.yaml](https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/_demo/config/env/mysite.com/config/themes/oxygen.yaml) and its contents. Then rename the folder `mysite.com` to your production url without `www`. 
+Copy [user/env/mysite.com/config/themes/oxygen.yaml](https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/_demo/config/env/mysite.com/config/themes/oxygen.yaml). Then rename the folder `mysite.com` to your production url without `www`. 
 
 Enable indexing by setting this key/value pair:
 
@@ -183,7 +181,7 @@ pageOptions:
 
 ### Environments
 
-For optimal perfomance in your production environment, create [user/env/mysite.com/config/system.yaml](https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/_demo/env/mysite.com/system.yaml) and its contents. Then rename the folder `mysite.com` to your production url without `www`.
+For optimal perfomance in your production environment, copy [user/env/mysite.com/config/system.yaml](https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/_demo/env/mysite.com/system.yaml). Then rename the folder `mysite.com` to your production url without `www`.
 
 
 ## Build Tools

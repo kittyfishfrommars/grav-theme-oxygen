@@ -11,7 +11,8 @@
       "dist": "dist",
       "fingerprint": [
         "templates/partials/base.html.twig",
-        "templates/partials/banner.html.twig"
-    ]
+        "templates/partials/banner.html.twig",
+        "templates/modular/portals.html.twig"
+      ]
     }
  }  

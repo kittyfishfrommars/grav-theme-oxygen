@@ -1,10 +1,9 @@
 /*
 	Deferred startup Javascript
 */
+(function() {
 
-(function($) {
-
-	// skel.js options
+	// Skel.js
 	skel.init({
 		reset: 'full',
 		breakpoints: {
@@ -42,21 +41,9 @@
 		}
 	});
 
-	// Dropdown
-	var	$window = $(window),
-		$body = $('body');
-
-	// Disable animations/transitions until page has loaded
-	$body.addClass('loading');
-
-	$window.on('load', function() {
-		$body.removeClass('loading');
-	});
-
-	// Submenus
-	// Documentation: https://github.com/ajlkn/jquery.dropotron
+	// Dropotron
 	$('#nav > ul').dropotron({
-		offsetY: 0,
+		offsetY: -3,
 		offsetX: -58,
 		expandMode: 'hover',
 		hoverDelay: 0,
@@ -64,6 +51,7 @@
 		mode: 'slide',
 		speed: 0,
 		noOpenerFade: true,
+		detach: true,
+		cloneOnDetach: true
 	});
-
-})(jQuery);
+})();

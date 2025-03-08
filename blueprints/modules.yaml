@@ -1,0 +1,17 @@
+title: Modules
+
+form:
+    fields:
+        tabs:
+            type: tabs
+            active: 1
+            fields:
+                content:
+                    fields:
+                        # @start: DEFAULTS
+                        # add a title to every module
+                        header.title:
+                            type: text
+                            label: Title
+                            style: vertical
+                        # @end: DEFAULTS

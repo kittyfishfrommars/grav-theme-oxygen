@@ -1,14 +1,15 @@
 ---
 # title: 'Impressum'
 title: 'Contact'
-# subtitle: 'Integer sit amet pede vel arcu aliquet pretium'
 menu: 'Contact'
 # slug: 'Impressum'
 slug: 'contact'
 visible: true
+content:
+    items: '@self.modules'
 pageOptions:
    # set noIndex to true to disable indexing of this page
-    noIndex: false
+   noIndex: false
 # grav-plugin-sitemap overrides
 sitemap:
    changefreq: monthly
@@ -16,9 +17,9 @@ sitemap:
    # disallow indexing via sitemap.xml plugin
    ignore: false
 # do not change taxonomy definition
-# unique category is an identifier in templates/partials/footer.html.twig
+# id category is an identifier in templates/partials/footer.html.twig
 taxonomy:
-   tag: 'unique-legal'
+   tag: 'id-legal'
 ---
 
 ### Legal Notice {#legal}
@@ -39,12 +40,12 @@ VAT ID: DE 000 000 009
 Julie Citizen, Hillside 9, 50555 Capitol City
 </div>
 
-### Credits {#credits .pt-3}
+### License {#license .pt-3}
 <div class="color-link-text" markdown="1">
 * Theme "Oxygen" developed by [kittyfishfrommars](https://github.com/Kittyfishfrommars) under the [MIT License](https://github.com/Kittyfishfrommars/grav-theme-oxygen/blob/main/LICENSE), for modifications see [Changelog](https://github.com/Kittyfishfrommars/grav-theme-oxygen/blob/main/CHANGELOG.md)
 * Based on the "Solarize" Grav port by [hughbris](https://github.com/hughbris/grav-theme-solarize/) under the [MIT License](https://github.com/hughbris/grav-theme-solarize/blob/develop/LICENSE)
 * Developed for [Grav CMS](https://getgrav.org/) under the [MIT License](https://github.com/getgrav/grav/blob/master/LICENSE.txt)
-* Header image created by [DeepAI](https://deepai.org/machine-learning-model/text2img) under its [Generated Content License](https://deepai.org/terms-of-service/terms-of-service)
+* Header image and whimsical sample story created with the help of [DeepAI](https://deepai.org/machine-learning-model/text2img) under its [Generated Content License](https://deepai.org/terms-of-service/terms-of-service)
 * Design inspired by [templated.co](https://templated.co) under the [Creative Commons 3.0 Attribution License](https://creativecommons.org/licenses/by/3.0/)
 * Font Awesome 4.0.3 by @davegandy - [fontawesome.io](http://fontawesome.io) - @fontawesome
 License - [fontawesome.io/license](https://fontawesome.io/license) (Font: SIL OFL 1.1, CSS: MIT License)

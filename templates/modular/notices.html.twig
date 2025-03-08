@@ -1,0 +1,30 @@
+{% if page.header.notices %}
+	{% set columns = columns ?: 3 %}
+	{% set column_units = column_units ?: (12 // columns) %}
+	{% set notices = page.header.notices %}
+	<div class="wrapper style4 plain">
+		<section class="container">
+			<header class="major pb-2">
+				<h2>{{ notices.headline|raw }}</h2>
+				<span class="byline {{ notices.byline.class|replace({',': ' '}) }}">{{ notices.byline.text|raw }}</span>
+			</header>
+				<div class="clearfix">
+					<ul class="special-icons grid-default">
+					{% for item in notices.items %}
+						<li class="special-icons-{{ loop.index }}">
+							<span class="fa {{ item.iconColor ? : 'color-primary' }} {{ item.icon }}"></span>
+							<h3>{% spaceless %}
+								{% if item.url %}
+									<a href="{{ item.url }}">{{ item.title|raw }}</a>
+								{% else %}
+									{{ item.title|raw }}
+								{% endif %}
+							{% endspaceless %}</h3>
+							<p>{{ item.text|raw }}</p>
+						</li>
+					{% endfor %}			
+					</ul>
+				</div>
+		</section>
+	</div>
+{% endif %}

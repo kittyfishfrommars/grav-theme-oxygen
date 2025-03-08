@@ -22,7 +22,7 @@ class Oxygen extends Theme {
         // pass function getUrl to template engine
         $this->grav['twig']->twig->addFunction($addSlash);
 
-        /*  MODULAR LINKS
+        /*  getUrl($path) - adds a trailing slash to navigation links, if needed
             twig: {{ getUrl(path) }}
             Allows defined paths to be reused across the site by
             calculating the url from webroot, supporting #anchors.
