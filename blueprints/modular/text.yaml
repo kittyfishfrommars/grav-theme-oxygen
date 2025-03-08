@@ -55,8 +55,8 @@ form:
                                             type: select
                                             label: (Optional) Class
                                             help: Additional class to apply to button.
-                                            description: >
-                                                <small><i>Aligns button on desktop. Always centered on mobile view.</i></small>
+                                            sublabel: >
+                                                <small>Aligns button on desktop. Always centered on mobile view.</small>
                                             default: 'text-left'
                                             options:
                                                 'text-left': 'text-left'

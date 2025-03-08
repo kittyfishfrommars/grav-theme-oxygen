@@ -64,7 +64,7 @@ form:
                                             label: URL
                                             help: >
                                                 External or internal link. Leave blank if your title should not be clickable.
-                                        .description:
+                                        .sublabel:
                                             type: text
                                             label: (Optional) Description
                                             help: >

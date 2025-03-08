@@ -44,9 +44,8 @@ form:
         index:
             type: toggle
             label: Search Engine Index
-            description: >
-                <small>Allow this website to be indexed by search
-                engines, individual page exceptions may apply (default: disabled).</small>
+            sublabel: >
+                <small>Allow this website to be indexed by search engines, individual page exceptions may apply (default: disabled).</small>
             default: false
             highlight: true
             options:
@@ -57,7 +56,7 @@ form:
         dropdown:
             type: toggle
             label: Dropdown in Navigation
-            description: >
+            sublabel: >
                 <small>Desktop navigation: Display submenus in a dropdown (default: enabled).</small>
             default: 1
             highlight: 1
@@ -69,7 +68,7 @@ form:
         jquery:
             type: toggle
             label: Load jQuery
-            description: >
+            sublabel: >
                 <small>Include jQuery library from theme folder (default: enabled).</small>
             default: 1
             highlight: 1

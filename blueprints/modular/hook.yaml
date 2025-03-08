@@ -38,8 +38,8 @@ form:
                                                     type: selectize
                                                     label: (Optional) Class
                                                     help: Classes to apply to text
-                                                    description: >
-                                                        <small><i>Choose one, multiple or leave blank (default).</i></small>
+                                                    sublabel: >
+                                                        <small>Choose one, multiple or leave blank (default).</small>
                                                     selectize:
                                                         options:
                                                             -
@@ -86,8 +86,8 @@ form:
                                                     type: select
                                                     label: (Optional) Class
                                                     help: Additional class to apply to button.
-                                                    description: >
-                                                        <small><i>Aligns button on desktop. Always centered on mobile view.</i></small>
+                                                    sublabel: >
+                                                        <small>Aligns button on desktop. Always centered on mobile view.</small>
                                                     default: 'text-center'
                                                     options:
                                                         'text-left': 'text-left'

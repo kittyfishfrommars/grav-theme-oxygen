@@ -32,8 +32,8 @@ form:
                                             type: selectize
                                             label: (Optional) Class
                                             help: Classes to apply to text
-                                            description: >
-                                                <small><i>Choose one, multiple or leave blank (default).</i></small>
+                                            sublabel: >
+                                                <small>Choose one, multiple or leave blank (default).</small>
                                             selectize:
                                                 options:
                                                     -
@@ -73,14 +73,14 @@ form:
                                             type: text
                                             label: URL
                                             help: Read More target
-                                            description: >
-                                                <small><i>Leave blank for none (default).</i></small>
+                                            sublabel: >
+                                                <small>Leave blank for none (default).</small>
                                         .icon:
                                             type: text
                                             label: icon
                                             help: Icon identifier
-                                            description: >
-                                                <small><i>Refer to Elements page for available icon names.</i></small>
+                                            sublabel: >
+                                                <small>Refer to Elements page for available icon names.</small>
                                             default: fa-leaf
                                         .iconColor:
                                             type: select

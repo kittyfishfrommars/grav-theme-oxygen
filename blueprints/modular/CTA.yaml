@@ -33,8 +33,8 @@ form:
                                             type: selectize
                                             label: (Optional) Class
                                             help: Classes to apply to text
-                                            description: >
-                                                <small><i>Choose one, multiple or leave blank (default).</i></small>
+                                            sublabel: >
+                                                <small>Choose one, multiple or leave blank (default).</small>
                                             selectize:
                                                 options:
                                                     -
@@ -70,8 +70,8 @@ form:
                                             type: selectize
                                             label: (Optional) Class
                                             help: Additional classes to apply to button
-                                            description: >
-                                                <small><i>Choose one, multiple or leave blank (default).</i></small>
+                                            sublabel: >
+                                                <small>Choose one, multiple or leave blank (default).</small>
                                             selectize:
                                                 options:
                                                     -

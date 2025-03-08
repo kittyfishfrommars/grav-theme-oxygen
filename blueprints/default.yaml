@@ -42,7 +42,7 @@ form:
                   #   type: file
                   #   # type: pagemedia
                   #   label: Upload image
-                  #   description: >
+                  #   sublabel: >
                   #       <i>Recommended size: 1500x960px.</i>
                   #   style: vertical
                   #   destination: 'image://banner'
@@ -58,8 +58,8 @@ form:
                     # folder: 'image://banner'
                     label: Image
                     help: 'Leave blank for none.'
-                    description: >
-                      <small><i>Recommended size: 1500x960px. Leave blank for none.</i></small>
+                    sublabel: >
+                      <small>Recommended size: 1500x960px. Leave blank for none.</small>
                     preview_images: true
                     accept:
                       - image/*
@@ -80,7 +80,7 @@ form:
                   #   type: selectize
                   #   label: (Optional) Follower class
                   #   help: 'Custom pre-defined CSS classes.'
-                  #   description: <small><i>Choose one, multiple or leave blank (default).</i></small>
+                  #   sublabel: <small>Choose one, multiple or leave blank (default).</small>
                   #   selectize:
                   #       options:
                   #         - text: 'opacity-dark'
@@ -107,8 +107,8 @@ form:
                   #   type: selectize
                   #   label: (Optional) Blurb class
                   #   help: 'Custom pre-defined CSS classes.'
-                  #   description: >
-                  #       <small><i>Choose one, multiple or leave blank (default).</i></small>
+                  #   sublabel: >
+                  #       <small>Choose one, multiple or leave blank (default).</small>
                   #   selectize:
                   #       options:
                   #         - text: 'opacity-dark'

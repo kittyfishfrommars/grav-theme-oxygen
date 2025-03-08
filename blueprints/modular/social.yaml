@@ -31,8 +31,8 @@ form:
                                             type: selectize
                                             label: (Optional) Class
                                             help: Classes to apply to text
-                                            description: >
-                                                <small><i>Choose one, multiple or leave blank (default).</i></small>
+                                            sublabel: >
+                                                <small>Choose one, multiple or leave blank (default).</small>
                                             selectize:
                                                 options:
                                                     -
@@ -67,8 +67,8 @@ form:
                                             type: text
                                             label: Icon
                                             help: Icon identifier
-                                            description: >
-                                                <small><i>Refer to Elements page for available icon names.</i></small>
+                                            sublabel: >
+                                                <small>Refer to Elements page for available icon names.</small>
                                             default: fa-envelope-o
                                         .class:
                                             type: selectize
@@ -112,8 +112,8 @@ form:
                                                     type: text
                                                     label: Icon
                                                     help: Icon identifier
-                                                    description: >
-                                                        <small><i>Refer to Elements page for available icon names.</i></small>
+                                                    sublabel: >
+                                                        <small>Refer to Elements page for available icon names.</small>
                                                     default: fa-star-o
                                 .links:
                                     type: section
@@ -133,11 +133,11 @@ form:
                                                     type: text
                                                     label: URL
                                                     help: Link target
-                                                    description: >
-                                                        <small><i>Automatically links to legal page if left blank.</i></small>
+                                                    sublabel: >
+                                                        <small>Automatically links to legal page if left blank.</small>
                                                 .param:
                                                     type: text
                                                     label: (Optional) Parameter
                                                     help: Parameter to append to URL
-                                                    description: >
-                                                        <small><i>Appends to URL, ie. anchor link #id.</i></small>
+                                                    sublabel: >
+                                                        <small>Appends to URL, ie. anchor link #id.</small>
