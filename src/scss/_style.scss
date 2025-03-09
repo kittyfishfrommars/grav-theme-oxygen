@@ -143,6 +143,10 @@ header.major {
     h1, h2, h3, h4 {
         font-weight: bold;
     }
+
+    .byline {
+        text-transform: none;
+    }
 }
 
 header.major h1 {
