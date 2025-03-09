@@ -43,6 +43,11 @@ h3 {
     font-size: 1.25em;
 }
 
+h5 {
+    font-weight: 300;
+    font-size: 1.25em;
+}
+
 a {
     color: config.$color-link-default;
     text-decoration: underline;
@@ -568,7 +573,6 @@ input[type = "button"].fit,
     text-transform: uppercase;
 }
 
-.wrapper.style3,
 .wrapper.cta {
     background-color: config.$color-primary;
     color: config.$color-secondary;
@@ -576,13 +580,11 @@ input[type = "button"].fit,
     text-align: center;
 }
 
-.wrapper.style3 .container,
 .wrapper.cta .container {
     padding-left: 6em;
     padding-right: 6em;
 }
 
-.wrapper.style3 p,
 .wrapper.cta p {
     font-size: 1.4em;
 }
@@ -595,22 +597,19 @@ input[type = "button"].fit,
     padding-bottom: 4rem;
 }
 
-.wrapper.style5,
 .wrapper.portals {
     background-color: config.$color-primary;
     color: config.$color-secondary;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     text-align: center;
 }
 
-.wrapper.style5 .image,
 .wrapper.portals .image {
     display: block;
     margin: 0 auto 2em;
     width: 60%;
 }
 
-.wrapper.style5 .image img,
 .wrapper.portals .image img {
     border: 10px solid;
     border-color: config.$color-secondary;
