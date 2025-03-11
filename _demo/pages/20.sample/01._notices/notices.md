@@ -20,7 +20,7 @@ notices:
           iconColor: color-primary
         - title: an unlikely Friendship
           text: >
-            Do mechanical fish snack on electric shrimp?
+            Do mechanical fish ride electrical bikes?
           url: '#'
           icon: fa-heart
           iconColor: color-primary

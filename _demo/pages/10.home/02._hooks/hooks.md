@@ -22,5 +22,5 @@ hooks:
             button:
                 class: 'text-center'
                 text: Login
-                url: 'admin'
+                url: 'admin/themes/oxygen'
 ---
