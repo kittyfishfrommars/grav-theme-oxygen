@@ -3,7 +3,7 @@ title: Notices
 notices:
     headline: 'Curio vitae metus semper'
     byline:
-        text: "pulvinar mollis. Vestibulum sem magna, elementum vestibulum arcu.\n"
+        text: "Pulvinar mollis. Vestibulum sem magna, elementum vestibulum arcu.\n"
     items:
         -
             title: 'Nulla luctus eleifend'
