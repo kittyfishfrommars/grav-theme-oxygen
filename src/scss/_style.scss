@@ -573,19 +573,19 @@ input[type = "button"].fit,
     text-transform: uppercase;
 }
 
-.wrapper.cta {
+.wrapper.callout {
     background-color: config.$color-primary;
     color: config.$color-secondary;
     padding-bottom: 4rem;
     text-align: center;
 }
 
-.wrapper.cta .container {
+.wrapper.callout .container {
     padding-left: 6em;
     padding-right: 6em;
 }
 
-.wrapper.cta p {
+.wrapper.callout p {
     font-size: 1.4em;
 }
 

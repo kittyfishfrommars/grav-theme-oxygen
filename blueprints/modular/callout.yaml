@@ -1,4 +1,4 @@
-title: CTA
+title: callout
 extends@:
   type: modules
 
@@ -10,11 +10,11 @@ form:
             fields:
                 content:
                     type: tab
-                    title: CTA
+                    title: callout
                     fields:
-                        header.cta:
+                        header.callout:
                             type: section
-                            title: Module CTA
+                            title: Module callout
                             underline: true
                             fields:
                                 .headline:
