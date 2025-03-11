@@ -1,4 +1,4 @@
-title: Hook
+title: Hooks
 extends@:
   type: modules
 
@@ -10,11 +10,11 @@ form:
             fields:
                 content:
                     type: tab
-                    title: Hook
+                    title: hooks
                     fields:
-                        header.hook:
+                        header.hooks:
                             type: section
-                            title: Module Hook
+                            title: Module hooks
                             underline: true
                             fields:
                                 .items:

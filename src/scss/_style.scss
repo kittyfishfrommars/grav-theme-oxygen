@@ -540,16 +540,16 @@ input[type = "button"].fit,
     margin: 0;
 }
 
-.wrapper.hook {
+.wrapper.hooks {
     background-color: config.$color-bg-primary;
     padding: 4rem 0 2rem;
 }
 
-.wrapper.hook .major {
+.wrapper.hooks .major {
     text-align: left;
 }
 
-.wrapper.hook .major h2 {
+.wrapper.hooks .major h2 {
     display: block;
     font-size: 1.8em;
     font-weight: 400;
@@ -558,14 +558,14 @@ input[type = "button"].fit,
     text-transform: uppercase;
 }
 
-.wrapper.hook .major .byline{
+.wrapper.hooks .major .byline{
     font-size: 1.2em;
     letter-spacing: normal;
     line-height: config.$line-height-headlines;
     text-transform: none;
 }
 
-.wrapper.hook h3 {
+.wrapper.hooks h3 {
     display: block;
     font-size: 1.6em;
     font-weight: 400;

@@ -1,10 +1,10 @@
-{% if page.header.hook %}
-	{% set hook = page.header.hook %}
-	{% set isOdd = hook.items|length % 2 == 1 %}
-	<div class="wrapper hook border-t-dashed border-b-dashed">
+{% if page.header.hooks %}
+	{% set hooks = page.header.hooks %}
+	{% set isOdd = hooks.items|length % 2 == 1 %}
+	<div class="wrapper hooks border-t-dashed border-b-dashed">
 		<section class="container">
 			<div class="row double">
-				{% for item in hook.items %}
+				{% for item in hooks.items %}
 					<div class="mb-2 {{ (isOdd and (loop.index == 1) ) ? '12u' : '6u' }}">
 						<header class="major">
 							<h2 class="text-center">{{ item.headline|raw }}</h2>

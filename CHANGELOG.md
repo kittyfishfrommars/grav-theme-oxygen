@@ -6,7 +6,7 @@
 * Introduce modules as building blocks
 * [#3](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/3) Add configurable pages
 * [#7](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/7) Add dynamic footer links
-* [#6](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/6) Add full-width hook section
+* [#6](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/6) Add full-width hooks section
 2. [](#improved)
 * Improved and simplified error and sitemap pages
 * Add cs language support to sitemap, thanks [@petira](https://github.com/petira)
