@@ -199,12 +199,12 @@
         padding: 1em 0;
     }
 
-    .social-links li {
+    .socials-links li {
         display: block;
         float: none;
     }
 
-    .social-links li + li::before {
+    .socials-links li + li::before {
         content: "";
         margin: 1em 0;
     }

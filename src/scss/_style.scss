@@ -810,38 +810,38 @@ input[type = "button"].fit,
     text-transform: uppercase;
 }
 
-/* social */
+/* socials */
 
-.social {
+.socials {
     background-color: config.$color-bg-secondary;
     color: config.$color-secondary;
     padding: 3em 0 2em;
     text-align: center;
 }
 
-.social hr {
+.socials hr {
     border-bottom: 1px solid;
     border-color: inherit;
     opacity: 0.05;
 }
 
-.social .major h2 {
+.socials .major h2 {
     color: inherit;
 }
 
-.social .major .byline,
-.social-links {
+.socials .major .byline,
+.socials-links {
     color: inherit;
     opacity: 0.6;
 }
 
-.social .social-links {
+.socials .socials-links {
     text-align: center;
 }
 
 /* Footer */
 
-.social-links {
+.socials-links {
     align-items: center;
     display: inline-block;
     margin: 0 auto;
@@ -852,18 +852,18 @@ input[type = "button"].fit,
     width: auto;
 }
 
-.social-links a {
+.socials-links a {
     color: inherit;
     text-decoration: none;
 }
 
-.social-links li {
+.socials-links li {
     display: contents;
     float: left;
     list-style-type: none;
 }
 
-.social-links li + li::before {
+.socials-links li + li::before {
     content: "|";
     margin: auto 0.5em;
 }

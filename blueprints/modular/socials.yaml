@@ -1,4 +1,4 @@
-title: Social
+title: Socials
 extends@:
   type: modules
 
@@ -10,11 +10,11 @@ form:
             fields:
                 content:
                     type: tab
-                    title: Social
+                    title: socials
                     fields:
-                        header.social:
+                        header.socials:
                             type: section
-                            title: Module Social
+                            title: Module socials
                             underline: true
                             fields:
                                 .headline:
