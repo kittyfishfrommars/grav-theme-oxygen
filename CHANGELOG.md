@@ -19,7 +19,7 @@
 * [#4](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/4) Correctly save footer values in admin panel
 * [#2](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/2) Fix fontawesome reference for inherited themes
 * [#1](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/1) Update sidebar examples
-* ...and whimsical sample story
+* ...and flimsy sample story
 
 # v1.0.4
 ##  14-10-2024
