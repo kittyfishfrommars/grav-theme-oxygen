@@ -1,7 +1,7 @@
 ---
 title: Social
 
-social:
+socials:
   headline: Stay in touch
   byline:
     text: >

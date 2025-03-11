@@ -1,6 +1,6 @@
 ---
-title: Hook
-hook:
+title: Hooks
+hooks:
     items:
         -
             headline: 'Getting Started'
