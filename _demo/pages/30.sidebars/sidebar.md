@@ -11,9 +11,16 @@ content:
         dir: asc
 ---
 
-This is a demo of a menu dropdown.
+### Page content
 
-The subpages demonstrate the `sidebar` template, with the sidebar positioned `left` and `right`.
-Displayed within the sidebar is the `links` module.
+* On mobile any sidebar positioned `left` will always appear **above** the page content. Think “FAQ“ to quickly link to specific parts of your site.
 
-In production this page should provide an overview of its subpages.
+* On mobile any sidebar positioned `right` will always appear **below** the page content, but before any modules. Think “Further Reading“ to assemble your footnotes.
+
+### Module support
+
+* `links` will always appear in the Sidebar itself
+* All other modules will appear below the page content
+* Shown here is the `text` module with a button
+
+... scroll down to the text module ... 

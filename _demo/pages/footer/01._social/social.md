@@ -5,12 +5,12 @@ social:
   headline: Stay in touch
   byline:
     text: >
-      In posuere eleifend <span class="nowrap">odio quisque</span> semper.
+      Never miss a <span class="nowrap">Mars Extravaganza</span>.
     # (values) bold | italic | uppercase | normal-case | small | normal-case
-    # class: 'normal-case'
+    # class: 'uppercase'
   button:
     text: 'Newsletter'
-    url: 'https://kittyfishfrommars.github.io'
+    url: '#'
     icon: 'fa-envelope-o'
     # (values) bold | italic | uppercase | normal-case | small | normal-case
     # class: ''

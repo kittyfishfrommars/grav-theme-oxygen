@@ -1,33 +1,34 @@
 ---
 title: Portals
 portals:
-    headline: 'Curio vitae metus semper'
+    headline: 'Meet the Crew'
     byline:
-        text: 'Pulvinar mollis. Vestibulum <a href="#">sem magna</a>, elementum vestibulum arcus.'
+        text: >
+            Any resemblance to actual persons, living or otherwise, is purely coincidental.
     items:
-        -
-            title: 'Joan Q. Public'
-            alt: 'Joan Q. Public'
-            url: '#'
-            text: 'In posuere eleifend odio quisque semper augue wisi ligula.'
-            thumbnail: person-185x185.png
         -
             title: 'Julie Citizen'
             alt: 'Julie Citizen'
             url: '#'
-            text: 'In posuere eleifend odio quisque semper augue wisi ligula.'
+            text: 'Inventor of the cardboard box rocketship.'
+            thumbnail: person-185x185.png
+        -
+            title: 'Joan Q. Public'
+            alt: 'Joan Q. Public'
+            url: '#'
+            text: 'Cryptographer of their own handwriting.'
             thumbnail: person-185x185.png
         -
             title: 'Dr. Zarah Quinn'
             alt: 'Dr. Zarah Quinn'
             url: '#'
-            text: 'In posuere eleifend odio quisque semper augue wisi ligula.'
+            text: 'Xenobiologist with a PhD in applied Mixology.'
             thumbnail: person-185x185.png
         -
-            title: 'Ming the Merciless'
-            alt: 'Emperor Ming, Ruler of the Universe'
+            title: 'Mink the Murkyness'
+            alt: 'Emperor Mink, Ruler of the Universe'
             url: '#'
-            text: 'In posuere eleifend odio quisque semper augue wisi ligula.'
+            text: 'Emperor Mink, Ruler of the Universe.'
             thumbnail: person-185x185.png
 ---
 

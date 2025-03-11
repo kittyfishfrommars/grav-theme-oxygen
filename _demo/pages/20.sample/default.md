@@ -8,7 +8,7 @@ banner:
     url: 'banner_default-1500x960_q100.webp'
 	position: '85% 77.5%'
 ---
-## A Cosmic Adventure
+## A Cosmic Tale
 
 One day, Kittyfish gazed at the stars from their cozy windowsill, dreaming of adventure. “Mars,” they declared, swishing their shimmering goldfishtail with determination. “I must pounce on that red planet!”
 

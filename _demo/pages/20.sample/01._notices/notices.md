@@ -4,29 +4,29 @@ title: Notices
 
 # rendered in a 3-column grid, confiurable by SCSS
 notices:
-    headline: Curio vitae metus semper
+    headline: Choose your Adventure
     byline:
         text: >
-          pulvinar mollis. Vestibulum sem magna, elementum vestibulum arcu.
-        # (values) align-left-md | uppercase | normal-case | bold | small
-        # class: ''
+          Cardboard box for homemade spaceship included
+        # (values) normal-case | uppercase | normal-case | bold | small | align-left-md
+        class: uppercase
     items:
         - title: A tale about a kitten
           text: >
-            In posuere eleifend odio. Quisque semper augue. Maecenas ligula.
+            ... a kitten with an unusual tail. Also, a spacesuit.
           url: '#'
           icon: fa-github-alt
           # (values) color-primary | color-secondary | color-success | color-warning | color-danger
           iconColor: color-primary
         - title: an unlikely Friendship
           text: >
-            Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat.
+            Do mechanical fish snack on electric shrimp?
           url: '#'
           icon: fa-heart
           iconColor: color-primary
         - title: and Rocketry
           text: >
-            Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin orci.
+            To space and beyond in 3 simple steps!
           url: '#'
           icon: fa-rocket
           iconColor: color-primary
