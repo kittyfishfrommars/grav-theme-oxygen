@@ -1,8 +1,10 @@
-# Theme options
+# THEME OPTIONS
 # if this theme is currently active
 enabled: true
-# if search engines may index this site
+# SEO: if search engines may index this site
 index: false
+# SEO: Add the global sitename to every page's title attribute
+sitetitle: false
 # if main navigation should display submenus in a dropdown on desktop
 dropdown: true
 # if jquery should be included, only necessary for some other plugins

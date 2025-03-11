@@ -45,12 +45,24 @@ form:
             type: toggle
             label: Search Engine Index
             sublabel: >
-                <small>Allow this website to be indexed by search engines, individual page exceptions may apply (default: disabled).</small>
-            default: false
-            highlight: true
+                <small>SEO: Allow this website to be indexed by search engines, individual page exceptions may apply (default: disabled).</small>
+            default: 0
+            highlight: 1
             options:
-                '0': PLUGIN_ADMIN.DISABLED
-                '1': PLUGIN_ADMIN.ENABLED
+                0: PLUGIN_ADMIN.DISABLED
+                1: PLUGIN_ADMIN.ENABLED
+            validate:
+                type: bool
+        sitetitle:
+            type: toggle
+            label: Include sitename in page title
+            sublabel: >
+                <small>SEO: Add the global sitename to every page's title attribute.</small>
+            default: 0
+            highlight: 1
+            options:
+                0: PLUGIN_ADMIN.DISABLED
+                1: PLUGIN_ADMIN.ENABLED
             validate:
                 type: bool
         dropdown:
@@ -61,8 +73,8 @@ form:
             default: 1
             highlight: 1
             options:
-                '0': PLUGIN_ADMIN.DISABLED
-                '1': PLUGIN_ADMIN.ENABLED
+                0: PLUGIN_ADMIN.DISABLED
+                1: PLUGIN_ADMIN.ENABLED
             validate:
                 type: bool
         jquery:
@@ -73,7 +85,7 @@ form:
             default: 1
             highlight: 1
             options:
-                '0': PLUGIN_ADMIN.DISABLED
-                '1': PLUGIN_ADMIN.ENABLED
+                0: PLUGIN_ADMIN.DISABLED
+                1: PLUGIN_ADMIN.ENABLED
             validate:
                 type: bool
