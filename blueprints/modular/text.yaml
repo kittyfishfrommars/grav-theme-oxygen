@@ -10,11 +10,11 @@ form:
             fields:
                 content:
                     type: tab
-                    title: Text
+                    title: Content
                     fields:
                         spacer:
                             type: section
-                            title: 'Module: Text'
+                            title: Module Text
                             underline: true
                         content:
                             type: editor
