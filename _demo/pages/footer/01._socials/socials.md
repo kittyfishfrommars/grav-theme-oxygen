@@ -1,5 +1,5 @@
 ---
-title: Social
+title: Socials
 
 socials:
   headline: Stay in touch
