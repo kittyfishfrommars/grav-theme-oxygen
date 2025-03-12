@@ -1,4 +1,4 @@
-title: Callout
+title: Callouts
 extends@:
   type: modules
 
@@ -10,11 +10,11 @@ form:
             fields:
                 content:
                     type: tab
-                    title: callout
+                    title: Content
                     fields:
-                        header.callout:
+                        header.callouts:
                             type: section
-                            title: Module callout
+                            title: Module Callouts
                             underline: true
                             fields:
                                 .headline:
