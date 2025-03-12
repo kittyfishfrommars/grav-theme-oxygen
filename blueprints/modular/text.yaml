@@ -18,6 +18,8 @@ form:
                             underline: true
                         content:
                             type: editor
+                            codemirror:
+                                font: 'sans'
                         header.mediaCollection:
                             disabled: true
                             # type: file
