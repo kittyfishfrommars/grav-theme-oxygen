@@ -10,11 +10,11 @@ form:
             fields:
                 content:
                     type: tab
-                    title: hooks
+                    title: Hooks
                     fields:
                         header.hooks:
                             type: section
-                            title: Module hooks
+                            title: Module Hooks
                             underline: true
                             fields:
                                 .items:

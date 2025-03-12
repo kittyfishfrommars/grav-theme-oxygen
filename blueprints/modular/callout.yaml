@@ -10,11 +10,11 @@ form:
             fields:
                 content:
                     type: tab
-                    title: callout
+                    title: Callout
                     fields:
                         header.callout:
                             type: section
-                            title: Module callout
+                            title: Module Callout
                             underline: true
                             fields:
                                 .headline:

@@ -1,5 +1,5 @@
 ---
-title: CTA
+title: Callout
 callout:
     headline: All-in-One Package
     byline:

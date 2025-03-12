@@ -210,7 +210,7 @@ Item 3
 - - - - - - -
 
 ## .actions .button-secondary
-<div class="social">
+<div class="socials">
   <ul class="actions">
     <li><a href="#" class="button button-secondary special">Special</a></li>
     <li><a href="#" class="button button-secondary">Default</a></li>

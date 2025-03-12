@@ -10,11 +10,11 @@ form:
             fields:
                 content:
                     type: tab
-                    title: socials
+                    title: Socials
                     fields:
                         header.socials:
                             type: section
-                            title: Module socials
+                            title: Module Socials
                             underline: true
                             fields:
                                 .headline:

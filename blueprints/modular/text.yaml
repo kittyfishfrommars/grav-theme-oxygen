@@ -14,7 +14,7 @@ form:
                     fields:
                         spacer:
                             type: section
-                            title: 'Module: Text'
+                            title: Module Text
                             underline: true
                         content:
                             type: editor
