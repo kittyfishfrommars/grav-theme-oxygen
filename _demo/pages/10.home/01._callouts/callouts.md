@@ -1,6 +1,6 @@
 ---
-title: CTA
-callout:
+title: Callouts
+callouts:
     headline: All-in-One Package
     byline:
         text: >
@@ -9,4 +9,3 @@ callout:
         text: Download
         url: 'https://github.com/kittyfishfrommars/grav-skeleton-oxygen/releases'
 ---
-
