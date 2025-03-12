@@ -1,0 +1,11 @@
+{% if page.header.callouts %}
+	<div class="wrapper callouts">
+		<section class="container">
+			<header class="major">
+				<h2>{{ header.callouts.headline|raw }}</h2>
+			</header>
+			<p class="color-link-secondary {{ header.callouts.byline.class|replace({',': ' '}) }}">{{ header.callouts.byline.text|raw }}</p>
+			<a href="{{ header.callouts.button.url }}" class="button alt mt-2 {{ header.callouts.button.class|replace({',': ' '}) }}">{{ header.callouts.button.text|raw }}</a>
+		</section>
+	</div>
+{% endif %}
