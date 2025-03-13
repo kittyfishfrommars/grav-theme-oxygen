@@ -1,28 +1,33 @@
 title: Sidebar
 extends@:
     type: default
-    context: blueprints://pages
+    context: 'blueprints://pages'
 
 form:
-  fields:
-    tabs:
-      type: tabs
-      active: 1
-
-      fields:
-          content:
+    fields:
+        tabs:
+            type: tabs
+            active: 1
             fields:
-              header.sidebar:
-                type: section
-                # title: Sidebar
-                # underline: true
-                ordering@: content
-                fields:
-                  .position:
-                    type: toggle
-                    label: Sidebar Position
-                    help: 'Sidebar will be populated by modules.'
-                    default: right
-                    options:
-                      left: left
-                      right: right
+                content:
+                    fields:
+                        # @start: DEFAULTS
+                        # @end: DEFAULTS
+                        header.sidebar:
+                            type: fieldset
+                            title: Sidebar
+                            info: ' click to expand / collapse'
+                            # underline: true
+                            icon: align-left
+                            collapsed: false
+                            collapsible: true
+                            # ordering@: content
+                            ordering@: header.banner
+                            fields:
+                                .position:
+                                    type: toggle
+                                    label: Sidebar Position
+                                    default: left
+                                    options:
+                                        left: left
+                                        right: right

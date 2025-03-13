@@ -25,17 +25,27 @@ body, p, li, input, select, textarea {
 
 h1, h2, h3, h4, h5, h6 {
     color: inherit;
-    font-weight: 700;
+    display: block;
+    font-weight: normal;
     line-height: config.$line-height-headlines;
     margin-bottom: config.$margin-bottom;
 }
 
+h1 {
+    font-size: 1.9em;
+}
+
 h2 {
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 
 h3 {
     font-size: 1.25em;
+}
+
+h5 {
+    font-size: 1.25em;
+    font-weight: 300;
 }
 
 a {
@@ -63,7 +73,7 @@ a.color-link-secondary,
 }
 
 strong, b {
-    font-weight: 700;
+    font-weight: 400;
 }
 
 em, i {
@@ -75,10 +85,9 @@ p {
     margin-bottom: config.$margin-bottom;
 }
 
-p.medium {
-    font-size: 1.4em;
+p + h1, p + h2, p + h3, p + h4, p + h5, p + h6 {
+    padding-top: config.$margin-bottom * 0.5;
 }
-
 
 sub {
     font-size: 0.8em;
@@ -135,6 +144,14 @@ section.special, article.special {
 header.major {
     text-align: center;
     text-transform: uppercase;
+
+    h1, h2, h3, h4 {
+        font-weight: bold;
+    }
+
+    .byline {
+        text-transform: none;
+    }
 }
 
 header.major h1 {
@@ -149,14 +166,6 @@ header.major .byline {
     letter-spacing: 1px;
     line-height: 1.4em;
     margin-bottom: config.$margin-bottom * 2;
-}
-
-footer > :last-child {
-    margin-bottom: 0;
-}
-
-footer.major {
-    padding-top: 3em;
 }
 
 /* Form */
@@ -206,7 +215,11 @@ input[type = "text"] {
     color: rgb(85 85 85 / 50%) !important;
 }
 
-/* Image */
+/* Content */
+
+#content {
+    padding-bottom: config.$margin-bottom * 2;
+}
 
 #content img {
     border: 1px solid config.$color-disabled;
@@ -280,7 +293,6 @@ ol.default {
     list-style-type: decimal;
     margin: 0 0 1em 1.1em;
 }
-
 
 ul li,
 ol li,
@@ -517,7 +529,7 @@ input[type = "button"].fit,
 /* Wrapper */
 
 .wrapper {
-    padding: 4em 0;
+    padding: 4rem 0 0;
 }
 
 .wrapper.style1 {
@@ -528,22 +540,16 @@ input[type = "button"].fit,
     margin: 0;
 }
 
-.wrapper.style2,
-.wrapper.evenpart {
+.wrapper.hooks {
     background-color: config.$color-bg-primary;
+    padding: 4rem 0 2rem;
 }
 
-.wrapper.evenpart {
-    padding-bottom: 4rem;
+.wrapper.hooks .major {
+    text-align: left;
 }
 
-.wrapper.style2 .major,
-.wrapper.evenpart .major {
-    text-align: left !important;
-}
-
-.wrapper.style2 .major h2,
-.wrapper.evenpart .major h2 {
+.wrapper.hooks .major h2 {
     display: block;
     font-size: 1.8em;
     font-weight: 400;
@@ -552,16 +558,14 @@ input[type = "button"].fit,
     text-transform: uppercase;
 }
 
-.wrapper.style2 .major .byline,
-.wrapper.evenpart .major .byline {
-    font-size: 1.4em;
+.wrapper.hooks .major .byline{
+    font-size: 1.2em;
     letter-spacing: normal;
     line-height: config.$line-height-headlines;
     text-transform: none;
 }
 
-.wrapper.style2 h3,
-.wrapper.evenpart h3 {
+.wrapper.hooks h3 {
     display: block;
     font-size: 1.6em;
     font-weight: 400;
@@ -569,23 +573,20 @@ input[type = "button"].fit,
     text-transform: uppercase;
 }
 
-.wrapper.style3,
-.wrapper.cta {
+.wrapper.callout {
     background-color: config.$color-primary;
     color: config.$color-secondary;
-    padding-bottom: 5em;
+    padding-bottom: 4rem;
     text-align: center;
 }
 
-.wrapper.style3 .container,
-.wrapper.cta .container {
+.wrapper.callout .container {
     padding-left: 6em;
     padding-right: 6em;
 }
 
-.wrapper.style3 p,
-.wrapper.cta p {
-    font-size: 1.6em;
+.wrapper.callout p {
+    font-size: 1.4em;
 }
 
 /* Sidebar */
@@ -593,23 +594,22 @@ input[type = "button"].fit,
 .wrapper.style4,
 .wrapper.plain {
     background-color: config.$color-bg-primary;
+    padding-bottom: 4rem;
 }
 
-.wrapper.style5,
 .wrapper.portals {
     background-color: config.$color-primary;
     color: config.$color-secondary;
+    padding-bottom: 1rem;
     text-align: center;
 }
 
-.wrapper.style5 .image,
 .wrapper.portals .image {
     display: block;
     margin: 0 auto 2em;
     width: 60%;
 }
 
-.wrapper.style5 .image img,
 .wrapper.portals .image img {
     border: 10px solid;
     border-color: config.$color-secondary;
@@ -632,20 +632,19 @@ input[type = "button"].fit,
 
 #logo {
     color: config.$color-nav-text;
+    display: inline-block;
     font-size: 1.8em;
     font-weight: 400;
     letter-spacing: 2px;
     line-height: 2.2em;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
     text-transform: uppercase;
 }
 
-#logo h1 {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-}
-
 #nav {
+    display: inline-block;
     position: absolute;
     right: 0;
     top: 0;
@@ -653,13 +652,13 @@ input[type = "button"].fit,
 
 #nav > ul {
     margin: 0;
+    position: static;
 }
 
 #nav > ul > li {
-    border-radius: 4px;
     display: inline-block;
-    margin-left: 0.25em;
-    padding: 0 0.5em;
+    margin: 0;
+    padding: 1.7rem 0.5rem 1rem;
 }
 
 #nav > ul > li a {
@@ -667,20 +666,13 @@ input[type = "button"].fit,
     font-size: 1em;
     font-weight: 400;
     letter-spacing: 2px;
-    line-height: 4em;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-#nav > ul > li:first-child {
-    margin-left: 0;
-}
-
-#nav > ul > li.active a {
-    color: config.$color-secondary;
-}
-
-#nav > ul > li a.nav-active, #nav > ul > li a:hover  {
+.dropotron a.nav-active, 
+#nav a.nav-active, 
+#nav > ul > li a:hover  {
     color: config.$color-nav-active;
 }
 
@@ -695,13 +687,11 @@ input[type = "button"].fit,
     border-radius: 4px;
     color: config.$color-secondary;
     list-style-type: none !important;
-    margin: 0 0 0 -3rem;
-    min-width: 20rem;
-    padding: 0 0 0.5rem;
-    top: 2em;
+    margin: 0 0 0 -2rem;
+    padding: 0;
 }
 
-.dropotron > li {
+.dropotron li {
     border-top: solid 1px config.$color-nav-border;
     line-height: 1.5em;
     list-style-type: none !important;
@@ -709,7 +699,11 @@ input[type = "button"].fit,
 }
 
 .dropotron > li:first-child {
-    border-top: solid 1px transparent;
+    border-top: 0.25em solid config.$color-nav-bg;
+}
+
+.dropotron > li:last-child {
+    border-bottom: 0.25em solid config.$color-nav-bg;
 }
 
 .dropotron > li > a {
@@ -773,7 +767,7 @@ input[type = "button"].fit,
 /* Main */
 
 #main {
-    padding: 4em 0;
+    padding: 3rem 0 0;
 }
 
 #main #content .major, #main #sidebar .major {
@@ -795,7 +789,7 @@ input[type = "button"].fit,
 #main #sidebar .major h2 {
     font-size: 1.8em;
     line-height: 100%;
-    margin: 1px 0 2.5rem;
+    margin: 0 0 2.6rem;
 }
 
 /* Extra */
@@ -816,61 +810,60 @@ input[type = "button"].fit,
     text-transform: uppercase;
 }
 
-/* Footer */
+/* socials */
 
-#footer {
+.socials {
     background-color: config.$color-bg-secondary;
     color: config.$color-secondary;
-    padding: 6em 0 2em;
+    padding: 3em 0 2em;
     text-align: center;
 }
 
-#footer hr {
+.socials hr {
     border-bottom: 1px solid;
     border-color: inherit;
     opacity: 0.05;
 }
 
-#footer .major h2 {
+.socials .major h2 {
     color: inherit;
 }
 
-#footer .major .byline,
-#copyright {
+.socials .major .byline,
+.socials-links {
     color: inherit;
     opacity: 0.6;
 }
 
-#footer .copyright {
-    margin-top: 3em;
+.socials .socials-links {
     text-align: center;
 }
 
-/* Copyright */
+/* Footer */
 
-#copyright {
+.socials-links {
     align-items: center;
     display: inline-block;
     margin: 0 auto;
-    padding: 2em 0;
+    padding: 1em 0;
     position: relative;
     text-align: center;
     text-transform: none;
     width: auto;
 }
 
-#copyright a {
+.socials-links a {
     color: inherit;
     text-decoration: none;
 }
 
-#copyright li {
+.socials-links li {
     display: contents;
     float: left;
     list-style-type: none;
 }
 
-#copyright li + li::before {
+.socials-links li + li::before {
     content: "|";
     margin: auto 0.5em;
 }

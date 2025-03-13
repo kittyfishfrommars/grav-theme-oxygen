@@ -1,0 +1,29 @@
+{% if header.portals %}
+	{% set portals = header.portals %}
+	<div class="wrapper portals">
+		<section id="portals" class="container">
+
+			<header class="major">
+				{% if portals.headline %}
+					<h2>{{ portals.headline|raw }}</h2>
+				{% endif %}
+				{% if portals.byline.text %}
+					<span class="byline color-link-secondary pb-2 {{ portals.byline.class|replace({',': ' '}) }}">{{ portals.byline.text|raw }}</span>
+				{% endif %}
+			</header>
+
+			<div class="row">
+				{% for item in portals.items|slice(0, 4) %}
+				<div class="3u mb-1">
+					<a href="{{ item.url }}" class="image">
+						<img alt="{{ item.alt|default('') }}" src="{{ page.media[item.thumbnail].resize(185,185).url }}?fp=4702">
+					</a>
+					<h3>{{ item.title|raw }}</h3>
+					<p>{{ item.text|raw }}</p>
+				</div>
+				{% endfor %}
+			</div>
+
+		</section>
+	</div>
+{% endif %}

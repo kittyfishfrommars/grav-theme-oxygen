@@ -1,0 +1,91 @@
+title: Callout
+extends@:
+  type: modules
+
+form:
+    fields:
+        tabs:
+            type: tabs
+            active: 1
+            fields:
+                content:
+                    type: tab
+                    title: Callout
+                    fields:
+                        header.callout:
+                            type: section
+                            title: Module Callout
+                            underline: true
+                            fields:
+                                .headline:
+                                    type: text
+                                    label: Headline
+                                    help: Catchy headline
+                                .byline:
+                                    type: section
+                                    fields:
+                                        .text:
+                                            type: textarea
+                                            label: Byline
+                                            help: Short text below headline
+                                            rows: 3
+                                        .class:
+                                            type: selectize
+                                            label: (Optional) Class
+                                            help: Classes to apply to text
+                                            sublabel: >
+                                                <small>Choose one, multiple or leave blank (default).</small>
+                                            selectize:
+                                                options:
+                                                    -
+                                                        text: small
+                                                        value: small
+                                                    -
+                                                        text: bold
+                                                        value: bold
+                                                    -
+                                                        text: italic
+                                                        value: italic
+                                                    -
+                                                        text: uppercase
+                                                        value: uppercase
+                                                    -
+                                                        text: normal-case
+                                                        value: normal-case
+                                .button:
+                                    type: fieldset
+                                    title: Button
+                                    underline: true
+
+                                    fields:
+                                        .text:
+                                            type: text
+                                            label: Text
+                                            help: Button Text
+                                        .url:
+                                            type: text
+                                            label: URL
+                                            help: Button target
+                                        .class:
+                                            type: selectize
+                                            label: (Optional) Class
+                                            help: Additional classes to apply to button
+                                            sublabel: >
+                                                <small>Choose one, multiple or leave blank (default).</small>
+                                            selectize:
+                                                options:
+                                                    -
+                                                        text: small
+                                                        value: small
+                                                    -
+                                                        text: bold
+                                                        value: bold
+                                                    -
+                                                        text: italic
+                                                        value: italic
+                                                    -
+                                                        text: uppercase
+                                                        value: uppercase
+                                                    -
+                                                        text: normal-case
+                                                        value: normal-case

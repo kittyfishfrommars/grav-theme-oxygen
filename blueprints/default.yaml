@@ -12,6 +12,11 @@ form:
       fields:
           content:
             fields:
+              # @start: DEFAULTS
+              header.content.items:
+                  type: hidden
+                  default: '@self.modules'
+              # @end: DEFAULTS
               spacer:
                 type: spacer
                 # title: A title
@@ -24,27 +29,49 @@ form:
                 type: fieldset
                 title: Banner
                 # help: 'optional'
-                info: ' click to expand'
+                info: ' click to expand / collapse'
                 # text: 'Leave text fields blank'
                 icon: camera
-                collapsed: true
+                collapsed: false
                 collapsible: true
                 fields:
+                  # see https://github.com/getgrav/grav/issues/3909
+                  # Upload field
+                  # .mediaCollection:
+                  #   disabled: true
+                  #   type: file
+                  #   # type: pagemedia
+                  #   label: Upload image
+                  #   sublabel: >
+                  #       <i>Recommended size: 1500x960px.</i>
+                  #   style: vertical
+                  #   destination: 'image://banner'
+                  #   multiple: true
+                  #   limit: 255
+                  #   random_name: false
+                  #   avoid_overwriting: false
+                  #   accept:
+                  #     - image/*
                   .url:
+                    # type: pagemediaselect
                     type: mediapicker
-                    folder: 'self@'
+                    # folder: 'image://banner'
                     label: Image
-                    help: 'Leave blank for none. Please refer to demo for image dimensions.'
+                    help: 'Leave blank for none.'
+                    sublabel: >
+                      <small>Recommended size: 1500x960px. Leave blank for none.</small>
                     preview_images: true
+                    accept:
+                      - image/*
                   .position:
                     type: text
                     label: Position
                     help: 'CSS values for background-position'
                     default: 'center center'
-                  .headline:
-                    type: text
-                    label: (Optional) Headline
-                    help: 'Leave blank for none.'
+                  # .headline:
+                  #   type: text
+                  #   label: (Optional) Headline
+                  #   help: 'Leave blank for none.'
                   # .follower.text:
                   #   type: text
                   #   label: (Optional) Follower text
@@ -53,7 +80,7 @@ form:
                   #   type: selectize
                   #   label: (Optional) Follower class
                   #   help: 'Custom pre-defined CSS classes.'
-                  #   description: <i>Choose one, multiple or none at all (default).</i>
+                  #   sublabel: <small>Choose one, multiple or leave blank (default).</small>
                   #   selectize:
                   #       options:
                   #         - text: 'opacity-dark'
@@ -80,7 +107,8 @@ form:
                   #   type: selectize
                   #   label: (Optional) Blurb class
                   #   help: 'Custom pre-defined CSS classes.'
-                  #   description: <i>Choose one, multiple or none at all (default).</i>
+                  #   sublabel: >
+                  #       <small>Choose one, multiple or leave blank (default).</small>
                   #   selectize:
                   #       options:
                   #         - text: 'opacity-dark'
@@ -99,16 +127,14 @@ form:
                   #           value: 'uppercase'
                   #         - text: 'normal-case'
                   #           value: 'normal-case'
-
               header.pageOptions:
                 ordering@: banner
-                # type: section
                 type: fieldset
                 title: Page Options
-                info: ' click to expand'
+                info: ' click to expand / collapse'
                 # underline: true
                 icon: cog
-                collapsed: true
+                collapsed: false
                 collapsible: true
                 fields:
                   .noIndex:
@@ -122,3 +148,9 @@ form:
                       0: PLUGIN_ADMIN.ENABLED
                     validate:
                       type: bool
+              sectionModules:
+                  type: section
+                  title: Modules Available
+                  text: Additional content can be populated by modules.
+                  underline: true
+                  ordering@: 99

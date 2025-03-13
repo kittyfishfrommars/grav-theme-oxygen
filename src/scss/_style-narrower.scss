@@ -32,11 +32,6 @@
         font-size: 1.1em;
     }
 
-    .wrapper.style2 p,
-    .wrapper.style3 p {
-        line-height: 1.4em;
-    }
-
     /* List */ 
 
     ul.actions,
@@ -61,31 +56,24 @@
         width: 100%;
     }
 
-    .wrapper.style2 .major h2,
+    .wrapper.hooks .major h2,
     .wrapper.evenpart .major h2 {
         font-size: 1.4em;
     }
 
-    .wrapper.style2 .major .byline,
+    .wrapper.hooks .major .byline,
     .wrapper.evenpart .major .byline {
         font-size: 1.1em;
     }
 
-    .wrapper.style2 h3,
+    .wrapper.hooks h3,
     .wrapper.evenpart h3 {
         font-size: 1.2em;
     }
 
-    .wrapper.style3 .container,
-    .wrapper.cta .container {
+    .wrapper.callout .container {
         padding-left: 1em;
         padding-right: 1em;
-    }
-
-    .wrapper.style3 p, 
-    .wrapper.cta p {
-
-        /* font-size: 1.1em; */
     }
 
     .wrapper.style4,
@@ -93,7 +81,6 @@
         padding-bottom: 2em;
     }
 
-    .wrapper.style5,
     .wrapper.portals {
         padding-bottom: 4em;
     }
@@ -212,12 +199,12 @@
         padding: 1em 0;
     }
 
-    #copyright li {
+    .socials-links li {
         display: block;
         float: none;
     }
 
-    #copyright li + li::before {
+    .socials-links li + li::before {
         content: "";
         margin: 1em 0;
     }

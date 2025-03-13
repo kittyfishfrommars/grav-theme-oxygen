@@ -1,10 +1,8 @@
-{% set body_classes = header.body_classes %}
-<!-- Base -->
 <!DOCTYPE HTML>
 <html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
 <head>
 {% block head %}
-	<title>{{ header.title|e('html') }}</title>
+	<title>{% if page.title %}{{ page.title|e('html') }}{% endif %}{% if config.theme.sitetitle %} - {{ site.title|e('html') }}{% endif %}</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 
 	{% include 'partials/metadata.html.twig' %}
@@ -27,8 +25,13 @@
 	{% endblock %}
 
 	{% block javascripts %}
-		{% do assets.addJs('theme://vendor/js/jquery-3.7.1.min.js?fp=4702', {group: 'delay', loading: 'defer'}) %}
-		{% do assets.addJs('theme://vendor/js/jquery.dropotron.min.js?fp=4702', {group: 'delay', loading: 'defer'}) %}
+		{% if (config.theme.jquery == 1) %}
+			{% do assets.addJs('theme://vendor/js/jquery-3.7.1.min.js?fp=4702', {group: 'delay', loading: 'defer'}) %}
+		{% endif %}
+		{% do assets.addJs('theme://vendor/js/dropdown.min.js?fp=4702', {group: 'delay', loading: 'defer'}) %}
+		{% if (config.theme.dropdown == 1) %}
+			{% do assets.addJs('theme://vendor/js/jquery.dropotron.min.js?fp=4702', {group: 'delay', loading: 'defer'}) %}
+		{% endif %}
 		{% do assets.addJs('theme://vendor/js/skel.min.js?fp=4702', {group: 'delay', loading: 'defer'}) %}
 		{% do assets.addJs('theme://vendor/js/skel-layers.min.js?fp=4702', {group: 'delay', loading: 'defer'}) %}
 		{% do assets.addJs('theme://dist/js/scripts.js?fp=4702', {group: 'delay', loading: 'defer'}) %}
@@ -41,37 +44,27 @@
 {% endblock head %}
 </head>
 
-<body class="{{ body_classes }}">
+<body>
 
 	{% block header %}
-
-		<!-- Header Wrapper -->
 		<div class="wrapper style1">
-
-			<!-- Header -->
 			<div id="header">
 				<div class="container">
-
-					<!-- Logo -->
-					<h1><a href="{{ addSlash(home_url) }}" id="logo">{{ site.title }}</a></h1>
-
-					<!-- Nav -->
-					<nav id="nav">
+					<a href="{{ addSlash(home_url) }}" id="logo">{{ site.title }}</a>
 						{% include 'partials/navigation.html.twig' %}
-					</nav>
-
 				</div>
 			</div>
 
 			{% block banner %}{% endblock banner %}
 
 		</div>
-
 	{% endblock header %}
 
 	{% block body %}
 		{% block content %}
+
 			{{ page.content|raw }}
+
 		{% endblock content %}
 	{% endblock body %}
 

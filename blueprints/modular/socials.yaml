@@ -1,0 +1,143 @@
+title: Socials
+extends@:
+  type: modules
+
+form:
+    fields:
+        tabs:
+            type: tabs
+            active: 1
+            fields:
+                content:
+                    type: tab
+                    title: Socials
+                    fields:
+                        header.socials:
+                            type: section
+                            title: Module Socials
+                            underline: true
+                            fields:
+                                .headline:
+                                    type: text
+                                    label: Headline
+                                .byline:
+                                    type: section
+                                    fields:
+                                        .text:
+                                            type: textarea
+                                            label: Byline
+                                            rows: 3
+                                        .class:
+                                            type: selectize
+                                            label: (Optional) Class
+                                            help: Classes to apply to text
+                                            sublabel: >
+                                                <small>Choose one, multiple or leave blank (default).</small>
+                                            selectize:
+                                                options:
+                                                    -
+                                                        text: small
+                                                        value: small
+                                                    -
+                                                        text: bold
+                                                        value: bold
+                                                    -
+                                                        text: italic
+                                                        value: italic
+                                                    -
+                                                        text: uppercase
+                                                        value: uppercase
+                                                    -
+                                                        text: normal-case
+                                                        value: normal-case
+                                .button:
+                                    type: fieldset
+                                    title: Button
+                                    underline: true
+                                    fields:
+                                        .text:
+                                            type: text
+                                            label: Text
+                                            help: Button text
+                                        .url:
+                                            type: text
+                                            label: URL
+                                            help: Button target
+                                        .icon:
+                                            type: text
+                                            label: Icon
+                                            help: Icon identifier
+                                            sublabel: >
+                                                <small>Refer to Elements page for available icon names.</small>
+                                            default: fa-envelope-o
+                                        .class:
+                                            type: selectize
+                                            label: (Optional) Class
+                                            help: Additional classes to apply to button
+                                            selectize:
+                                                options:
+                                                    -
+                                                        text: small
+                                                        value: small
+                                                    -
+                                                        text: bold
+                                                        value: bold
+                                                    -
+                                                        text: italic
+                                                        value: italic
+                                                    -
+                                                        text: uppercase
+                                                        value: uppercase
+                                                    -
+                                                        text: normal-case
+                                                        value: normal-case
+                                .icons:
+                                    type: section
+                                    title: Icons
+                                    underline: true
+                                    fields:
+                                        .items:
+                                            type: list
+                                            style: vertical
+                                            fields:
+                                                .title:
+                                                    type: text
+                                                    label: Label
+                                                    help: Aria-label for accessibility
+                                                .url:
+                                                    type: text
+                                                    label: URL
+                                                    help: External or internal link
+                                                .icon:
+                                                    type: text
+                                                    label: Icon
+                                                    help: Icon identifier
+                                                    sublabel: >
+                                                        <small>Refer to Elements page for available icon names.</small>
+                                                    default: fa-star-o
+                                .links:
+                                    type: section
+                                    title: Links
+                                    underline: true
+                                    fields:
+                                        .items:
+                                            type: list
+                                            style: vertical
+                                            fields:
+                                                .title:
+                                                    type: text
+                                                    label: Title
+                                                    validate:
+                                                        required: true
+                                                .url:
+                                                    type: text
+                                                    label: URL
+                                                    help: Link target
+                                                    sublabel: >
+                                                        <small>Automatically links to legal page if left blank.</small>
+                                                .param:
+                                                    type: text
+                                                    label: (Optional) Parameter
+                                                    help: Parameter to append to URL
+                                                    sublabel: >
+                                                        <small>Appends to URL, ie. anchor link #id.</small>

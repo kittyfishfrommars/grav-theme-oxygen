@@ -1,0 +1,24 @@
+{% if page.header.hooks %}
+	{% set hooks = page.header.hooks %}
+	{% set isOdd = hooks.items|length % 2 == 1 %}
+	<div class="wrapper hooks border-t-dashed border-b-dashed">
+		<section class="container">
+			<div class="row double">
+				{% for item in hooks.items %}
+					<div class="mb-2 {{ (isOdd and (loop.index == 1) ) ? '12u' : '6u' }}">
+						<header class="major">
+							<h2 class="text-center">{{ item.headline|raw }}</h2>
+							<span class="byline {{ item.byline.class|replace({',': ' '}) }}">{{ item.byline.text|raw }}</span>
+						</header>
+						{% if item.button.text %}
+							<div class="mt-3 {{ item.button.class }}">
+								<a href="{{ item.button.url }}" class="button mb-0">{{ item.button.text|raw }}</a>
+							</div>
+						{% endif %}
+					</div>
+				{% endfor %}
+
+			</div>
+		</section>
+	</div>
+{% endif %}

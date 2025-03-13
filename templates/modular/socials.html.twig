@@ -1,0 +1,42 @@
+{% if header.socials %}
+	{% set socials = page.header.socials %}
+	<div class="socials">
+
+		<section class="container">
+			<header class="major">
+				<h2>{{ socials.headline|raw }}</h2>
+				<span class="byline {{ socials.byline.class|replace({',': ' '}) }}">{{ socials.byline.text|raw }}</span>
+			</header>
+
+			{% if socials.button.text %}
+				<div class="mt-3 mb-1">
+					<a href="{{ socials.button.url }}" class="button button-secondary {{ socials.button.icon ? 'icon ' ~ socials.button.icon}} {{ socials.button.class|replace({',': ' '}) }}">
+						{{ socials.button.text }}
+					</a>
+				</div>
+			{% endif %}
+
+			{% if socials.icons.items %}
+				<ul class="icons {% if socials.button.text %} pt-3 {% endif %}">
+				{% for item in socials.icons.items %}
+					<li><a href="{{ item.url }}" class="fa {{ item.icon }}" aria-label="{{ item.title }}"><span>{{ item.title }}</span></a></li>
+				{% endfor %}
+				</ul>
+			{% endif %}
+
+			<hr />
+		</section>
+
+		{% if socials.links.items %}
+			{% for post in taxonomy.findTaxonomy({'tag':'id-legal'}) %}
+				<ul class="socials-links">
+					{% for item in socials.links.items %}
+						{% set url = (item.url ? item.url : post.url) %}
+						<li><a href="{{ url }}{{ item.param }}">{{ item.title }}</a></li>
+					{% endfor %}
+				</ul>
+			{% endfor %}
+		{% endif %}
+
+	</div>
+{% endif %}

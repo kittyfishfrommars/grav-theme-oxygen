@@ -1,42 +1,14 @@
-<div id="footer">
-	{% for page in taxonomy.findTaxonomy({'tag':'unique-footer'}) %}
-		{% set footer = page.header %}
+{% for page in taxonomy.findTaxonomy({'tag':'id-footer'}) %}
 
-		<section class="container">
-			<header class="major">
-				<h2>{{ footer.content.headline|raw }}</h2>
-				<span class="byline {{ footer.content.byline.class|replace({',': ' '}) }}">{{ footer.content.byline.text|raw }}</span>
-			</header>
+	{% include 'partials/modular.html.twig' %}
 
-			{% if footer.content.button.text %}
-				<div class="mb-3">
-					<a href="{{ footer.content.button.url }}" class="button button-secondary icon {{ footer.content.button.icon }} {{ footer.content.button.class|replace({',': ' '}) }}">
-						{{ footer.content.button.text }}
-					</a>
-				</div>
-			{% endif %}
+	<div class="socials pt-0 pb-0">
 
-			{% if footer.social.items %}
-				<ul class="icons {% if footer.content.button.text %} pt-3 {% endif %}">
-				{% for item in footer.social.items %}
-					<li><a href="{{ item.url }}" class="fa {{ item.icon }}" aria-label="{{ item.title }}"><span>{{ item.title }}</span></a></li>
-				{% endfor %}
-				</ul>
-			{% endif %}
-
-			<hr />
+		<section class="container pt-0 pb-0">
+			<div class="socials-links small">
+				{{ page.content|raw }}
+			</div>
 		</section>
 
-		{% if footer.legal.items %}
-			{% for post in taxonomy.findTaxonomy({'tag':'unique-legal'}) %}
-				<ul id="copyright">
-					{% for item in footer.legal.items %}
-						{% set url = (item.url ? item.url : post.url) %}
-						<li><a href="{{ url }}{{ item.param }}">{{ item.title }}</a></li>
-					{% endfor %}
-				</ul>
-			{% endfor %}
-		{% endif %}
-
-	{% endfor %}
-</div>
+	</div>
+{% endfor %}

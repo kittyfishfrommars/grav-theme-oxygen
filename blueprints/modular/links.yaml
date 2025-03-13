@@ -1,64 +1,71 @@
-title: Footer
+title: Links
+extends@:
+  type: modules
 
 form:
-  fields:
-    tabs:
-      type: tabs
-      active: 1
-
-      fields:
-        footer:
-          type: tab
-          title: Footer
-
-          fields:
-            header.items:
-              type: section
-              title: Links
-              underline: true
-              fields:
-                header.items:
-                  type: list
-                  style: vertical
-                  fields:
-                    .headline:
-                      type: text
-                      label: Headline
-                      help: 'Large text, preferably one or two short words.'
-                    .byline:
-                      type: section
-                      fields:
-                        .text:
-                          type: text
-                          label: '(Optional) Byline'
-                          help: 'A short text below the headline. Leave blank for none.'
-                    .type:
-                      type: select
-                      label: List style type
-                      help: 'Displays a dot, a number or nothing before a list item.'
-                      default: 'list-disc'
-                      options:
-                        'list-disc': 'list-disc'
-                        'list-decimal': 'list-decimal'
-                        'list-none': 'list-none'
-                    .links:
-                      type: list
-                      style: horizontal
-                      label: List of link items
-                      collapsed: false
-                      collapsible: true
-                      fields:
-                        .text:
-                          type: text
-                          label: Title
-                          help: 'The title text is clickable, if URL is provided.'
-                        .url:
-                          # (#8) type: text, instead of type: url allows for relative URLs
-                          type: text
-                          label: URL
-                          help: 'The link target. Leave blank if your title should not be clickable.'
-                        .description:
-                          type: text
-                          label: '(Optional) Description'
-                          help: 'A short text underneath the title. Leave blank for none.'
-                          
+    fields:
+        tabs:
+            type: tabs
+            active: 1
+            fields:
+                content:
+                    type: tab
+                    title: Links
+                    fields:
+                        # @start: DEFAULTS
+                        # do not change taxonomy definition, do not change
+                        header.taxonomy.tag:
+                            type: hidden
+                            default: 'links'
+                        # @end: DEFAULTS
+                        header.links:
+                            type: section
+                            title: Module Links
+                            underline: true
+                            fields:
+                                .headline:
+                                    type: text
+                                    label: Headline
+                                    help: >
+                                        Large text, preferably one or two short words.
+                                .byline:
+                                    type: section
+                                    fields:
+                                        .text:
+                                            type: text
+                                            label: (Optional) Byline
+                                            help: >
+                                                Short text below the headline. Leave blank for none.
+                                .type:
+                                    type: select
+                                    label: List style type
+                                    help: >
+                                        Displays a dot, a number or nothing before a list item.
+                                    default: list-disc
+                                    options:
+                                        list-disc: list-disc
+                                        list-decimal: list-decimal
+                                        list-none: list-none
+                                .spacer:
+                                    type: section
+                                    title: Items
+                                    underline: true
+                                .items:
+                                    type: list
+                                    style: vertical
+                                    fields:
+                                        .text:
+                                            type: text
+                                            label: Title
+                                            help: >
+                                                Title text is clickable, if URL is provided.
+                                        .url:
+                                            type: text
+                                            label: URL
+                                            help: >
+                                                External or internal link. Leave blank if your title should not be clickable.
+                                        .sublabel:
+                                            type: text
+                                            label: (Optional) Description
+                                            help: >
+                                                Short text below title. Leave blank for none.

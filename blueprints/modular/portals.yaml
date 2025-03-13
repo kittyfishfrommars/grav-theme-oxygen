@@ -1,0 +1,114 @@
+title: Portals
+extends@:
+  type: modules
+
+form:
+    fields:
+        tabs:
+            type: tabs
+            active: 1
+            fields:
+                content:
+                    type: tab
+                    title: Portals
+                    fields:
+                        header.portals:
+                            type: section
+                            title: Module Portals
+                            underline: true
+                            fields:
+                                .headline:
+                                    type: text
+                                    label: Headline
+                                .byline:
+                                    type: section
+                                    fields:
+                                        .text:
+                                            type: textarea
+                                            label: Byline
+                                            help: >
+                                                Short text below headline. Leave blank for none.
+                                            rows: 3
+                                        .class:
+                                            type: selectize
+                                            label: (Optional) Class
+                                            help: Classes to apply to text
+                                            sublabel: >
+                                                <small>Choose one, multiple or leave blank (default).</small>
+                                            selectize:
+                                                options:
+                                                    -
+                                                        text: small
+                                                        value: small
+                                                    -
+                                                        text: bold
+                                                        value: bold
+                                                    -
+                                                        text: italic
+                                                        value: italic
+                                                    -
+                                                        text: uppercase
+                                                        value: uppercase
+                                                    -
+                                                        text: normal-case
+                                                        value: normal-case
+                                .separator:        
+                                    type: section
+                                    title: Page Media
+                                    text: >
+                                        <i>Recommended size: 185x185px.</i>
+                                    underline: true
+                                .mediaCollection:
+                                    disabled: true
+                                    # type: file
+                                    type: pagemedia
+                                    label: Media
+                                    help: Upload image
+                                    style: vertical
+                                    destination: 'self@'
+                                    # destination: 'image://shared'
+                                    # folder: 'image://shared'
+                                    multiple: true
+                                    # limit: 255
+                                    random_name: false
+                                    avoid_overwriting: false
+                                    accept:
+                                        - image/*
+                                .spacer:        
+                                    type: section
+                                    title: Items
+                                    underline: true
+                                .items:
+                                    type: list
+                                    underline: true
+                                    style: vertical
+                                    fields:
+                                        .title:
+                                            type: text
+                                            label: Text
+                                            help: Title
+                                        .alt:
+                                            type: text
+                                            label: Descriptive alt text
+                                            help: Image alternative text
+                                        .url:
+                                            type: text
+                                            label: URL
+                                            help: Image link target
+                                        .text:
+                                            type: textarea
+                                            label: Text
+                                            help: Short text below headline
+                                        .thumbnail:
+                                            sublabel: >
+                                                <small>Recommended size: 185x185px.</small>
+                                            # type: filepicker | mediapicker | pagemediaselect | file
+                                            type: filepicker
+                                            # type: mediapicker
+                                            # sublabel: >
+                                            #    <small>Recommended size: 185x185px.</small>
+                                            folder: 'self@'
+                                            # folder: image://portals
+                                            label: Thumbnail
+                                            help: Select image
+                                            preview_images: true

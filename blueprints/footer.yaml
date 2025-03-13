@@ -1,132 +1,35 @@
-title: Footer
+title: Error
+extends@:
+    type: default
+    context: 'blueprints://pages'
 
 form:
-  fields:
-    tabs:
-      type: tabs
-      active: 1
-
-      fields:
-        footer:
-          type: tab
-          title: Footer
-
-          fields:
-            header.content:
-              type: section
-              title: Footer
-              underline: true
-              fields:
-                .headline:
-                  type: text
-                  label: Headline
-                .byline:
-                  type: section
-                  fields:
-                    .text:
-                      # type: editor
-                      type: textarea
-                      label: Byline
-                      rows: 3
-                    .class:
-                      type: selectize
-                      label: (Optional) Class
-                      help: Classes to apply to text
-                      description: <i>Choose one, multiple or none at all (default).</i>
-                      selectize:
-                          options:
-                            - text: 'small'
-                              value: 'small'
-                            - text: 'bold'
-                              value: 'bold'
-                            - text: 'italic'
-                              value: 'italic'
-                            - text: 'uppercase'
-                              value: 'uppercase'
-                            - text: 'normal-case'
-                              value: 'normal-case'
-                .button:
-                  type: section
-                  title: Button
-                  underline: true
-                  fields:
-                    .text:
-                      type: text
-                      label: Text
-                      help: 'Button Text'
-                    .url:
-                      type: text
-                      label: URL
-                      help: 'Button target'
-                    .icon:
-                      type: text
-                      label: Icon
-                      help: 'Icon to display'
-                      description: '<i>Refer to Elements page for available icon names</i>'
-                      default: 'fa-envelope-o'
-                    .class:
-                      type: selectize
-                      label: (Optional) Class
-                      help: Additional classes to apply to button
-                      selectize:
-                          options:
-                            - text: 'small'
-                              value: 'small'
-                            - text: 'bold'
-                              value: 'bold'
-                            - text: 'italic'
-                              value: 'italic'
-                            - text: 'uppercase'
-                              value: 'uppercase'
-                            - text: 'normal-case'
-                              value: 'normal-case'
-
-            header.social:
-              type: section
-              title: Social
-              underline: true
-              fields:
-                .items:
-                  type: list
-                  style: vertical
-                  fields:
-                    .title:
-                      type: text
-                      label: Label
-                      help: 'Aria-label for accessibility'
-                    .url:
-                      type: text
-                      label: URL
-                      help: 'External or internal link'
-                    .icon:
-                      type: text
-                      label: Icon
-                      help: 'Icon to display'
-                      description: '<i>Refer to Elements page for available icon names</i>'
-                      default: 'fa-leaf'
-
-            header.legal:
-              type: section
-              title: Legal
-              underline: true
-              fields:
-                .items:
-                  type: list
-                  style: vertical
-                  fields:
-                    .title:
-                      type: text
-                      label: Title
-                      help: 'Displayed name of link'
-                      validate:
-                        required: true
-                    .url:
-                      type: text
-                      label: URL
-                      help: '(Optional) External link'
-                      description: '<i>Automatically links to legal page, if left blank</i>'
-                    .param:
-                      type: text
-                      label: '(Optional) Parameter'
-                      help: 'Parameter to append to URL'
-                      description: '<i>Appends to URL, ie. anchor link #id</i>'
+    fields:
+        tabs:
+            type: tabs
+            active: 1
+            fields:
+                content:
+                    fields:
+                        # @start: DEFAULTS
+                        # not a routable page, but an internal reference
+                        header.routable:
+                            type: hidden
+                            default: false
+                        # not visible in menus
+                        header.visible:
+                            type: hidden
+                            default: false
+                        # do exclude from search engines                   
+                        header.pageOptions.noIndex:
+                            type: hidden
+                            default: true
+                        # do exclude from sitemap
+                        header.sitemap.ignore:
+                            type: hidden
+                            default: true
+                        # @end: DEFAULTS
+                        header.pageOptions:
+                            unset@: true
+                        header.banner:
+                            unset@: true
