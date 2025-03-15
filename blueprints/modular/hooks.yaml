@@ -10,7 +10,7 @@ form:
             fields:
                 content:
                     type: tab
-                    title: Hooks
+                    title: Content
                     fields:
                         header.hooks:
                             type: section

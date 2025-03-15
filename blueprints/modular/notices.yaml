@@ -10,7 +10,7 @@ form:
             fields:
                 content:
                     type: tab
-                    title: Notices
+                    title: Content
                     fields:
                         header.notices:
                             type: section
