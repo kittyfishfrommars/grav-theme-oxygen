@@ -10,7 +10,7 @@ form:
             fields:
                 content:
                     type: tab
-                    title: Portals
+                    title: Content
                     fields:
                         header.portals:
                             type: section

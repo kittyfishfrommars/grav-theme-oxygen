@@ -10,7 +10,7 @@ form:
             fields:
                 content:
                     type: tab
-                    title: Links
+                    title: Content
                     fields:
                         # @start: DEFAULTS
                         # do not change taxonomy definition, do not change
