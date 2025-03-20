@@ -1,5 +1,5 @@
 ---
-title: "Look, It's Kittyfish from Mars."
+title: "Look, it's Kittyfish from Mars."
 menu: Home
 
 # grav-plugin-sitemap overrides
