@@ -1,5 +1,5 @@
 # v2.0.0
-##  18-03-2025
+##  20-03-2025
 
 1. [](#new)
 * **Oxygen v2.0.0 Breaking Changes:** This major release improves integration with the admin panel. Please import all [_demo](https://github.com/kittyfishfrommars/grav-theme-oxygen/tree/main/_demo) content for a new data structure

@@ -1,6 +1,6 @@
 name: Oxygen
 version: 2.0.0
-description: 'Now with modular building blocks! Oxygen is a crazy fast, accessible and GDPR-compliant theme + build tools.'
+description: 'Oxygen is a crazy fast, accessible and GDPR-compliant theme + build tools. Now with modular building blocks!'
 icon: sun-o
 author:
     name: Kittyfish from Mars
@@ -13,22 +13,14 @@ readme: 'https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/README
 docs: 'https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/README.md'
 bugs: 'https://github.com/kittyfishfrommars/grav-theme-oxygen/issues'
 license: MIT
+
 dependencies:
-    -
-        name: grav
-        version: '>=1.7.0'
-    -
-        name: grav-plugin-error
-        version: '>=1.8.0'
-    -
-        name: grav-plugin-markdown-notices
-        version: '>=1.1.0'
-    -
-        name: grav-plugin-problems
-        version: '>=2.1.1'
-    -
-        name: grav-plugin-sitemap
-        version: '>=5.0.0'
+    - { name: grav, version: '>=1.7.0' }
+    - { name: grav-plugin-error, version: '>=1.8.0' }
+    - { name: grav-plugin-markdown-notices, version: '>=1.1.0' }
+    - { name: grav-plugin-problems, version: '>=2.1.1' }
+    - { name: grav-plugin-sitemap, version: '>=5.0.0' }
+
 form:
     validation: strict
     fields:
