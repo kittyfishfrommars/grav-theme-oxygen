@@ -5,6 +5,8 @@ enabled: true
 index: false
 # SEO: Add the global sitename to every page's title attribute
 sitetitle: false
+# SEO: Optional separator between page name and website name
+sitetitleseparator: -
 # if main navigation should display submenus in a dropdown on desktop
 dropdown: true
 # if jquery should be included, only necessary for some other plugins
