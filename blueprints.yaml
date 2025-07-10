@@ -1,5 +1,5 @@
 name: Oxygen
-version: 2.0.0
+version: v2.0.1
 description: 'Oxygen is a crazy fast, accessible and GDPR-compliant theme + build tools. Now with modular building blocks!'
 icon: sun-o
 author:
@@ -13,7 +13,6 @@ readme: 'https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/README
 docs: 'https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/README.md'
 bugs: 'https://github.com/kittyfishfrommars/grav-theme-oxygen/issues'
 license: MIT
-
 dependencies:
     - { name: grav, version: '>=1.7.0' }
     - { name: grav-plugin-error, version: '>=1.8.0' }
@@ -36,7 +35,7 @@ form:
         index:
             type: toggle
             label: Search Engine Index
-            sublabel: >
+            description: >
                 <small>SEO: Allow this website to be indexed by search engines, individual page exceptions may apply (default: disabled).</small>
             default: 0
             highlight: 1
@@ -48,7 +47,7 @@ form:
         sitetitle:
             type: toggle
             label: Include sitename in page title
-            sublabel: >
+            description: >
                 <small>SEO: Add the global sitename to every page's title attribute.</small>
             default: 0
             highlight: 1
@@ -60,7 +59,7 @@ form:
         dropdown:
             type: toggle
             label: Dropdown in Navigation
-            sublabel: >
+            description: >
                 <small>Desktop navigation: Display submenus in a dropdown (default: enabled).</small>
             default: 1
             highlight: 1
@@ -72,7 +71,7 @@ form:
         jquery:
             type: toggle
             label: Load jQuery
-            sublabel: >
+            description: >
                 <small>Include jQuery library from theme folder (default: enabled).</small>
             default: 1
             highlight: 1
