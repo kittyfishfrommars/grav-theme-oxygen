@@ -5,7 +5,9 @@
 				<h2>{{ header.callout.headline|raw }}</h2>
 			</header>
 			<p class="color-link-secondary {{ header.callout.byline.class|replace({',': ' '}) }}">{{ header.callout.byline.text|raw }}</p>
-			<a href="{{ header.callout.button.url }}" class="button alt mt-2 {{ header.callout.button.class|replace({',': ' '}) }}">{{ header.callout.button.text|raw }}</a>
+			{% if header.callout.button.text %}
+				<a href="{{ header.callout.button.url }}" class="button alt mt-2 {{ header.callout.button.class|replace({',': ' '}) }}">{{ header.callout.button.text|raw }}</a>
+			{% endif %}
 		</section>
 	</div>
 {% endif %}
