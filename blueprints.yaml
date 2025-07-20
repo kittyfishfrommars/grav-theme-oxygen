@@ -56,6 +56,13 @@ form:
                 1: PLUGIN_ADMIN.ENABLED
             validate:
                 type: bool
+        sitetitleseparator:
+            type: text
+            size: small
+            label: Sitename separator in page title
+            description: >
+                <small>Deafault is '-', you can use your own, e.g. '|'.</small>
+            default: '-'
         dropdown:
             type: toggle
             label: Dropdown in Navigation
