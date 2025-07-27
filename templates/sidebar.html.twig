@@ -11,7 +11,7 @@
 
 			{% if page.header.sidebar.position|lower  == 'left' %}
 				<div id="sidebar" class="4u mb-3">
-					{% set modules = page.collection().ofType('modular/links') %}
+					{% set modules = page.collection().ofOneOfTheseTypes(['modular/links', 'modular/static']) %}
 					{% if modules is not empty %}
 						{% include 'partials/modular.html.twig' with { 'modules' : modules } %}
 					{% endif %}
@@ -27,14 +27,14 @@
 
 			{% if page.header.sidebar.position|lower  == 'right' %}
 				<div id="sidebar" class="4u">
-					{% set modules = page.collection().ofType('modular/links') %}
+					{% set modules = page.collection().ofOneOfTheseTypes(['modular/links', 'modular/static']) %}
 					{% include 'partials/modular.html.twig' with { 'modules' : modules } %}
 				</div>
 			{% endif %}
 
 		</div>
 	</div>
-	{% set modules = page.collection()|filter(module => module.template != 'modular/links') %}
+	{% set modules = page.collection()|filter(module => module.template != 'modular/links')|filter(module => module.template != 'modular/static') %}
 	{% if modules is not empty %}
 		{% include 'partials/modular.html.twig' with { 'modules' : modules } %}
 	{% endif %}
