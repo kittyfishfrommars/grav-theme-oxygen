@@ -1,5 +1,5 @@
 name: Oxygen
-version: 2.1.6
+version: 2.1.7
 slug: oxygen
 type: theme
 description: 'Oxygen is a crazy fast, accessible and GDPR-compliant theme + build tools. Now with modular building blocks!'
@@ -14,6 +14,13 @@ readme: 'https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/README
 docs: 'https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/README.md'
 bugs: 'https://github.com/kittyfishfrommars/grav-theme-oxygen/issues'
 license: MIT
+
+dependencies:
+    - { name: grav, version: '>=1.7.8' }
+    - { name: grav-plugin-error }
+    - { name: grav-plugin-markdown-notices }
+    - { name: grav-plugin-problems }
+    - { name: grav-plugin-sitemap }
 
 form:
     validation: strict
