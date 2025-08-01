@@ -17,9 +17,6 @@ license: MIT
 
 dependencies:
     - { name: grav, version: '>=1.7.8' }
-    - { name: grav-plugin-error }
-    - { name: grav-plugin-markdown-notices }
-    - { name: grav-plugin-problems }
     - { name: grav-plugin-sitemap }
 
 form:
