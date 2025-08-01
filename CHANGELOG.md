@@ -1,5 +1,5 @@
-# v2.1.7
-## 28-07-2025
+# v2.1.8
+## 01-08-2025
 
 1. [](#bugfix)
 * [#25](https://github.com/kittyfishfrommars/grav-theme-oxygen/issues/25) Fix GPM installation
