@@ -52,6 +52,15 @@ form:
                   #   avoid_overwriting: false
                   #   accept:
                   #     - image/*
+                  .image_source:
+                    type: toggle
+                    label: Image Source
+                    highlight: 1
+                    default: local
+                    options:
+                      local: 'Local Image'
+                      remote: 'Remote URL'
+                    toggleable: true
                   .url:
                     # type: pagemediaselect
                     type: mediapicker
@@ -63,6 +72,13 @@ form:
                     preview_images: true
                     accept:
                       - image/*
+                  .remote_url:
+                    type: text
+                    label: Remote Image URL
+                    help: 'Enter the full URL of the image'
+                    validate:
+                      type: url
+                    visible: 'header.banner.image_source == "remote"'
                   .position:
                     type: text
                     label: Position
