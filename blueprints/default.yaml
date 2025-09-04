@@ -78,7 +78,6 @@ form:
                     help: 'Enter the full URL of the image'
                     validate:
                       type: url
-                    visible: 'header.banner.image_source == "remote"'
                   .position:
                     type: text
                     label: Position
