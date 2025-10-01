@@ -1,21 +1,35 @@
-{% if page.header.banner.url %}
-	<div id="banner" class="height-100" style="background-position: {{ page.header.banner.position }}; background-image:url('{{ page.media[page.header.banner.url].url }}?fp=4702')">
-		<section class="container relative text-center height-100">
-			<div class="center-vh width-100">
-				{% if page.header.banner.headline %}
-					<h2>{{ page.header.banner.headline|raw }}</h2>
-				{% endif %}
-				{% if page.header.banner.follower.text %}
-					<div>
-						<span class="follower {{ page.header.banner.follower.class|replace({',': ' '}) }}">{{ page.header.banner.follower.text|raw }}</span>
-					<div>	
-				{% endif %}
-				{% if page.header.banner.blurb.text %}
-					<div>
-						<span class="blurb {{ page.header.banner.blurb.class|replace({',': ' '}) }}">{{ page.header.banner.blurb.text|raw }}</span>
-					</div>
-				{% endif %}
-			</div>
-		</section>
-	</div>
+{# Check if we have any banner image configured #}
+{% if (page.header.banner.image_source == 'local' and page.header.banner.url) or 
+      (page.header.banner.image_source == 'remote' and page.header.banner.remote_url) %}
+
+    {# Determine the image URL based on the source type #}
+    {% set banner_image_url = '' %}
+    {% if page.header.banner.image_source == 'local' and page.header.banner.url %}
+        {% set banner_image_url = page.media[page.header.banner.url].url %}
+    {% elseif page.header.banner.image_source == 'remote' and page.header.banner.remote_url %}
+        {% set banner_image_url = page.header.banner.remote_url %}
+    {% endif %}
+
+    {# Only display banner if we have a valid image URL #}
+    {% if banner_image_url %}
+        <div id="banner" class="height-100" style="background-position: {{ page.header.banner.position|default('center center') }}; background-image:url('{{ banner_image_url }}')">
+            <section class="container relative text-center height-100">
+                <div class="center-vh width-100">
+                    {% if page.header.banner.headline %}
+                        <h2>{{ page.header.banner.headline|raw }}</h2>
+                    {% endif %}
+                    {% if page.header.banner.follower.text %}
+                        <div>
+                            <span class="follower {{ page.header.banner.follower.class|replace({',': ' '}) }}">{{ page.header.banner.follower.text|raw }}</span>
+                        <div>	
+                    {% endif %}
+                    {% if page.header.banner.blurb.text %}
+                        <div>
+                            <span class="blurb {{ page.header.banner.blurb.class|replace({',': ' '}) }}">{{ page.header.banner.blurb.text|raw }}</span>
+                        </div>
+                    {% endif %}
+                </div>
+            </section>
+        </div>
+    {% endif %}
 {% endif %}
