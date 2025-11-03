@@ -213,7 +213,7 @@ This process may take a while populating `node_modules`. Please wait patiently.
 
 `npm run serve` for development
 
-* opens a livereload browser tab at `http://localhost`, this path is configurable in [gulp.config.json](https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/gulp.config.json)
+* opens a livereload browser tab at `http://localhost:8080`, this path is configurable in [gulp.config.json](https://github.com/kittyfishfrommars/grav-theme-oxygen/blob/main/gulp.config.json)
 
 `npm run build` for production
 
