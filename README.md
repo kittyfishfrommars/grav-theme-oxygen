@@ -29,7 +29,7 @@ All-in-one package: [grav-skeleton-oxygen](https://github.com/kittyfishfrommars/
 - [Troubleshooting](#troubleshooting)
   - [500 Internal Server Error](#500-internal-server-error)
   - [Incorrect content rendering](#incorrect-content-rendering)
-- [Examples in the wild](#examples-in-the-wild)
+- [Showcases in the wild](#showcases-in-the-wild)
 - [Credits](#credits)
 
 
@@ -240,10 +240,11 @@ Where `grav-skeleton-oxygen` is your installation folder.
 If your content renders as markdown instead of nicely formatted html, this is most solved by editing the settings in `/user/config/system.yaml`. Please see [Setup](#setup) for detailed instructions.
 
 
-## Examples in the wild
+## Showcases in the wild
 
-* [kittyfishfrommars.github.io](https://kittyfishfrommars.github.io/grav/grav-theme-oxygen/) - Theme "Oxygen" developed by [kittyfishfrommars](https://github.com/kittyfishfrommars)
+* [ict.unito.it](https://ict.unito.it/) - Università di Torino: Innovazione Sociale, Comunicazione e Nuove Tecnologie (italian)
 * [juedisch.info](https://juedisch.info) - Jewish activism (german)
+* [kittyfishfrommars.github.io](https://kittyfishfrommars.github.io/grav/grav-theme-oxygen/) - Theme "Oxygen" developed by [kittyfishfrommars](https://github.com/kittyfishfrommars)
 * [behold.metamotive.co.nz](https://behold.metamotive.co.nz/solarize) - Original Grav port "Solarize" by [hughbris](https://github.com/hughbris/)
 
 Please drop me a line if you want yours to be included (hey, it's free publicity).
