@@ -13,6 +13,7 @@
 	{% block stylesheets %}
 		{% do assets.addCss('theme://fonts/opensans/opensans.css?fp=4702', {group: 'init'}) %}
 		{% do assets.addCss('theme://dist/css/main.css?fp=4702', {group: 'init'}) %}
+		{% do assets.addCss('theme://css/custom.css', {group: 'init'}) %}
 		{# head: blocking scripts #}		
 		{{ assets.css('init')|raw }}
 		{# head: with loading parameter #}
