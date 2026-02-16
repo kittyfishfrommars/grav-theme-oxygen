@@ -1,6 +1,7 @@
 # v2.1.12
 ## 14-02-2026
-1. [](#bugfix) Fix banner image source in `_demo` files
+1. [](#bugfix)
+* Fix banner image source in `_demo` files
 
 # v2.1.11
 ## 10-10-2025
